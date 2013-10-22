@@ -8,7 +8,7 @@
 			<div class="row" id="navtop">
 				
 					<div class="fourcol">
-						<a href="home.php"> <img id="logo" src="img/logo.png" alt="Final Level Gaming to the next level"></a>
+						<a href="home.php"> <img id="logo" src="img/logo.png" alt="Final Level - Gaming For Girls"></a>
 						
 					</div>
 					<div class="threecol">	
@@ -63,9 +63,9 @@
 					<div class="threecol last">
 						<div class="socialnav">
 							<ul>
-								<li><a href="http://www.facebook.com"><img src="img/icons/facebook.png" alt="Facebook"></a> </li>
-								<li><a href="http://www.twitter.com"><img src="img/icons/twitter.png" alt="Twitter"></a> </li>
-								<li><a href="http://www.plus.google.com"><img src="img/icons/google.png" alt="Google Plus"></a> </li>
+								<li><a href="http://www.facebook.com"><img src="img/icons/facebook.png" alt="Final Level on Facebook"></a> </li>
+								<li><a href="http://www.twitter.com"><img src="img/icons/twitter.png" alt="Final Level on Twitter"></a> </li>
+								<li><a href="http://www.plus.google.com"><img src="img/icons/google.png" alt="Final Level on Google Plus"></a> </li>
 							</ul>
 						</div>
 					</div>

@@ -8,7 +8,7 @@ require_once('db_connect.php');
 <html dir="ltr" lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Final Level Games Home – Miki Nagai</title>
+<title>Final Level Games Home – Gaming For Girls</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -150,7 +150,7 @@ require_once('db_connect.php');
         <div class="container" style="position:relative;">
             <div class="row">
                 <div class="container">
-                    <div class="twelvecol"><p class="featured">Featured Products</p></div>
+                    <div class="twelvecol"><p class="featured">Featured Games For Girls</p></div>
                 </div>
             </div>
             <div class="row">
@@ -165,7 +165,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="product" />';
+                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -205,7 +205,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="product" />';
+                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -245,7 +245,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="product" />';
+                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -285,7 +285,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="product" />';
+                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -325,7 +325,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="product" />';
+                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -365,7 +365,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="product" />';
+                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -405,7 +405,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="product" />';
+                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -445,7 +445,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="product" />';
+                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -485,7 +485,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="product" />';
+                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -525,7 +525,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="product" />';
+                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>

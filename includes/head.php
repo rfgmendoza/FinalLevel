@@ -16,7 +16,7 @@
 		
 		
 		<title>
-			Final Level Games – Ashley Pajak
+			Final Level Games – Gaming For Girls
 		</title>
 	
 	</head>
