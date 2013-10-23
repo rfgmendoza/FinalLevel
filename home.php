@@ -4,7 +4,6 @@ require_once('db_connect.php');
 
 ?>
 
-<!--hi-->
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
