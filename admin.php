@@ -133,7 +133,35 @@
                 
                 <TR> <TD colspan="6"><span class="addnew">Add new</span></TD>  </TR>
                 
-                <TR> <TD class="lastcell"><input type="text" style="width:300px;"/></TD> <TD><select name="state" id="state" required=""> <option value="">Select</option> <option value="Action Adventure">Action Adventure</option> <option value="Arcade/Puzzle">Arcade/Puzzle</option> <option value="Family/Party">Family/Party</option>   <option value="Fighting">Fighting</option> <option value="Music/Dance">Music/Dance</option>  <option value="Racing">Racing</option> <option value="Family/Party">Family/Party</option>  <option value="Arcade/Puzzle">Arcade/Puzzle</option> <option value="Role-Playing">Role-Playing</option> </select></TD> <TD><input type="text" style="width:30px;" /></TD> <TD><input type="text" style="width:30px;" /></TD>  <TD><input type="text" style="width:50px;" /></TD> <TD><a href="#">Add</a></TD>  </TR>
+                <TR> 
+					<TD class="lastcell">
+						<input type="text" style="width:300px;" name="Title"/>
+					</TD> 
+					<TD>
+						<select name="Category" id="state" required=""> 
+							<option value="">Select</option> 
+							<option value="Action Adventure">Action Adventure</option> 
+							<option value="Arcade/Puzzle">Arcade/Puzzle</option> 
+							<option value="Family/Party">Family/Party</option>   
+							<option value="Fighting">Fighting</option> 
+							<option value="Music/Dance">Music/Dance</option>  
+							<option value="Racing">Racing</option> 
+							<option value="Family/Party">Family/Party</option>  
+							<option value="Arcade/Puzzle">Arcade/Puzzle</option> 
+							<option value="Role-Playing">Role-Playing</option> 
+						</select>
+					</TD> 
+					<TD>
+						<input type="text" style="width:30px;" name="Price"/>
+					</TD> 
+					<TD>
+						<input type="text" style="width:30px;" name="Sales Price"/>
+					</TD>  
+					<TD>
+						<input type="text" style="width:50px;" name ="Image"/>
+					</TD> 
+					<TD><a href="#">Add</a></TD>  
+				</TR>
                 
                 </TBODY>
                 
