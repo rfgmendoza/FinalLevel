@@ -129,11 +129,15 @@
                 
                 <TR> <TD><img src="img/game1.jpg" width="100" height="112" /></TD> <TD>KINGDOM HEARTS HD 1.5 ReMIX</TD> <TD>Role-Playing</TD> <TD>499</TD> <TD>50</TD>  <TD>$40.00</TD> <TD>rating</TD> <TD>console</TD> <TD>creator</TD> <TD><a href="#">edit</a></TD>  </TR>
                 
-                <TR> <TD colspan="6"><span class="addnew">Add new</span></TD>  </TR>
+                <TR> <TD colspan="10"><span class="addnew">Add new</span></TD>  </TR>
+                
                 
                 <TR> 
                                         <TD class="lastcell">
-                                                <input type="text" style="width:300px;" name="Title"/>
+                                                <input type="text" style="width:100px;" name="Title"/>
+                                        </TD> 
+                                        <TD class="lastcell">
+                                                <input type="text" style="width:200px;" name="Title"/>
                                         </TD> 
                                         <TD>
                                                 <select name="Category" id="state" required=""> 
@@ -157,6 +161,15 @@
                                         </TD>  
                                         <TD>
                                                 <input type="text" style="width:50px;" name ="Image"/>
+                                        </TD> 
+                                        <TD>
+                                                <input type="text" style="width:50px;" name="Price"/>
+                                        </TD> 
+                                        <TD>
+                                                <input type="text" style="width:50px;" name="Price"/>
+                                        </TD> 
+                                        <TD>
+                                                <input type="text" style="width:50px;" name="Price"/>
                                         </TD> 
                                         <TD><a href="#">Add</a></TD>  
                                 </TR>
