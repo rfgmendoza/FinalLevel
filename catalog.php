@@ -42,7 +42,7 @@
         	<div class="container">
             	<div class="row">
                 	<div class="threecol">
-                    	<a href="home.php"><img src="img/logo_2.png" alt="logo" /></a>
+                    	<a href="home.php"><image src="image/logo_2.png" alt="logo" /></a>
                     </div><!--three col-->
                     <div class="nicecol last user-menu">
                     	
@@ -121,60 +121,60 @@
                 	<div class="row product-list-wrap" style="width:auto;">
                         <div class="threecol" style="margin-right: 2.8% !important;">
                             <div class="product-wrapper">
-                                <div class="image"><img src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
+                                <div class="image"><image src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
                                 <div class="product-infor">
                                     <p class="product_name">KINGDOM HEARTS HD 1.5 ReMIX</p>
                                     <p class="product_pr">$49.00</p>
-                                    <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                    <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                     </p><!--rating-->
                                 </div><!--product-infor-->
                                 <p>
-                                    <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                    <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                                 </p>
                             </div><!--product-wrapper-->
                          </div><!--threecol-->
                          
                          <div class="threecol" style="margin-right: 2.8% !important;">
                             <div class="product-wrapper">
-                                <div class="image"><img src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
+                                <div class="image"><image src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
                                 <div class="product-infor">
                                     <p class="product_name">KINGDOM HEARTS HD 1.5 ReMIX</p>
                                     <p class="product_pr">$49.00</p>
-                                    <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                    <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                     </p><!--rating-->
                                 </div><!--product-infor-->
                                 <p>
-                                    <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                    <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                                 </p>
                             </div><!--product-wrapper-->
                          </div><!--threecol-->
                          
                          <div class="threecol" style="margin-right: 2.8% !important;">
                             <div class="product-wrapper">
-                                <div class="image"><img src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
+                                <div class="image"><image src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
                                 <div class="product-infor">
                                     <p class="product_name">KINGDOM HEARTS HD 1.5 ReMIX</p>
                                     <p class="product_pr">$49.00</p>
-                                    <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                    <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                     </p><!--rating-->
                                 </div><!--product-infor-->
                                 <p>
-                                    <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                    <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                                 </p>
                             </div><!--product-wrapper-->
                          </div><!--threecol-->
                          
                          <div class="threecol" style="margin-right: 2.8% !important;">
                             <div class="product-wrapper">
-                                <div class="image"><img src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
+                                <div class="image"><image src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
                                 <div class="product-infor">
                                     <p class="product_name">KINGDOM HEARTS HD 1.5 ReMIX</p>
                                     <p class="product_pr">$49.00</p>
-                                    <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                    <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                     </p><!--rating-->
                                 </div><!--product-infor-->
                                 <p>
-                                    <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                    <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                                 </p>
                             </div><!--product-wrapper-->
                          </div><!--threecol-->
@@ -185,60 +185,60 @@
                     <div class="row product-list-wrap" style="width:auto;">
                         <div class="threecol" style="margin-right: 2.8% !important;">
                             <div class="product-wrapper">
-                                <div class="image"><img src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
+                                <div class="image"><image src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
                                 <div class="product-infor">
                                     <p class="product_name">KINGDOM HEARTS HD 1.5 ReMIX</p>
                                     <p class="product_pr">$49.00</p>
-                                    <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                    <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                     </p><!--rating-->
                                 </div><!--product-infor-->
                                 <p>
-                                    <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                    <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                                 </p>
                             </div><!--product-wrapper-->
                          </div><!--threecol-->
                          
                          <div class="threecol" style="margin-right: 2.8% !important;">
                             <div class="product-wrapper">
-                                <div class="image"><img src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
+                                <div class="image"><image src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
                                 <div class="product-infor">
                                     <p class="product_name">KINGDOM HEARTS HD 1.5 ReMIX</p>
                                     <p class="product_pr">$49.00</p>
-                                    <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                    <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                     </p><!--rating-->
                                 </div><!--product-infor-->
                                 <p>
-                                    <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                    <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                                 </p>
                             </div><!--product-wrapper-->
                          </div><!--threecol-->
                          
                          <div class="threecol" style="margin-right: 2.8% !important;">
                             <div class="product-wrapper">
-                                <div class="image"><img src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
+                                <div class="image"><image src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
                                 <div class="product-infor">
                                     <p class="product_name">KINGDOM HEARTS HD 1.5 ReMIX</p>
                                     <p class="product_pr">$49.00</p>
-                                    <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                    <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                     </p><!--rating-->
                                 </div><!--product-infor-->
                                 <p>
-                                    <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                    <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                                 </p>
                             </div><!--product-wrapper-->
                          </div><!--threecol-->
                          
                          <div class="threecol" style="margin-right: 2.8% !important;">
                             <div class="product-wrapper">
-                                <div class="image"><img src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
+                                <div class="image"><image src="http://www.gamestop.com/common/images/lbox/271369b.jpg" alt="product" /></div>
                                 <div class="product-infor">
                                     <p class="product_name">KINGDOM HEARTS HD 1.5 ReMIX</p>
                                     <p class="product_pr">$49.00</p>
-                                    <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                    <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                     </p><!--rating-->
                                 </div><!--product-infor-->
                                 <p>
-                                    <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                    <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                                 </p>
                             </div><!--product-wrapper-->
                          </div><!--threecol-->
@@ -260,26 +260,26 @@
                 	<p class="footer-title">information</p>
                     <ul>
                     	<li><a href="about.php">about us</a></li>
-                        <li><a href="#">Delivery Information</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="shipping.php">Delivery Information</a></li>
+                        <li><a href="privacypolicy.php">Privacy Policy</a></li>
+                        <li><a href="conditions.php">Terms & Conditions</a></li>
                     </ul>
                 </div>
                 <div class="threecol footer-col">
                 	<p class="footer-title">Customer Service</p>
                     <ul>
                     	<li><a href="#">Contact us</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">site map</a></li>
+                        <li><a href="returns.php">Returns</a></li>
+                        <li><a href="#">Site map</a></li>
                     </ul>
                 </div>
                 <div class="threecol footer-col">
                 	<p class="footer-title">My Account</p>
                     <ul>
-                    	<li><a href="#">my account</a></li>
-                        <li><a href="#">order history</a></li>
-                        <li><a href="#">wish list</a></li>
-                        <li><a href="#">news letter</a></li>
+                    	<li><a href="#">My Account</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Wish List</a></li>
+                        <li><a href="#">News Letter</a></li>
                         <li><a target="_blank" href="admin.php">Admin</a></li>
                     </ul>
                 </div>
@@ -287,11 +287,11 @@
                 	<div class="footer-right">
                 	<p class="footer-title">Company information</p>
                     <ul>
-                    	<li><p><span class="contact"><img src="img/phone.png" alt="phone" /></span>+001 (000) 555 801</p></li>
-                        <li><p><span class="contact"><img src="img/location-outline.png" alt="phone" /></span>123 Main  Street Orlando, FL</p></li>
-                        <li style="text-transform:lowercase;"><p><span class="contact"><img src="img/mail.png" alt="phone" /></span>finalevelgames@contact.com</p></li>
-                        <li style="padding-top:10px;"><a href="#" target="_blank"><img src="img/Facebook.png" alt="socialmedia" class="fb socialmedia" /></a>
-                    <a href="#" target="_blank"><img src="img/Twitter.png" alt="socialmedia" class="tw socialmedia" /></a></li>
+                    	<li><p><span class="contact"><image src="image/phone.png" alt="phone" /></span>+001 (000) 555 801</p></li>
+                        <li><p><span class="contact"><image src="image/location-outline.png" alt="phone" /></span>123 Main  Street Orlando, FL</p></li>
+                        <li style="text-transform:lowercase;"><p><span class="contact"><image src="image/mail.png" alt="phone" /></span>finalevelgames@contact.com</p></li>
+                        <li style="padding-top:10px;"><a href="#" target="_blank"><image src="image/Facebook.png" alt="socialmedia" class="fb socialmedia" /></a>
+                    <a href="#" target="_blank"><image src="image/Twitter.png" alt="socialmedia" class="tw socialmedia" /></a></li>
                     </ul>
                     </div>
                 </div>
@@ -301,7 +301,7 @@
                 	<p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Miki Nagai</p>
                 </div>
                 
-                <div class="twocol last"><img src="img/payment.gif" alt="" /></div>
+                <div class="twocol last"><image src="image/payment.gif" alt="" /></div>
             </div>
         </div>
     

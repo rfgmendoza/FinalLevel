@@ -47,7 +47,7 @@ require_once('db_connect.php');
             <div class="container">
                 <div class="row">
                     <div class="threecol">
-                        <img src="img/logo_2.png" alt="logo" />
+                        <img src="image/logo_2.png" alt="logo" />
                     </div><!--three col-->
                     <div class="nicecol last user-menu">
                         
@@ -107,9 +107,9 @@ require_once('db_connect.php');
                 <div class="ninecol">
                     <div class="slider-wrapper theme-default">
                         <div id="slider" class="nivoSlider">
-                            <img src="img/slider1.png" alt="slider-1" />
-                            <img src="img/slider2.png" alt="" />
-                            <img src="img/slider3.png" alt="" />
+                            <img src="image/slider1.png" alt="slider-1" />
+                            <img src="image/slider2.png" alt="" />
+                            <img src="image/slider3.png" alt="" />
                         </div>
                     </div>
                 </div><!--eightcol-->
@@ -139,8 +139,8 @@ require_once('db_connect.php');
     <div id="banner">
         <div class="container">
             <div class="row">
-                <div class="sixcol"><img src="img/banner1.png" alt="banner" /></div>
-                <div class="sixcol last"><img src="img/banner2.png" alt="banner" /></div>
+                <div class="sixcol"><image src="image/banner1.png" alt="banner" /></div>
+                <div class="sixcol last"><image src="image/banner2.png" alt="banner" /></div>
             </div>
         </div>
     </div>
@@ -165,7 +165,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
+                                echo '<image src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -189,11 +189,11 @@ require_once('db_connect.php');
                                 echo $row[0];
                                 }
                                 ?></p>
-                                <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                 </p><!--rating-->
                             </div><!--product-infor-->
                             <p>
-                                <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                             </p>
                             
                         </li><!--li-->
@@ -205,7 +205,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
+                                echo '<image src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -229,11 +229,11 @@ require_once('db_connect.php');
                                 echo $row[0];
                                 }
                                 ?></p>
-                                <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                 </p><!--rating-->
                             </div><!--product-infor-->
                             <p>
-                                <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                             </p>
                             
                         </li><!--li-->
@@ -245,7 +245,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
+                                echo '<image src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -269,11 +269,11 @@ require_once('db_connect.php');
                                 echo $row[0];
                                 }
                                 ?></p>
-                                <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                 </p><!--rating-->
                             </div><!--product-infor-->
                             <p>
-                                <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                             </p>
                             
                         </li><!--li-->
@@ -285,7 +285,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
+                                echo '<image src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -309,11 +309,11 @@ require_once('db_connect.php');
                                 echo $row[0];
                                 }
                                 ?></p>
-                                <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                 </p><!--rating-->
                             </div><!--product-infor-->
                             <p>
-                                <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                             </p>
                             
                         </li><!--li-->
@@ -325,7 +325,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
+                                echo '<image src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -349,11 +349,11 @@ require_once('db_connect.php');
                                 echo $row[0];
                                 }
                                 ?></p>
-                                <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                 </p><!--rating-->
                             </div><!--product-infor-->
                             <p>
-                                <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                             </p>
                             
                         </li><!--li-->
@@ -365,7 +365,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
+                                echo '<image src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -389,11 +389,11 @@ require_once('db_connect.php');
                                 echo $row[0];
                                 }
                                 ?></p>
-                                <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                 </p><!--rating-->
                             </div><!--product-infor-->
                             <p>
-                                <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                             </p>
                             
                         </li><!--li-->
@@ -405,7 +405,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
+                                echo '<image src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -429,11 +429,11 @@ require_once('db_connect.php');
                                 echo $row[0];
                                 }
                                 ?></p>
-                                <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                 </p><!--rating-->
                             </div><!--product-infor-->
                             <p>
-                                <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                             </p>
                             
                         </li><!--li-->
@@ -445,7 +445,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
+                                echo '<image src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -469,11 +469,11 @@ require_once('db_connect.php');
                                 echo $row[0];
                                 }
                                 ?></p>
-                                <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                 </p><!--rating-->
                             </div><!--product-infor-->
                             <p>
-                                <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                             </p>
                             
                         </li><!--li-->
@@ -485,7 +485,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
+                                echo '<image src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -509,11 +509,11 @@ require_once('db_connect.php');
                                 echo $row[0];
                                 }
                                 ?></p>
-                                <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                 </p><!--rating-->
                             </div><!--product-infor-->
                             <p>
-                                <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                             </p>
                             
                         </li><!--li-->
@@ -525,7 +525,7 @@ require_once('db_connect.php');
                                 $result = mysql_query($sql); 
                                 while($row = mysql_fetch_array($result))
                                 {
-                                echo '<img src="' . $row[0] . '" alt="Games girls want" />';
+                                echo '<image src="' . $row[0] . '" alt="Games girls want" />';
                                 }
                                 ?>
                             </div>
@@ -549,11 +549,11 @@ require_once('db_connect.php');
                                 echo $row[0];
                                 }
                                 ?></p>
-                                <p class="rating"><img src="img/rating-icon.png" alt="rating" />
+                                <p class="rating"><image src="image/rating-icon.png" alt="rating" />
                                 </p><!--rating-->
                             </div><!--product-infor-->
                             <p>
-                                <a class="add-to-cart" href="#"><span><img src="img/shopping-cart-white.png" alt="" /></span>add to cart</a>
+                                <a class="add-to-cart" href="#"><span><image src="image/shopping-cart-white.png" alt="" /></span>add to cart</a>
                             </p>
                             
                         </li><!--li-->
@@ -569,54 +569,54 @@ require_once('db_connect.php');
     </div><!--products-->
     
     <div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="threecol footer-col">
-                    <p class="footer-title">information</p>
+    	<div class="container">
+        	<div class="row">
+            	<div class="threecol footer-col">
+                	<p class="footer-title">information</p>
                     <ul>
-                        <li><a href="about.php">about us</a></li>
-                        <li><a href="#">Delivery Information</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                    	<li><a href="about.php">about us</a></li>
+                        <li><a href="shipping.php">Delivery Information</a></li>
+                        <li><a href="privacypolicy.php">Privacy Policy</a></li>
+                        <li><a href="conditions.php">Terms & Conditions</a></li>
                     </ul>
                 </div>
                 <div class="threecol footer-col">
-                    <p class="footer-title">Customer Service</p>
+                	<p class="footer-title">Customer Service</p>
                     <ul>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">site map</a></li>
+                    	<li><a href="#">Contact us</a></li>
+                        <li><a href="returns.php">Returns</a></li>
+                        <li><a href="#">Site map</a></li>
                     </ul>
                 </div>
                 <div class="threecol footer-col">
-                    <p class="footer-title">My Account</p>
+                	<p class="footer-title">My Account</p>
                     <ul>
-                        <li><a href="#">my account</a></li>
-                        <li><a href="#">order history</a></li>
-                        <li><a href="#">wish list</a></li>
-                        <li><a href="#">news letter</a></li>
+                    	<li><a href="#">My Account</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Wish List</a></li>
+                        <li><a href="#">News Letter</a></li>
                         <li><a target="_blank" href="admin.php">Admin</a></li>
                     </ul>
                 </div>
                 <div class="threecol last contactinfor">
-                    <div class="footer-right">
-                    <p class="footer-title">Company information</p>
+                	<div class="footer-right">
+                	<p class="footer-title">Company information</p>
                     <ul>
-                        <li><p><span class="contact"><img src="img/phone.png" alt="phone" /></span>+001 (000) 555 801</p></li>
-                        <li><p><span class="contact"><img src="img/location-outline.png" alt="phone" /></span>123 Main  Street Orlando, FL</p></li>
-                        <li style="text-transform:lowercase;"><p><span class="contact"><img src="img/mail.png" alt="phone" /></span>finalevelgames@contact.com</p></li>
-                        <li style="padding-top:10px;"><a href="#" target="_blank"><img src="img/Facebook.png" alt="socialmedia" class="fb socialmedia" /></a>
-                    <a href="#" target="_blank"><img src="img/Twitter.png" alt="socialmedia" class="tw socialmedia" /></a></li>
+                    	<li><p><span class="contact"><image src="image/phone.png" alt="phone" /></span>+001 (000) 555 801</p></li>
+                        <li><p><span class="contact"><image src="image/location-outline.png" alt="phone" /></span>123 Main  Street Orlando, FL</p></li>
+                        <li style="text-transform:lowercase;"><p><span class="contact"><image src="image/mail.png" alt="phone" /></span>finalevelgames@contact.com</p></li>
+                        <li style="padding-top:10px;"><a href="#" target="_blank"><image src="image/Facebook.png" alt="socialmedia" class="fb socialmedia" /></a>
+                    <a href="#" target="_blank"><image src="image/Twitter.png" alt="socialmedia" class="tw socialmedia" /></a></li>
                     </ul>
                     </div>
                 </div>
             </div><!--row-->
             <div class="row footer-bottom">
-                <div class="tencol">
-                    <p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Miki Nagai</p>
+            	<div class="tencol">
+                	<p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Miki Nagai</p>
                 </div>
                 
-                <div class="twocol last"><img src="img/payment.gif" alt="" /></div>
+                <div class="twocol last"><image src="image/payment.gif" alt="" /></div>
             </div>
         </div>
     

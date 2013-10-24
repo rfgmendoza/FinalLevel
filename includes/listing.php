@@ -11,13 +11,14 @@
 	$products = $mynewsqli->query($pull) 
 		or die ($mynewsqli->error);
 	$a=0;
+	print "alert('Starting')";
+	echo"<div class='row product-list-wrap' style='width:auto;'>";
 	
-	echo"<div class='row'><div class='twelvecol last'><div class='listrow'><div class='row clear'>";
-	
-	if($a>3){
+	if($a>2){
 	
 		while($row = $products->fetch_assoc())
 			{
+				$sku=$row['SKU'];
 				$prod=$row['Product Name'];
 				$cate=$row['Category'];
 				$price=$row['Price'];
@@ -25,71 +26,102 @@
 				$img=$row['Product Image'];
 				$ratin=$row['Rating'];
 				$ranking=$row['Ranking'];
-					
+				$rankingimg;
+				
 				if (strlen($prod)>10){
 					$name = explode(":", $prod);
 					$prod = join("<br>",$name);
 				}else{
 					
 				}
-							
+				if ($ranking==0){
+					$rankimg='../image/icons/0stars.png';
+				}else if($ranking==1){
+					$rankimg='../image/icons/1stars.png';
+				}else if ($ranking==2){
+					$rankimg='../image/icons/2stars.png';
+				}else if ($ranking==3){
+					$rankimg='../image/icons/3stars.png';
+				}else if ($ranking==4){
+					$rankimg='../image/icons/4stars.png';
+				}else if ($ranking==5){
+					$rankimg='../image/icons/5stars.png';
+				}else{
+					alert("Error with Ranking");
+				}		
 				echo "
-				<div class='twocol last'>
-					<div class='catalog'>
-						<img src='$img' alt='$prod'>
-						<br>
-						<div class='list'>
-							<h2>$prod</h2>
-							<p>New: $$price<br>Used: $$salprice<br> <img src=$ranking alt='Star Ranking'> <br><a href='#' class='btn'>Buy</a></p>
-							
-						</div>			
+				<div class='threecol last'style='margin-right: 2.8% !important;'>
+					<div class='product-wrapper'>
+						<div class='image'><img src='$img' alt='$prod'></div>
+						
+						<div class='product-infor'>
+							<p class='product_name'>$prod</p>
+							<p class='product-pr'>New: $$price	Used: $$salprice</p>
+							<p class='rating'><img src=$rankimg alt='Star Ranking $ranking'> </p>
+						</div>
+							<p>
+								<a class='add-to-cart' href='#'><span><image src='image/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+							</p>			
 					</div>
 				</div>	
 			</div>
-		</div>
-		<div class='listrow'>
-			<div class='row clear'>
-					";
+			<div class='row product-list-wrap' style='width:auto;'>";
 			}
 		$a=0;
 	
 	}else{
 		while($row = $products->fetch_assoc())
 			{
+				$sku=$row['SKU'];
 				$prod=$row['Product Name'];
 				$cate=$row['Category'];
 				$price=$row['Price'];
 				$salprice=$row['Sales Price'];
 				$img=$row['Product Image'];
 				$ratin=$row['Rating'];
-				$console=$row['Console'];
-				$creator=$row['Creator'];
 				$ranking=$row['Ranking'];
+				$rankingimg;
 				
-				
-					
 				if (strlen($prod)>10){
 					$name = explode(":", $prod);
 					$prod = join("<br>",$name);
 				}else{
+					
 				}
-				
+				if ($ranking==0){
+					$rankimg='../image/icons/0stars.png';
+				}if ($ranking==1){
+					$rankimg='../image/icons/1stars.png';
+				}if ($ranking==2){
+					$rankimg='../image/icons/2stars.png';
+				}if ($ranking==3){
+					$rankimg='../image/icons/3stars.png';
+				}if ($ranking==4){
+					$rankimg='../image/icons/4stars.png';
+				}if ($ranking==5){
+					$rankimg='../image/icons/5stars.png';
+				}else{
+					alert("Error with Ranking");
+				}
+					
 				echo "
-				<div class='twocol'>
-					<div class='catalog'>
-						<img src='$img' alt='$prod'>
-						<br>
-						<div class='list'>
-							<h2>$prod</h2>
-							<p>New: $$price<br>Used: $$salprice<br><img src=$ranking alt='Star Ranking'><br><a href='#' class='btn'>Buy</a></p>
-							
-						</div>				
+				<div class='threecol' style='margin-right: 2.8% !important;'>
+					<div class='product-wrapper'>
+						<div class='image'><img src='$img' alt='$prod'></div>
+						
+						<div class='product-infor'>
+							<p class='product_name'>$prod</p>
+							<p class='product-pr'>New: $$price	Used: $$salprice</p>
+							<p class='rating'><img src=$rankimg alt='Star Ranking $ranking'> </p>
+						</div>
+							<p>
+								<a class='add-to-cart' href='#'><span><image src='image/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+							</p>			
 					</div>
-				</div>	
-					";
+				</div>";
 			}
 		$a++;
 	}
-	echo"</div></div></div></div>";
+	echo"</div>";
 			
 ?>
