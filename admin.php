@@ -118,29 +118,39 @@
                 </div><!--two-->
                 <div class="tencol last">
                 
-                <TABLE class="data-table admin-table">
+                <TABLE border="0" cellspacing="0" cellpadding="0" class="data-table admin-table">
 
                 <THEAD>
-                <TR> <TH>Product image</TH> <TH>Product Name</TH> <TH>Category</TH> <TH>SKU</TH> <TH>Qty</TH> <TH>Price</TH><TH>Rating</TH> <TH>Console</TH> <TH>Creator</TH><TH>&nbsp;</TH> </TR>
+                <TR> <TH>ID</TH> <TH>Product image</TH> <TH>Product Name</TH> <TH>Category</TH> <TH>SKU</TH> <TH>Qty</TH> <TH>Price</TH><TH>Rating</TH> <TH>Console</TH> <TH>Creator</TH><TH>&nbsp;</TH> </TR>
                 </THEAD>
                 
                 <TBODY>
-                <TR> <TD><img src="img/game1.jpg" width="100" height="112" /></TD> <TD>KINGDOM HEARTS HD 1.5 ReMIX</TD> <TD>Role-Playing</TD> <TD>499</TD> <TD>50</TD>  <TD>$40.00</TD> <TD>rating</TD> <TD>console</TD> <TD>creator</TD> <TD><a href="#">edit</a></TD>  </TR>
-                
-                <TR> <TD><img src="img/game1.jpg" width="100" height="112" /></TD> <TD>KINGDOM HEARTS HD 1.5 ReMIX</TD> <TD>Role-Playing</TD> <TD>499</TD> <TD>50</TD>  <TD>$40.00</TD> <TD>rating</TD> <TD>console</TD> <TD>creator</TD> <TD><a href="#">edit</a></TD>  </TR>
-                
-                <TR> <TD colspan="10"><span class="addnew">Add new</span></TD>  </TR>
-                
-                
-                <TR> 
+                <?php
+                $host="sulley.cah.ucf.edu"; // Host name 
+                $username="as932055"; // Mysql username 
+                $password="01knights!"; // Mysql password 
+                $db_name="as932055"; // Database name 
+                $tbl_name="Products"; // Table name
+
+                mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
+                mysql_select_db("$db_name")or die("cannot select DB");
+    
+                $sql="SELECT * FROM $tbl_name";
+                $result = mysql_query($sql);
+                while($row = mysql_fetch_array($result))
+                {
+                    echo '<form action="reviseProductUpload.php?id=' . $row[0] . '" method="post">';
+                    echo '<TR> <TD class="id"> ' . $row[0] . '</TD><TD><img src="' . $row[6] . '" width="100" height="112" /></TD> <TD>' . $row[1] . '</TD> <TD>' . $row[2] . '</TD> <TD>' . $row[3] . '</TD> <TD>' . $row[11] . '</TD>  <TD>' . $row[4] . '</TD> <TD>' . $row[7] . '</TD> <TD>' . $row[8] . '</TD> <TD>' . $row[9] . '</TD> </TR>';
+                    echo '<TR class="form"> 
+                    
                                         <TD class="lastcell">
-                                                <input type="text" style="width:100px;" name="Title"/>
+                                                <input type="text" style="width:100px;" id="productImage" name="productImage"/>
                                         </TD> 
                                         <TD class="lastcell">
-                                                <input type="text" style="width:200px;" name="Title"/>
+                                                <input type="text" style="width:200px;" id="productName" name="productName"/>
                                         </TD> 
                                         <TD>
-                                                <select name="Category" id="state" required=""> 
+                                                <select name="productCategory" id="productCategory" required=""> 
                                                         <option value="">Select</option> 
                                                         <option value="Action Adventure">Action Adventure</option> 
                                                         <option value="Arcade/Puzzle">Arcade/Puzzle</option> 
@@ -154,24 +164,76 @@
                                                 </select>
                                         </TD> 
                                         <TD>
-                                                <input type="text" style="width:30px;" name="Price"/>
+                                                <input type="text" style="width:30px;" id="productSku" name="productSku"/>
                                         </TD> 
                                         <TD>
-                                                <input type="text" style="width:30px;" name="Sales Price"/>
+                                                <input type="text" style="width:30px;" id="productQty" name="productQty"/>
                                         </TD>  
                                         <TD>
-                                                <input type="text" style="width:50px;" name ="Image"/>
+                                                <input type="text" style="width:50px;" id="productPrice" name ="productPrice"/>
                                         </TD> 
                                         <TD>
-                                                <input type="text" style="width:50px;" name="Price"/>
+                                                <input type="text" style="width:50px;" id="productRating" name="productRating"/>
                                         </TD> 
                                         <TD>
-                                                <input type="text" style="width:50px;" name="Price"/>
+                                                <input type="text" style="width:50px;" id="productConsole" name="productConsole"/>
                                         </TD> 
                                         <TD>
-                                                <input type="text" style="width:50px;" name="Price"/>
+                                                <input type="text" style="width:50px;" id="productCreator" name="productCreator"/>
                                         </TD> 
-                                        <TD><a href="#">Add</a></TD>  
+                                        <TD><input type="submit" id="addProduct" value="Edit"><a href="deleteProduct.php?id=' . $row[0] . '">Delete</a></TD>
+
+                                </TR>
+                            </form>';
+                }
+                ?>
+                
+                <form action="uploadProduct.php" method="post">
+                <TR> <TD colspan="10"><span class="addnew">Add new</span></TD>  </TR>
+                
+                
+                <TR class="form"> 
+                    
+                                        <TD class="lastcell">
+                                                <input type="text" style="width:100px;" id="productImage" name="productImage"/>
+                                        </TD> 
+                                        <TD class="lastcell">
+                                                <input type="text" style="width:200px;" id="productName" name="productName"/>
+                                        </TD> 
+                                        <TD>
+                                                <select name="productCategory" id="productCategory" required=""> 
+                                                        <option value="">Select</option> 
+                                                        <option value="Action Adventure">Action Adventure</option> 
+                                                        <option value="Arcade/Puzzle">Arcade/Puzzle</option> 
+                                                        <option value="Family/Party">Family/Party</option>   
+                                                        <option value="Fighting">Fighting</option> 
+                                                        <option value="Music/Dance">Music/Dance</option>  
+                                                        <option value="Racing">Racing</option> 
+                                                        <option value="Family/Party">Family/Party</option>  
+                                                        <option value="Arcade/Puzzle">Arcade/Puzzle</option> 
+                                                        <option value="Role-Playing">Role-Playing</option> 
+                                                </select>
+                                        </TD> 
+                                        <TD>
+                                                <input type="text" style="width:30px;" id="productSku" name="productSku"/>
+                                        </TD> 
+                                        <TD>
+                                                <input type="text" style="width:30px;" id="productQty" name="productQty"/>
+                                        </TD>  
+                                        <TD>
+                                                <input type="text" style="width:50px;" id="productPrice" name ="productPrice"/>
+                                        </TD> 
+                                        <TD>
+                                                <input type="text" style="width:50px;" id="productRating" name="productRating"/>
+                                        </TD> 
+                                        <TD>
+                                                <input type="text" style="width:50px;" id="productConsole" name="productConsole"/>
+                                        </TD> 
+                                        <TD>
+                                                <input type="text" style="width:50px;" id="productCreator" name="productCreator"/>
+                                        </TD> 
+                                        <TD><input type="submit" id="addProduct" value="Add"></TD>  
+                        </form>
                                 </TR>
                 
                 </TBODY>
