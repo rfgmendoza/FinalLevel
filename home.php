@@ -118,15 +118,15 @@ require_once('db_connect.php');
                         <p class="title">login</p>
                         <p>
                             <label for="nd_username">Username:</label>
-                            <input type="text" class="text" name="log" id="nd_username" placeholder="Username">
+                            <input type="text" class="text" name="log" id="userName" placeholder="Username">
                         </p>
                         <p>
                             <label for="nd_password">Password:</label> 
-                            <input type="password" class="text" name="pwd" id="nd_password" placeholder="Password">
+                            <input type="password" class="text" name="pwd" id="password" placeholder="Password">
                         </p>
                         <p style="margin-top:20px;">
                             <a class="forgotten" href="#nd_lost_password_form">You can not login?</a> 
-                            <input type="submit" class="button" value="Login">
+                            <input type="submit" id="loginSubmit" class="button" value="Login">
                         </p>
                     </div>
                 </div><!--threecol-->

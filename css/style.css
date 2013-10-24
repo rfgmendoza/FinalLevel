@@ -462,6 +462,7 @@ thead {
 .data-table {
 	width: 100%;
 	border: 1px solid #bebcb7;
+	font-size:12px;
 }
 
 .data-table thead th {
@@ -760,7 +761,6 @@ margin-bottom: 19px;
 .admin-table td{
 	padding:2px;
 	text-align: left;
-	padding:6px;
 }
 
 .admin-table a{

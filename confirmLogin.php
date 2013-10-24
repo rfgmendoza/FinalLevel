@@ -38,7 +38,7 @@
         if($userQuery!=$row2)
         { 
             echo "<script type='text/javascript'>alert('Login Failed');</script>";
-            echo "<script type='text/javascript'>window.location=\"login.php\";</script>";
+            echo "<script type='text/javascript'>window.location=\"home.php\";</script>";
         }
     
     

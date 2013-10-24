@@ -121,15 +121,13 @@
                 <TABLE class="data-table admin-table">
 
                 <THEAD>
-                <TR> <TH>Product Name</TH> <TH>Category</TH> <TH>SKU</TH> <TH>Qty</TH> <TH>Cost</TH> <TH>&nbsp;</TH> </TR>
+                <TR> <TH>Product image</TH> <TH>Product Name</TH> <TH>Category</TH> <TH>SKU</TH> <TH>Qty</TH> <TH>Price</TH><TH>Rating</TH> <TH>Console</TH> <TH>Creator</TH><TH>&nbsp;</TH> </TR>
                 </THEAD>
                 
                 <TBODY>
-                <TR> <TD>KINGDOM HEARTS HD 1.5 ReMIX</TD> <TD>Role-Playing</TD> <TD>499</TD> <TD>50</TD>  <TD>$40.00</TD> <TD><a href="#">edit</a></TD>  </TR>
-                <TR> <TD>KINGDOM HEARTS HD 1.5 ReMIX</TD> <TD>Role-Playing</TD> <TD>499</TD> <TD>50</TD>  <TD>$40.00</TD> <TD><a href="#">edit</a></TD>  </TR>
-                <TR> <TD>KINGDOM HEARTS HD 1.5 ReMIX</TD> <TD>Role-Playing</TD> <TD>499</TD> <TD>50</TD>  <TD>$40.00</TD> <TD><a href="#">edit</a></TD>  </TR>
-                <TR> <TD>KINGDOM HEARTS HD 1.5 ReMIX</TD> <TD>Role-Playing</TD> <TD>499</TD> <TD>50</TD>  <TD>$40.00</TD> <TD><a href="#">edit</a></TD>  </TR>
-                <TR> <TD>KINGDOM HEARTS HD 1.5 ReMIX</TD> <TD>Role-Playing</TD> <TD>499</TD> <TD>50</TD>  <TD>$40.00</TD> <TD><a href="#">edit</a></TD>  </TR>
+                <TR> <TD><img src="img/game1.jpg" width="100" height="112" /></TD> <TD>KINGDOM HEARTS HD 1.5 ReMIX</TD> <TD>Role-Playing</TD> <TD>499</TD> <TD>50</TD>  <TD>$40.00</TD> <TD>rating</TD> <TD>console</TD> <TD>creator</TD> <TD><a href="#">edit</a></TD>  </TR>
+                
+                <TR> <TD><img src="img/game1.jpg" width="100" height="112" /></TD> <TD>KINGDOM HEARTS HD 1.5 ReMIX</TD> <TD>Role-Playing</TD> <TD>499</TD> <TD>50</TD>  <TD>$40.00</TD> <TD>rating</TD> <TD>console</TD> <TD>creator</TD> <TD><a href="#">edit</a></TD>  </TR>
                 
                 <TR> <TD colspan="6"><span class="addnew">Add new</span></TD>  </TR>
                 
