@@ -692,7 +692,7 @@ margin-bottom: 11px;
 	font-size: 15px;
 }
 
-form#client-general-inf input[type="text"]{
+form#client-general-inf input[type="text"], form#client-general-inf input[type="password"]{
 	margin-bottom: 5px;
 	height: 19px;
 	padding: 3px 8px;

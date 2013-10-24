@@ -104,10 +104,10 @@
                 	<p class="login-header">REGISTERED CUSTOMERS</p>
                     
                     <form id="client-general-inf">
-                    	<p><label>Email Address or Username </label><input type="text" /></p>
-                        <p><label>Password </label><input type="text" /></p>
+                    	<p><label>Email Address or Username </label><input id="userName" type="text" /></p>
+                        <p><label>Password </label><input id="password" type="password" /></p>
                         <a href="#" style="font-weight: lighter;display:block;;font-size: 12px;text-decoration: underline;">Forgot Password</a> <br />
-                        <button type="button" title="signin" class="button btn-proceed-checkout btn-checkout"><span><span>SIGN IN</span></span></button>
+                        <button type="button" title="signin" id="loginSubmit" class="button btn-proceed-checkout btn-checkout"><span><span>SIGN IN</span></span></button>
                     </form>
                 </div>
                 <div class="fivecol last">
