@@ -29,8 +29,8 @@
 
 <div id="page_warp">
 <!--
-	<div id="header">
-    	<div id="header-top">
+        <div id="header">
+            <div id="header-top">
             <div class="container">
                 <div class="row">
                     <div id="search" class="twelvecol" style="text-align:right;">
@@ -40,35 +40,35 @@
            </div>
         </div>
         <div id="header-bottom">
-        	<div class="container">
-            	<div class="row">
-                	<div class="threecol">
-                    	<img src="img/logo_2.png" alt="logo" />
+                <div class="container">
+                    <div class="row">
+                        <div class="threecol">
+                            <img src="img/logo_2.png" alt="logo" />
                     </div>
                     <div class="nicecol last user-menu">
-                    	
+                            
                         <div id="cart">
-                        	<div class="heading">
+                                <div class="heading">
                               <div class="background"></div>
                               <div class="mini_header_cart"><a href="cart.php" class="cart_empty">My cart (3 items)</a></div>
                             </div>
                         </div>
                         
-                    	<ul>
-                        	<li class="account">
-                            	<div class="background"></div>
+                            <ul>
+                                <li class="account">
+                                    <div class="background"></div>
                                 <a href="client.php">account</a>
                             </li>
                             <li class="login">
-                            	<div class="background"></div>
+                                    <div class="background"></div>
                                 <a href="#">login</a>
                             </li>
                             <li class="signup">
-                            	<div class="background"></div>
+                                    <div class="background"></div>
                                 <a href="#">sign up</a>
                             </li>
                             <li class="wishlist">
-                            	<div class="background"></div>
+                                    <div class="background"></div>
                                 <a href="#">wishlist</a>
                             </li>
                         </ul>
@@ -79,11 +79,11 @@
     </div>
     
     <div id="navigation">
-    	<div class="container">
-        	<div class="row">
-            	<div id="mainmenu" class="twelvecol">
-                	<ul>
-                    	<li><a href="catalog.php">Xbox One</a></li>
+            <div class="container">
+                <div class="row">
+                    <div id="mainmenu" class="twelvecol">
+                        <ul>
+                            <li><a href="catalog.php">Xbox One</a></li>
                         <li><a href="catalog.php">PS4</a></li>
                         <li><a href="catalog.php">Xbox360</a></li>
                         <li><a href="catalog.php">PC</a></li>
@@ -100,14 +100,14 @@
     -->
     
     <div class="client-content">
-    	<div class="container">
-        	<div class="row">
-            	
-            	<p style="padding-left: 6px;margin-bottom: 23px;">Welcome, Admin</p>
+            <div class="container">
+                <div class="row">
+                    
+                    <p style="padding-left: 6px;margin-bottom: 23px;">Welcome, Admin</p>
                 
-            	<div class="twocol">
-                	<ul class="admin-menu">
-                    	<li><a href="#">Home</a></li>
+                    <div class="twocol">
+                        <ul class="admin-menu">
+                            <li><a href="#">Home</a></li>
                         <li><a href="#">Categories</a></li>
                         <li><a href="#">Products</a></li>
                         <li><a href="#">Orders</a></li>
@@ -134,34 +134,34 @@
                 <TR> <TD colspan="6"><span class="addnew">Add new</span></TD>  </TR>
                 
                 <TR> 
-					<TD class="lastcell">
-						<input type="text" style="width:300px;" name="Title"/>
-					</TD> 
-					<TD>
-						<select name="Category" id="state" required=""> 
-							<option value="">Select</option> 
-							<option value="Action Adventure">Action Adventure</option> 
-							<option value="Arcade/Puzzle">Arcade/Puzzle</option> 
-							<option value="Family/Party">Family/Party</option>   
-							<option value="Fighting">Fighting</option> 
-							<option value="Music/Dance">Music/Dance</option>  
-							<option value="Racing">Racing</option> 
-							<option value="Family/Party">Family/Party</option>  
-							<option value="Arcade/Puzzle">Arcade/Puzzle</option> 
-							<option value="Role-Playing">Role-Playing</option> 
-						</select>
-					</TD> 
-					<TD>
-						<input type="text" style="width:30px;" name="Price"/>
-					</TD> 
-					<TD>
-						<input type="text" style="width:30px;" name="Sales Price"/>
-					</TD>  
-					<TD>
-						<input type="text" style="width:50px;" name ="Image"/>
-					</TD> 
-					<TD><a href="#">Add</a></TD>  
-				</TR>
+                                        <TD class="lastcell">
+                                                <input type="text" style="width:300px;" name="Title"/>
+                                        </TD> 
+                                        <TD>
+                                                <select name="Category" id="state" required=""> 
+                                                        <option value="">Select</option> 
+                                                        <option value="Action Adventure">Action Adventure</option> 
+                                                        <option value="Arcade/Puzzle">Arcade/Puzzle</option> 
+                                                        <option value="Family/Party">Family/Party</option>   
+                                                        <option value="Fighting">Fighting</option> 
+                                                        <option value="Music/Dance">Music/Dance</option>  
+                                                        <option value="Racing">Racing</option> 
+                                                        <option value="Family/Party">Family/Party</option>  
+                                                        <option value="Arcade/Puzzle">Arcade/Puzzle</option> 
+                                                        <option value="Role-Playing">Role-Playing</option> 
+                                                </select>
+                                        </TD> 
+                                        <TD>
+                                                <input type="text" style="width:30px;" name="Price"/>
+                                        </TD> 
+                                        <TD>
+                                                <input type="text" style="width:30px;" name="Sales Price"/>
+                                        </TD>  
+                                        <TD>
+                                                <input type="text" style="width:50px;" name ="Image"/>
+                                        </TD> 
+                                        <TD><a href="#">Add</a></TD>  
+                                </TR>
                 
                 </TBODY>
                 
@@ -176,39 +176,39 @@
     <!--
     
     <div id="footer">
-    	<div class="container">
-        	<div class="row">
-            	<div class="threecol footer-col">
-                	<p class="footer-title">information</p>
+            <div class="container">
+                <div class="row">
+                    <div class="threecol footer-col">
+                        <p class="footer-title">information</p>
                     <ul>
-                    	<li><a href="about.php">about us</a></li>
+                            <li><a href="about.php">about us</a></li>
                         <li><a href="#">Delivery Information</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms & Conditions</a></li>
                     </ul>
                 </div>
                 <div class="threecol footer-col">
-                	<p class="footer-title">Customer Service</p>
+                        <p class="footer-title">Customer Service</p>
                     <ul>
-                    	<li><a href="#">Contact us</a></li>
+                            <li><a href="#">Contact us</a></li>
                         <li><a href="#">returns</a></li>
                         <li><a href="#">site map</a></li>
                     </ul>
                 </div>
                 <div class="threecol footer-col">
-                	<p class="footer-title">My Account</p>
+                        <p class="footer-title">My Account</p>
                     <ul>
-                    	<li><a href="#">my account</a></li>
+                            <li><a href="#">my account</a></li>
                         <li><a href="#">order history</a></li>
                         <li><a href="#">wish list</a></li>
                         <li><a href="#">news letter</a></li>
                     </ul>
                 </div>
                 <div class="threecol last contactinfor">
-                	<div class="footer-right">
-                	<p class="footer-title">Company information</p>
+                        <div class="footer-right">
+                        <p class="footer-title">Company information</p>
                     <ul>
-                    	<li><p><span class="contact"><img src="img/phone.png" alt="phone" /></span>+001 (000) 555 801</p></li>
+                            <li><p><span class="contact"><img src="img/phone.png" alt="phone" /></span>+001 (000) 555 801</p></li>
                         <li><p><span class="contact"><img src="img/location-outline.png" alt="phone" /></span>123 Main  Street Orlando, FL</p></li>
                         <li style="text-transform:lowercase;"><p><span class="contact"><img src="img/mail.png" alt="phone" /></span>finalevelgames@contact.com</p></li>
                         <li style="padding-top:10px;"><a href="#" target="_blank"><img src="img/Facebook.png" alt="socialmedia" class="fb socialmedia" /></a>
@@ -218,8 +218,8 @@
                 </div>
             </div>
             <div class="row footer-bottom">
-            	<div class="tencol">
-                	<p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Miki Nagai</p>
+                    <div class="tencol">
+                        <p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Miki Nagai</p>
                 </div>
                 
                 <div class="twocol last"><img src="img/payment.gif" alt="" /></div>
