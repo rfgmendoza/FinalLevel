@@ -87,14 +87,14 @@ require_once('db_connect.php');
             <div class="row">
                 <div id="mainmenu" class="twelvecol">
                     <ul>
-                        <li><a href="catalog.php">Xbox One</a></li>
-                        <li><a href="catalog.php">PS4</a></li>
-                        <li><a href="catalog.php">Xbox360</a></li>
-                        <li><a href="catalog.php">PC</a></li>
-                        <li><a href="catalog.php">Wii U</a></li>
-                        <li><a href="catalog.php">3DS</a></li>
-                        <li><a href="catalog.php">PS vista</a></li>
-                        <li><a href="catalog.php">More</a></li>
+                        <li><a href='catalog.php?$pulltable=XboxOne'>Xbox One</a></li>
+                        <li><a href="catalog.php?$pulltable=psfour">PS4</a></li>
+                        <li><a href="catalog.php?$pulltable=xbox">Xbox360</a></li>
+                        <li><a href="catalog.php?$pulltable=PC">PC</a></li>
+                        <li><a href="catalog.php?$pulltable=Wii">Wii U</a></li>
+                        <li><a href="catalog.php?$pulltable=3DS">3DS</a></li>
+                        <li><a href="catalog.php?$pulltable=PSVita">PS Vista</a></li>
+                        <li><a href="#">More</a></li>
                    </ul>
                 </div>
             </div>
@@ -134,7 +134,10 @@ require_once('db_connect.php');
 						</div>
 					</div>
 					<div class="ninecol last"> <!--products col-->
-						<p class="result"><span class="page-result">Showing 8 of 20</span><span class="nl-result"><a href="#">next</a> | <a href="#">last</a></span></p>
+						<p class="result"> 
+							<span class="page-result">Showing 8 of 20</span>
+							<span class="nl-result"><a href="#">next</a> | <a href="#">last</a></span>
+						</p>
 						
 							<?php include ('includes/listing.php'); ?>
 						
