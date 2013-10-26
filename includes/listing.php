@@ -6,7 +6,7 @@
 			printf("Connect failed:", $mynewsqli->connect_error);
 			exit();
 		}
-	$pulltable= '"Playstation"';	
+	$pulltable= '"Wii"';	
 	$pull='SELECT * FROM Products WHERE gaming_console='.$pulltable ;
 	
 	$products = $mynewsqli->query($pull) 
