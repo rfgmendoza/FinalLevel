@@ -42,7 +42,7 @@
         	<div class="container">
             	<div class="row">
                 	<div class="threecol">
-                    	<a href="home.php"><image src="image/logo_2.png" alt="logo" /></a>
+                    	<a href="home.php"><img src="image/logo_2.png" alt="logo" /></a>
                     </div><!--three col-->
                     <div class="nicecol last user-menu">
                     	

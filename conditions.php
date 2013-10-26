@@ -47,7 +47,7 @@ require_once('db_connect.php');
             <div class="container">
                 <div class="row">
                     <div class="threecol">
-                        <img src="image/logo_2.png" alt="logo" />
+                        <a href="home.php"><img src="image/logo_2.png" alt="logo" /></a>
                     </div><!--three col-->
                     <div class="ninecol last user-menu">
                         
