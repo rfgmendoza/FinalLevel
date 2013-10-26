@@ -82,14 +82,12 @@
         	<div class="row">
             	<div id="mainmenu" class="twelvecol">
                 	<ul>
-                    	<li><a href="catalog.php">Xbox One</a></li>
-                        <li><a href="catalog.php">PS4</a></li>
-                        <li><a href="catalog.php">Xbox360</a></li>
-                        <li><a href="catalog.php">PC</a></li>
-                        <li><a href="catalog.php">Wii U</a></li>
-                        <li><a href="catalog.php">3DS</a></li>
-                        <li><a href="catalog.php">PS vista</a></li>
-                        <li><a href="catalog.php">More</a></li>
+                        <li><a href='catalog_playstation.php?pulltable=$pulltable'>PS3</a></li>
+                        <li><a href='catalog_xbox.php?pulltable=$pulltable'>Xbox360</a></li>
+                        <li><a href='catalog_pc.php?pulltable=$pulltable'>PC</a></li>
+                        <li><a href='catalog_wii.php?pulltable=$pulltable'>Wii</a></li>
+                        <li><a href='catalog_nintendods.php?pulltable=$pulltable'>Nintendo DS</a></li>
+                        <li><a href="#">More</a></li>
                    </ul>
                 </div>
             </div>
