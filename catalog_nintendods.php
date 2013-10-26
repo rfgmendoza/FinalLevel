@@ -1,8 +1,14 @@
+<?php
+
+require_once('db_connect.php');
+
+?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Final Level Games Login – Miki Nagai</title>
+<title>Final Level Games Home – Miki Nagai</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -26,10 +32,9 @@
 </head>
 
 <body>
-
 <div id="page_warp">
-	<div id="header">
-    	<div id="header-top">
+    <div id="header">
+        <div id="header-top">
             <div class="container">
                 <div class="row">
                     <div id="search" class="twelvecol" style="text-align:right;">
@@ -39,23 +44,23 @@
             </div>
         </div><!--header-top-->
         <div id="header-bottom">
-        	<div class="container">
-            	<div class="row">
-                	<div class="threecol">
-                    	<a href="home.php"><image src="image/logo_2.png" alt="logo" /></a>
+            <div class="container">
+                <div class="row">
+                    <div class="threecol">
+                        <img src="image/logo_2.png" alt="logo" />
                     </div><!--three col-->
-                    <div class="nicecol last user-menu">
-                    	
+                    <div class="ninecol last user-menu">
+                        
                         <div id="cart">
-                        	<div class="heading">
+                            <div class="heading">
                               <div class="background"></div>
                               <div class="mini_header_cart"><a href="cart.php" class="cart_empty">My cart (3 items)</a></div>
                             </div>
                         </div><!--cart-->
                         
-                    	<ul>
-                        	<li class="account">
-                            	<div class="background"></div>
+                        <ul>
+                            <li class="account">
+                                <div class="background"></div>
                                 <a href="client.php">account</a>
                             </li>
                             <li class="login">
@@ -63,11 +68,11 @@
                                 <a href="login.php">login</a>
                             </li>
                             <li class="signup">
-                            	<div class="background"></div>
+                                <div class="background"></div>
                                 <a href="#">sign up</a>
                             </li>
                             <li class="wishlist">
-                            	<div class="background"></div>
+                                <div class="background"></div>
                                 <a href="#">wishlist</a>
                             </li>
                         </ul>
@@ -78,10 +83,10 @@
     </div><!--header-->
     
     <div id="navigation">
-    	<div class="container">
-        	<div class="row">
-            	<div id="mainmenu" class="twelvecol">
-                	<ul>
+        <div class="container">
+            <div class="row">
+                <div id="mainmenu" class="twelvecol">
+                    <ul>
                         <li><a href='catalog_playstation.php?pulltable=$pulltable'>PS3</a></li>
                         <li><a href='catalog_xbox.php?pulltable=$pulltable'>Xbox360</a></li>
                         <li><a href='catalog_pc.php?pulltable=$pulltable'>PC</a></li>
@@ -94,34 +99,69 @@
         </div>
     </div><!--navigation-->
     
-    <div class="login-content">
-    	<div class="container">
-        	<div class="row">
-            	<div class="threecol">&nbsp;</div>
-                <div class="fourcol">
-                	<p class="login-header">REGISTERED CUSTOMERS</p>
-                    
-                    <form id="client-general-inf">
-                    	<p><label>Email Address or Username </label><input id="userName" type="text" /></p>
-                        <p><label>Password </label><input id="password" type="password" /></p>
-                        <a href="#" style="font-weight: lighter;display:block;;font-size: 12px;text-decoration: underline;">Forgot Password</a> <br />
-                        <button type="button" title="signin" id="loginSubmit" class="button btn-proceed-checkout btn-checkout"><span><span>SIGN IN</span></span></button>
-                    </form>
-                </div>
-                <div class="fivecol last">
-                	<p class="client-header">CREATE AN ACCOUNT</p>
-                    <p style="font-weight:lighter;">Register with Final Level Games to enjoy personalized services, including:
-                    <ul style="font-weight:lighter;margin-top:20px;padding-left:20px;margin-bottom:20px;">
-                    	<li>Online Order Status</li>
-                        <li>Wish List</li>
-                        <li>Exclusive Emails</li>
-                        <li>Checkout Preferences</li>
-                    </ul>
-                    <button type="button" title="signin" class="button btn-proceed-checkout btn-checkout"><span><span>Create an Account</span></span></button>
-                </div>
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="twelvecol last">
+					<div class="row">
+					<div class="twocol ">
+						<div>
+							<div id='sidebar'>
+							<div><h3>Categories</h3></div>
+								<div>
+									<ul>
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Casual</a></li>
+										<li><a href="#">Collectibles</a></li>
+										<li><a href="#">DLC</a></li>
+										<li><a href="#">Education</a></li>
+										<li><a href="#">Fighting</a></li>
+										<li><a href="#">Kinect</a></li>
+										<li><a href="#">Movies & TV</a></li>
+										<li><a href="#">Music & Party</a></li>
+										<li><a href="#">Puzzle & Cards</a></li>
+										<li><a href="#">Role-Playing</a></li>
+										<li><a href="#">Shooter</a></li>
+										<li><a href="#">Simulation</a></li>
+										<li><a href="#">Sports</a></li>
+										<li><a href="#">Strategy</a></li>
+										<li><a href="#">Systems</a></li>				
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ninecol last"> <!--products col-->
+						<p class="result"> 
+							<span class="page-result">Showing 8 of 20</span>
+							<span class="nl-result"><a href="#">next</a> | <a href="#">last</a></span>
+						</p>
+						
+							<?php
+								$pulltable='"NintendoDS"';
+								include ('includes/listing.php'); ?>
+						
+					</div>
+				</div><!--end row-->
+                   
+                </div><!--threecol-->
             </div>
         </div>
-    </div>
+    </div><!--content-->
+
+    
+    <div id="products">
+        <div class="container" style="position:relative;">
+            <div class="row">
+                <div class="container">
+                    <div class="twelvecol">
+					
+					</div>
+                </div>
+            </div>
+		</div>
+	</div>
+            
     
     <div id="footer">
     	<div class="container">

@@ -6,8 +6,10 @@
 			printf("Connect failed:", $mynewsqli->connect_error);
 			exit();
 		}
-	$pulltable= '"Wii"';	
+	$_GET["pulltable"]=$pulltable;	
+	
 	$pull='SELECT * FROM Products WHERE gaming_console='.$pulltable ;
+	
 	
 	$products = $mynewsqli->query($pull) 
 		or die ($mynewsqli->error);
@@ -58,7 +60,7 @@
 				echo "
 				<div class='threecol' style='margin-right: 2.8% !important;'>
 					<div class='product-wrapper'>
-						<div class='image'><img src='$img' alt='$prod' class='shopimg'></div>
+						<div class='image'><a href='productpage.php?sku=$sku&amp;prod=$prod'><img src='$img' alt='$prod' class='shopimg'></a></div>
 						
 						<div class='product-infor'>
 							<p class='product_name'>$prodname</p>
@@ -67,7 +69,7 @@
 						</div>
 							<br>
 							<p>
-								<a class='add-to-cart' href='#'><span><image src='image/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+								<a class='add-to-cart' href='includes/addtocart.php?sku=$sku&amp;prod=$prod'><span><image src='image/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
 							</p>	
 							
 					</div>
