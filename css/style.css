@@ -8,7 +8,7 @@ a{
 	-o-transition:all .2s linear; /* Opera */
 }
 
-body{font-family: 'Open Sans', sans-serif;}
+body{font-family: 'Open Sans', sans-serif;font-size:9px;}
 
 /***************************************************
 	  page-header
@@ -26,7 +26,10 @@ input[type='text'], input[type='password'], textarea, select {
 	outline: none;
 	}
 	
-	
+th{text-align:left;}
+td.id{width:20px;}
+th.id{width:20px;}
+tr{text-align:left;}
 #header-top{
 	background:#333;
 }
@@ -47,7 +50,7 @@ input[type='text'], input[type='password'], textarea, select {
 }
 
 #search-bar{
-	background:#929292 url(../image/search-icon.png) no-repeat right;
+	background:#929292 url(../img/search-icon.png) no-repeat right;
     padding-right: 17px;
 	z-index:9999;
 }
@@ -98,18 +101,18 @@ input[type='text'], input[type='password'], textarea, select {
 
 
 .user-menu > ul > li.account a {
-	background: url(../image/user.png) no-repeat center top;
+	background: url(../img/user.png) no-repeat center top;
 }
 
 .user-menu > ul > li.login a {
-	background: url(../image/lock-closed.png) no-repeat center top;
+	background: url(../img/lock-closed.png) no-repeat center top;
 }
 .user-menu > ul > li.signup a {
-	background: url(../image/user-add.png) no-repeat center top;
+	background: url(../img/user-add.png) no-repeat center top;
 }
 
 .user-menu > ul > li.wishlist a {
-	background: url(../image/edit.png) no-repeat center top;
+	background: url(../img/edit.png) no-repeat center top;
 }
 
 #cart {
@@ -144,7 +147,7 @@ input[type='text'], input[type='password'], textarea, select {
 }
 
 #cart .heading .mini_header_cart #cart-total, #cart .heading .mini_header_cart .cart_empty {
-	background-image: url(../image/shopping-cart.png);
+	background-image: url(../img/shopping-cart.png);
 	background-repeat: no-repeat;
 	background-position: 8px 5px;
 }
@@ -248,7 +251,7 @@ p.featured{
 
 #loginform input.text {
 	border: 1px solid #d5d5d5;
-	background: #f9f9f9 url(../image/input.png) repeat-x top left;
+	background: #f9f9f9 url(../img/input.png) repeat-x top left;
 	color: #666666;
 	font-size: 14px;
 	padding: 8px 8px;
@@ -462,7 +465,6 @@ thead {
 .data-table {
 	width: 100%;
 	border: 1px solid #bebcb7;
-	font-size:12px;
 }
 
 .data-table thead th {
@@ -693,7 +695,7 @@ margin-bottom: 11px;
 	font-size: 15px;
 }
 
-form#client-general-inf input[type="text"], form#client-general-inf input[type="password"]{
+form#client-general-inf input[type="text"]{
 	margin-bottom: 5px;
 	height: 19px;
 	padding: 3px 8px;
@@ -789,7 +791,7 @@ margin-top: 16px;
 
 ul.admin-menu{
 	background: #f7f7f7;
-padding: 31px;
+padding: 5px;
 list-style: none;
 }
 
@@ -805,9 +807,20 @@ ul.admin-menu li a:hover{
 	color:#03F
 }
 
-
+tr.form{
+	text-align:right;
+}
 p.aboutus-content{
 	margin-bottom: 15px;
-padding: 10px;
-line-height: 1.7;
+	padding: 10px;
+	line-height: 1.7;
+}
+
+.admin-product-table thead th{
+	 border-right: 1px solid #FFFFFF;
+	
+}
+
+.admin-product-table tbody td {
+    border-right: 1px solid #CCCCCC !important;
 }

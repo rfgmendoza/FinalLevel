@@ -9,7 +9,7 @@ AJAX.login = function() {
     data: {test: '1'},
     dataType: 'html',
     error: function(response) {
-        alert('login failed AJAX');
+        alert('AJAX error');
     },
     success: function(response) {
     	window.location = 'confirmLogin.php?userQuery=' + userQuery + '&passwordQuery=' + passwordQuery;
@@ -20,7 +20,9 @@ AJAX.login = function() {
     $.ajax(ajaxOptions);
 };
 
+
 $(document).ready(function(){
+
 	$('#box-products-wrapper').carouFredSel({
 					auto: false,
 					prev: '#prev2',
