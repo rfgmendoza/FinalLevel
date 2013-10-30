@@ -58,11 +58,12 @@ require_once('db_connect.php');
                             </div>
                         </div><!--cart-->
                         
-                        <ul>
+                        <ul><!--
                             <li class="account">
                                 <div class="background"></div>
                                 <a href="client.php">account</a>
                             </li>
+                            -->
                             <li class="login">
                             	<div class="background"></div>
                                 <a href="login.php">login</a>
