@@ -57,8 +57,6 @@
 			}
 			
 			echo 
-			"works inside";
-				/*
 				"
 				<div class='row clear prodtitle'>
 					<h1>$prod<span id='creator'>	BY $creator</span></h1>

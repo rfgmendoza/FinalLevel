@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 FinalLevel
 ==========
 
@@ -24,3 +25,7 @@ Git Basics:
 -git commit -m "Your comment about this commit"
 
 -Push all files to GH with: git push git@github.com:your_username/repo_name.git
+=======
+FinaLevel
+=========
+>>>>>>> c0c9f1115bc67f0eedc1513a413849d13657b847

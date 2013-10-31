@@ -137,7 +137,9 @@ require_once('db_connect.php');
 							<span class="nl-result"><a href="#">next</a> | <a href="#">last</a></span>
 						</p>
 						
-						<?php	$pulltable='"PC"';	include ('includes/listing.php'); ?>
+							<?php
+								$pulltable='"PC"';
+								include ('includes/listing.php'); ?>
 						
 					</div>
 				</div><!--end row-->
@@ -146,7 +148,20 @@ require_once('db_connect.php');
             </div>
         </div>
     </div><!--content-->
-         
+
+    
+    <div id="products">
+        <div class="container" style="position:relative;">
+            <div class="row">
+                <div class="container">
+                    <div class="twelvecol">
+					
+					</div>
+                </div>
+            </div>
+		</div>
+	</div>
+            
     
     <div id="footer">
     	<div class="container">

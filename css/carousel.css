@@ -15,14 +15,11 @@
 	cursor: move;
 }
 
-#products #box-products-wrapper .image img{
+#box-products-wrapper .image img{
 	height:170px;
 	width:auto;
 }
-#box-products-wrapper .image img{
-	height:auto;
-	width:auto;
-}
+
 .product-infor{
 	text-align:center;
 }

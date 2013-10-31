@@ -135,7 +135,7 @@ require_once('db_connect.php');
 						<div class="ninecol last"> <!--products col-->
 							<?php 
 							echo $sku;
-							//include ('includes/prodlisting.php'); ?>	
+							include ('includes/prodlisting?sku=$sku.php'); ?>	
 						</div>
 					</div><!--end row-->
                 </div><!--threecol-->
