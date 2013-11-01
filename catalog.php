@@ -31,9 +31,12 @@
 	<div id="header">
     	<div id="header-top">
             <div class="container">
-                <div class="row">
+                 <div class="row">
                     <div id="search" class="twelvecol" style="text-align:right;">
-                        <input type="text" id="search-bar" name="filter_name" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#4b4b4b';">
+                       <form action="search.php" method="post" class="search">
+                        <input type="text" name="term" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#4b4b4b';">
+                         <input id="search-bar" type="submit" name="search" value=""/>
+                        </form>
                     </div>
                 </div><!--row-->
             </div>
