@@ -31,11 +31,11 @@ input[type='text'], input[type='password'], textarea, select {
 	background:#333;
 }
 
-#search input {
+.search input {
 	margin:5px 0;
 	padding: 1px 27px 4px 3px;
-	width: 225px;
-	height: 21px;
+	width: 160px;
+	height: 16px;
 	border: none;
 	-webkit-border-radius: 2px 2px 2px 2px;
 	-moz-border-radius: 2px 2px 2px 2px;
@@ -44,12 +44,16 @@ input[type='text'], input[type='password'], textarea, select {
 	color: #4b4b4b;
 	font-size: 11px;
 	font-family: Arial, Helvetica, sans-serif;
+	vertical-align:middle;
 }
 
 #search-bar{
-	background:#929292 url(../image/search-icon.png) no-repeat right;
-    padding-right: 17px;
+	background:#929292 url('../img/search-icon.png') no-repeat right;
+    padding-right:17px;
 	z-index:9999;
+	width:21px;
+	height:21px;
+	vertical-align:middle;
 }
 
 #header-bottom{
