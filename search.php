@@ -90,14 +90,12 @@
             <div class="row">
                 <div id="mainmenu" class="twelvecol">
                     <ul>
-                        <li><a href="catalog.php">Xbox One</a></li>
-                        <li><a href="catalog.php">PS4</a></li>
-                        <li><a href="catalog.php">Xbox360</a></li>
-                        <li><a href="catalog.php">PC</a></li>
-                        <li><a href="catalog.php">Wii U</a></li>
-                        <li><a href="catalog.php">3DS</a></li>
-                        <li><a href="catalog.php">PS vista</a></li>
-                        <li><a href="catalog.php">More</a></li>
+                        <li><a href='catalog_playstation.php?pulltable=$pulltable'>PS3</a></li>
+                        <li><a href='catalog_xbox.php?pulltable=$pulltable'>Xbox360</a></li>
+                        <li><a href='catalog_pc.php?pulltable=$pulltable'>PC</a></li>
+                        <li><a href='catalog_wii.php?pulltable=$pulltable'>Wii</a></li>
+                        <li><a href='catalog_nintendods.php?pulltable=$pulltable'>Nintendo DS</a></li>
+                        <li><a href="#">More</a></li>
                    </ul>
                 </div>
             </div>
@@ -159,7 +157,7 @@
 
                                     echo "<div class='row product-list-wrap' style='width:auto;'>";
 									
-                                    while ($row = mysqli_fetch_array($result)){{
+                                    while ($row = mysqli_fetch_array($result)){
 										$sku=$row['sku'];
 										$prod=$row['product_name'];
 										$cate=$row['category'];
@@ -281,20 +279,20 @@
         <div class="container">
             <div class="row">
                 <div class="threecol footer-col">
-                    <p class="footer-title">information</p>
+                	<p class="footer-title">information</p>
                     <ul>
-                        <li><a href="about.php">about us</a></li>
-                        <li><a href="#">Delivery Information</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                    	<li><a href="about.php">about us</a></li>
+                        <li><a href="shipping.php">Delivery Information</a></li>
+                        <li><a href="privacypolicy.php">Privacy Policy</a></li>
+                        <li><a href="conditions.php">Terms & Conditions</a></li>
                     </ul>
                 </div>
                 <div class="threecol footer-col">
-                    <p class="footer-title">Customer Service</p>
+                	<p class="footer-title">Customer Service</p>
                     <ul>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">site map</a></li>
+                    	<li><a href="#">Contact us</a></li>
+                        <li><a href="returns.php">Returns</a></li>
+                        <li><a href="#">Site map</a></li>
                     </ul>
                 </div>
                 <div class="threecol footer-col">
