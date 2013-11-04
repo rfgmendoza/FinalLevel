@@ -159,7 +159,7 @@
 
                                     echo "<div class='row product-list-wrap' style='width:auto;'>";
 									
-                                    while ($row = mysqli_fetch_array($result)){{
+                                    while ($row = mysqli_fetch_array($result)){
 										$sku=$row['sku'];
 										$prod=$row['product_name'];
 										$cate=$row['category'];
