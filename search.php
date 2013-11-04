@@ -159,35 +159,89 @@
 
                                     echo "<div class='row product-list-wrap' style='width:auto;'>";
 									
-                                    while ($row = mysqli_fetch_array($result)){
+                                    while ($row = mysqli_fetch_array($result)){{
+										$sku=$row['sku'];
 										$prod=$row['product_name'];
 										$cate=$row['category'];
 										$price=$row['price'];
 										$salprice=$row['sales_price'];
 										$img=$row['product_image'];
-										//$ratin=$row['rating'];
-										//$ranking=$row['ranking'];
-			
-                                echo "<div class='threecol' style='margin-right: 2.8% !important'><div class='product-wrapper'><div class='image'><img src=".$img." alt='product' /></div>";
-                                echo "<div class='product-infor'><p class='product_name'>". $prod ."</p>";
-                                echo "<p class='product_pr'>$". $price ."</p>";
-                                //echo "<p class='rating'><img src='img/rating-icon.png' alt="rating" /></p><!--rating-->
-                               echo  "</div><p>";
-                                echo "<a class='add-to-cart' href='#'><span><img src='img/shopping-cart-white.png' alt='' /></span>add to cart</a>";
-                                echo "</p></div></div>";
-
-                                //  <div class='twocol last'>
-                                //         <div class='catalog'>
-                                //                 <img src='$img' alt='$prod'>
-                                //                 <br>
-                                //                 <div class='list'>
-                                //                         <h2>$prod</h2>
-                                //                         <p>New: $$price<br>Used: $$salprice<br> <img src=$ranking alt='Star Ranking'> <br><a href='#' class='btn'>Buy</a></p>
-                                                        
-                                //                 </div>                        
-                                //         </div>
-                                // </div>        
-									    }
+										$ranking=$row['ranking'];
+										$rankingimg;
+										
+										if (strlen($prod)>20){
+											$name = explode(':', $prod);
+											$prodname = join('<br>',$name);
+										}else if (strlen($prod)<22){
+											$prodname= $prod.'<br>    <br>';
+										}else{
+											
+										}
+										if ($ranking==0){
+											$rankimg='<p class="rating">&#9734;	&#9734;	&#9734;	&#9734;	&#9734; </p>';
+											
+										}else if($ranking==1){
+											$rankimg='<p class="rating">&#9733;	&#9734;	&#9734;	&#9734;	&#9734;</p>';
+											
+										}else if ($ranking==2){
+											$rankimg='<p class="rating">&#9733;	&#9733;	&#9734;	&#9734;	&#9734;</p>';
+											
+										}else if ($ranking==3){
+											$rankimg='<p class="rating">&#9733;	&#9733;	&#9733;	&#9734;	&#9734;</p>';
+											
+										}else if ($ranking==4){
+											$rankimg='<p class="rating">&#9733;	&#9733;	&#9733;	&#9733; &#9734;</p>';
+											
+										}else if ($ranking==5){
+											$rankimg='<p class="rating">&#9733;	&#9733;	&#9733;	&#9733;	&#9733;</p>';
+											
+										}else{
+											print("Error with Ranking");
+										}
+										if ($a<3){
+											echo "
+											<div class='threecol' style='margin-right: 2.8% !important;'>
+												<div class='product-wrapper'>
+													<div class='image'><a href='productpage.php?sku=$sku&amp;prod=$prod'><img src='$img' alt='$prod' class='shopimg'></a></div>
+													
+													<div class='product-infor'>
+														<p class='product_name'>$prodname</p>
+														<p class='product-pr'>New: $$price<br>Used: $$salprice</p>
+														$rankimg
+													</div>
+														<br>
+														<p>
+															<a class='add-to-cart' href='includes/addtocart.php?sku=$sku&amp;prod=$prod'><span><image src='image/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+														</p>	
+														
+												</div>
+											</div>";
+											$a++;
+										}else{
+												echo "
+											
+													<div class='threecol last' style='margin-right: 2.8% !important;'>
+														<div class='product-wrapper'>
+															<div class='image'><a href='productpage.php?sku=$sku&amp;prod=$prod'><img src='$img' alt='$prod' class='shopimg'></a></div>
+															
+															<div class='product-infor'>
+																<p class='product_name'>$prodname</p>
+																<p class='product-pr'>New: $$price<br>Used: $$salprice</p>
+																$rankimg
+															</div>
+																<br>
+																<p>
+																	<a class='add-to-cart' href='includes/addtocart.php?sku=$sku&amp;prod=$prod'><span><image src='image/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+																</p>	
+																
+														</div>
+													</div>
+												</div>
+											<div class='row product-list-wrap clear' style='width:auto;'>
+													";
+											$a=0;
+										}
+									}
 
 									//echo "<p><b>You Searched For: </b>" . $term  ."</p> ";
                                         echo "</div></div>";

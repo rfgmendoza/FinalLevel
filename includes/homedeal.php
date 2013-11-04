@@ -67,11 +67,11 @@
 							$rankimg
 						</div>
 							<br>
-							<p>
-								<a class='add-to-cart' href='includes/addtocart.php?sku=$sku&amp;prod=$prod'><span><image src='image/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
-							</p>	
+						<p>
+							<a class='add-to-cart' href='includes/addtocart.php?sku=$sku&amp;prod=$prod'><span><image src='image/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+						</p>	
 							
-					</li>";
+				</li>";
 				
 		}
 	 /* Passing variables page to page: http://stackoverflow.com/questions/10252418/how-to-pass-variables-from-one-php-page-to-another-without-form  */

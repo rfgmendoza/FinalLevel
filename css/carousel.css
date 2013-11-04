@@ -16,8 +16,8 @@
 }
 
 #box-products-wrapper .image img{
-	height:170px;
-	width:auto;
+	width:154px;
+	height:217px;
 }
 
 .product-infor{
@@ -86,7 +86,7 @@ a.add-to-cart span img{
 	width: 50px;
 	text-indent: -9999px;
 	position: absolute;
-	background: url(../image/slideshow-arrows.png) no-repeat;
+	background: url(../img/slideshow-arrows.png) no-repeat;
 }
 
 .slide_arrow_prev {
@@ -97,7 +97,7 @@ a.add-to-cart span img{
 	width: 50px;
 	text-indent: -9999px;
 	position: absolute;
-	background: url(../image/slideshow-arrows.png) no-repeat;
+	background: url(../img/slideshow-arrows.png) no-repeat;
 }
 
 
