@@ -79,7 +79,7 @@
 							<h2>$$price</h2>
 						</div>
 						<br>
-						<a class='add-to-cart' href='includes/addtocart.php?sku={$sku}&price={$price}'><span><image src='image/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+						<a class='add-to-cart' href=addToCart.php?id={$id}&name={$name}><span><image src='image/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
 					</div>
 					<div class='fourcol last'>
 						<div class='buy'>

@@ -2,6 +2,14 @@
 
 require_once('db_connect.php');
 
+if($_GET['action']=='add'){
+    echo "<div>" . $_GET['product_name'] . " was added to your cart.</div>";
+}
+
+if($_GET['action']=='exists'){
+    echo "<div>" . $_GET['product_name'] . " already exists in your cart.</div>";
+}
+
 ?>
 
 <!DOCTYPE html>
