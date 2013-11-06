@@ -119,6 +119,7 @@ require_once('db_connect.php');
             <div class="row">
                 <div class="container">
                     <div class="twelvecol">
+                    <div id="paragraph">
 						<h1>Returns to FinaLevel.com</h1>
 						<p><b>Please note:</b> A receipt is required for all returns and exchanges.</p>
 						<p>This page details how to return products purchased online at finalevel.com.</p>
@@ -144,7 +145,7 @@ require_once('db_connect.php');
 						<p>Handling costs are non-refundable. If the reason for your return is due to our error, please contact us at 1-800-888-8888 for a handling credit. </p>
 						<p>We reserve the right to refuse any return and to require that certain items be returned directly to the manufacturer. </p>
 
-
+</div>
 					</div>
                 </div>
             </div>
