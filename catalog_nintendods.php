@@ -16,7 +16,7 @@ if($_GET['action']=='exists'){
 <html dir="ltr" lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Final Level Games Home – Miki Nagai</title>
+<title>Final Level Games Catalog Nintendo DS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -40,6 +40,16 @@ if($_GET['action']=='exists'){
 </head>
 
 <body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41209891-2', 'ucf.edu');
+  ga('send', 'pageview');
+
+</script>
 <div id="page_warp">
     <div id="header">
         <div id="header-top">
@@ -219,7 +229,7 @@ if($_GET['action']=='exists'){
             </div><!--row-->
             <div class="row footer-bottom">
             	<div class="tencol">
-                	<p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Miki Nagai</p>
+                	<p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed byRafael Mendoza, Melissa McDermott, Ashley Pajak, Miki Nagai, and James Marquis.</p>
                 </div>
                 
                 <div class="twocol last"><image src="img/payment.gif" alt="" /></div>
