@@ -130,7 +130,8 @@ require_once('db_connect.php');
             <div class="row">
                 <div class="container">
                     <div class="twelvecol">
-						<h1>Conditions of Use<h1>
+                    <div id="paragraph">
+						<h1>Conditions of Use</h1>
 						<p>Last Updated: September 6, 2013</p>
 						<p>FinaLevel Games, Inc. and/or its affiliates ("FinaLevel") provide website features and other products and services when you visit or shop using GameStop's mobile applications, or finalevelgames.com. <h3>By using the Sites you agree to the following terms and conditions, as well as the FinaLevel Privacy Policy and all other disclaimers and terms and conditions that appear elsewhere on this Site.</h3></p>
 
@@ -192,7 +193,7 @@ require_once('db_connect.php');
 
 
 
-
+</div>
 					</div>
                 </div>
             </div>
