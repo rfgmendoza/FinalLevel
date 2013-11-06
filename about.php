@@ -45,7 +45,7 @@
         	<div class="container">
             	<div class="row">
                 	<div class="threecol">
-                    	<a href="home.php"><img src="image/logo_2.png" alt="logo" /></a>
+                    	<a href="home.php"><img src="img/logo_2.png" alt="logo" /></a>
                     </div><!--three col-->
                     <div class="nicecol last user-menu">
                     	
@@ -145,11 +145,11 @@
                 	<div class="footer-right">
                 	<p class="footer-title">Company information</p>
                     <ul>
-                    	<li><p><span class="contact"><image src="image/phone.png" alt="phone" /></span>+001 (000) 555 801</p></li>
-                        <li><p><span class="contact"><image src="image/location-outline.png" alt="phone" /></span>123 Main  Street Orlando, FL</p></li>
-                        <li style="text-transform:lowercase;"><p><span class="contact"><image src="image/mail.png" alt="phone" /></span>finalevelgames@contact.com</p></li>
-                        <li style="padding-top:10px;"><a href="#" target="_blank"><image src="image/Facebook.png" alt="socialmedia" class="fb socialmedia" /></a>
-                    <a href="#" target="_blank"><image src="image/Twitter.png" alt="socialmedia" class="tw socialmedia" /></a></li>
+                    	<li><p><span class="contact"><image src="img/phone.png" alt="phone" /></span>+001 (000) 555 801</p></li>
+                        <li><p><span class="contact"><image src="img/location-outline.png" alt="phone" /></span>123 Main  Street Orlando, FL</p></li>
+                        <li style="text-transform:lowercase;"><p><span class="contact"><image src="img/mail.png" alt="phone" /></span>finalevelgames@contact.com</p></li>
+                        <li style="padding-top:10px;"><a href="#" target="_blank"><image src="img/Facebook.png" alt="socialmedia" class="fb socialmedia" /></a>
+                    <a href="#" target="_blank"><image src="img/Twitter.png" alt="socialmedia" class="tw socialmedia" /></a></li>
                     </ul>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
                 	<p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Miki Nagai</p>
                 </div>
                 
-                <div class="twocol last"><image src="image/payment.gif" alt="" /></div>
+                <div class="twocol last"><image src="img/payment.gif" alt="" /></div>
             </div>
         </div>
     
