@@ -143,13 +143,13 @@
 
 									//echo "<p><b>You Searched For: </b>" . $term  ."</p> ";
                                         echo "</div></div>";
-									 if ($numrows == 0||$term=='') 
+									 if ($numrows == 0) 
 									 { 
 									 echo "<p>Sorry, but your search returned 0 results</p>"; 
 									 } 
    									 mysqli_free_result($result);
 									 }
-									 else{ 
+									 if ($term==''||$term=='Search'){ 
 									echo  "<p>Please enter a search term</p>"; 
 									}
 									?>
