@@ -130,9 +130,11 @@ require_once('db_connect.php');
             <div class="row">
                 <div class="container">
                     <div class="twelvecol">
-						<h1>Conditions of Use<h1>
+                    <div id="paragraph">
+						<h1>Conditions of Use</h1>
 						<p>Last Updated: September 6, 2013</p>
-						<p>FinaLevel Games, Inc. and/or its affiliates ("FinaLevel") provide website features and other products and services when you visit or shop using GameStop's mobile applications, or finalevelgames.com. <h3>By using the Sites you agree to the following terms and conditions, as well as the FinaLevel Privacy Policy and all other disclaimers and terms and conditions that appear elsewhere on this Site.</h3></p>
+						<p>FinaLevel Games, Inc. and/or its affiliates ("FinaLevel") provide website features and other products and services when you visit or shop using GameStop's mobile applications, or finalevelgames.com. 
+						<h3>By using the Sites you agree to the following terms and conditions, as well as the FinaLevel Privacy Policy and all other disclaimers and terms and conditions that appear elsewhere on this Site.</h3></p>
 
 						<h2>Disclaimer and Limitation of Liability</h2>
 
@@ -190,7 +192,7 @@ require_once('db_connect.php');
 
 						<p>No Endorsement of User Content. Users to the Sites are prohibited from posting through the Sites any harmful, vulgar, obscene, profane, sexually explicit, abusive, threatening, privacy invading, libelous, racially, ethnically, or otherwise objectionable or unlawful content of any kind, or that infringes or may infringe on the intellectual or other rights of another. You acknowledge that FinaLevel does not endorse or pre-screen content, but that FinaLevel and its designees will have the right (but not the obligation) in their sole discretion to refuse, edit, move, or remove any content that is available via the Sites. You may not use a false e-mail address, impersonate any person or entity, or otherwise mislead as to the origin of any Content posted by you. </p>
 
-
+</div>
 
 
 					</div>
