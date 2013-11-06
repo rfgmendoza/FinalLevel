@@ -140,6 +140,7 @@ require_once('db_connect.php');
                 <div class="container">
                     <div class="twelvecol">
                     <div id="paragraph">
+                    				<h1>Privacy Policy</h2>
 						<p>FinaLevel Games knows that you care about your privacy and the use of your personal information. This notice describes our Privacy Policy.  This Privacy Policy applies to information we collect about you from our Website.</p>
 						<p>By visiting a FinaLevel Website, or otherwise providing information FinaLevel you are accepting the practices described in this Privacy Policy. </p>
 
