@@ -1,77 +1,59 @@
-<?
-	session_start();
-?>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="threecol footer-col">
+                	<p class="footer-title">information</p>
+                    <ul>
+                    	<li><a href="about.php">about us</a></li>
+                        <li><a href="shipping.php">Delivery Information</a></li>
+                        <li><a href="privacypolicy.php">Privacy Policy</a></li>
+                        <li><a href="conditions.php">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="threecol footer-col">
+                	<p class="footer-title">Customer Service</p>
+                    <ul>
+                    	<li><a href="#">Contact us</a></li>
+                        <li><a href="returns.php">Returns</a></li>
+                        <li><a href="#">Site map</a></li>
+                    </ul>
+                </div>
+                <div class="threecol footer-col">
+                    <p class="footer-title">My Account</p>
+                    <ul>
+                        <li><a href="#">my account</a></li>
+                        <li><a href="#">order history</a></li>
+                        <li><a href="#">wish list</a></li>
+                        <li><a href="#">news letter</a></li>
+                        <li><a target="_blank" href="admin.php">Admin</a></li>
+                    </ul>
+                </div>
+                <div class="threecol last contactinfor">
+                    <div class="footer-right">
+                    <p class="footer-title">Company information</p>
+                    <ul>
+                        <li><p><span class="contact"><img src="img/phone.png" alt="phone" /></span>+001 (000) 555 801</p></li>
+                        <li><p><span class="contact"><img src="img/location-outline.png" alt="phone" /></span>123 Main  Street Orlando, FL</p></li>
+                        <li style="text-transform:lowercase;"><p><span class="contact"><img src="img/mail.png" alt="phone" /></span>finalevelgames@contact.com</p></li>
+                        <li style="padding-top:10px;"><a href="#" target="_blank"><img src="img/Facebook.png" alt="socialmedia" class="fb socialmedia" /></a>
+                    <a href="#" target="_blank"><img src="img/Twitter.png" alt="socialmedia" class="tw socialmedia" /></a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div><!--row-->
+            <div class="row footer-bottom">
+                <div class="tencol">
+                    <p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Miki Nagai</p>
+                </div>
+                
+                <div class="twocol last"><img src="img/payment.gif" alt="" /></div>
+            </div>
+        </div>
+    
+    </div><!--footer-->
+    
+</div><!--page_warp-->
 
-<!-- divide for footer -->
-		
-		<div class="container">
-			<div id="footer">
-				<div class="row">
-					<div class="twocol">
-						<div class="footercol">
-							<p>
-								<h4>Information</h4><br>
-								<ul>
-									<li><a href="#">Privacy Policy</a></li><br>
-									<li><a href="#">Terms & Conditions</a></li><br>
-									<li><a href="#">Legal Notices</a></li><br>
-								</ul>
-							</p>
-						</div>
-					</div>
-					<div class="twocol">
-						<div class="footercol">
-							<p>
-								<h4>Customer Service</h4><br>
-								<ul>
-									<li><a href="#">FAQ</a></li><br>
-									<li><a href="#">Returns & Refunds</a></li><br>
-									<li><a href="#">Shipping & Delivery</a></li><br>
-									<li><a href="#">Contact Us</a></li><br>
-								</ul>
-							</p>
-						</div>
-					</div>	
-					<div class="twocol">	
-						<div class="footercol">
-							<p>
-								<h4>Corporate</h4><br>
-								<ul>
-									<li><a href="about.php">About Us</a></li><br>
-									<li><a href="#">Careers</a></li><br>
-									<li><a href="#">News</a></li><br>
-									<li><a href="#">Sitemap</a></li><br>
-								</ul>
-							</p>
-						</div>
-					</div>
-					<div class="twocol">
-						<div class="footercol">
-							<p>	
-								<h4>Get Connected</h4><br>
-								<ul>
-									<li><a href="#">Follow Twitter</a></li><br>
-									<li><a href="#">Join Facebook</a></li><br>
-									<li><a href="#">Hangout Google+</a></li><br>
-								</ul>
-							</p>
-						</div>
-					</div>
-					<div class="twocol last">
-						<div class="footercol">
-							<p>	
-								<h4>Company</h4><br>
-								<ul>
-									<li><a href="#">Follow Twitter</a></li><br>
-									<li><a href="#">Join Facebook</a></li><br>
-									<li><a href="#">Hangout Google+</a></li><br>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>	
-		</div>
-	</body>
+</body>
 </html>
 
