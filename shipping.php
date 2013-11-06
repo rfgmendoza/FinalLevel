@@ -10,7 +10,7 @@
                     <div id="paragraph">
 						<h1>Shipping Rates & Delivery Times</h1>
 						<p>Currently finalevelgames.com processes and ships items Monday through Friday. Orders placed on Saturday or Sunday will be processed and/or shipped the following business day.</p>
-						<p>We will not process or ship orders on the following holidays: New Years Day, Memorial Day, Fourth of July, Labor Day, Thanksgiving, and Christmas. Additional processing time may be necessary on bank closure holidays.</p>.
+						<p>We will not process or ship orders on the following holidays: New Years Day, Memorial Day, Fourth of July, Labor Day, Thanksgiving, and Christmas. Additional processing time may be necessary on bank closure holidays.</p>
 						<h2>Shipping Methods</h2>
 						<p>We offer three methods for shipping your orders from finalevelgames.com:</p>
 						<ul>
