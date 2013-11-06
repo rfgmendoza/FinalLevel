@@ -43,7 +43,8 @@
             </div><!--row-->
             <div class="row footer-bottom">
                 <div class="tencol">
-                    <p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Miki Nagai</p>
+                    <p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Rafael Mendoza, Melissa McDermott, Ashley Pajak, Miki Nagai, and James Marquis.
+</p>
                 </div>
                 
                 <div class="twocol last"><img src="img/payment.gif" alt="" /></div>
