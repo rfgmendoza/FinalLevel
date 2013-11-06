@@ -130,6 +130,7 @@ require_once('db_connect.php');
             <div class="row">
                 <div class="container">
                     <div class="twelvecol">
+                    <div id="paragraph">
 						<h1>Shipping Rates & Delivery Times</h1>
 						<p>Currently finalevelgames.com processes and ships items Monday through Friday. Orders placed on Saturday or Sunday will be processed and/or shipped the following business day.</p>
 						<p>We will not process or ship orders on the following holidays: New Years Day, Memorial Day, Fourth of July, Labor Day, Thanksgiving, and Christmas. Additional processing time may be necessary on bank closure holidays.</p>.
@@ -158,7 +159,7 @@ require_once('db_connect.php');
 						<p>There is no extra shipping fee to Alaska and Hawaii. Marketplace items cannot currently be shipped to Alaska or Hawaii.</p>
 						<h2>Shipping Costs</h2>
 						<p>Shipping cost is calculated on a "per item" or "per pound" basis and is based on the shipping method you select (Standard, Expedited, Express). We sometimes offer free shipping in select categories, or free shipping site-wide.</p>
-
+</div>
 
 					</div>
                 </div>
