@@ -10,6 +10,12 @@ a{
 
 body{font-family: 'Open Sans', sans-serif;}
 
+#paragraph p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+}
+
 /***************************************************
 	  page-header
 ***************************************************/
