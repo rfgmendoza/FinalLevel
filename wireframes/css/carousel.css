@@ -1,0 +1,210 @@
+.caroufredsel_wrapper{
+	display: block;
+	text-align: left;
+	float: none;
+	position: relative;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
+	z-index: auto;
+	width: 1132px !important;
+	height: 396px !important;
+	margin: auto;
+	overflow: hidden;
+	cursor: move;
+}
+
+#box-products-wrapper .image img{
+	width:154px;
+	height:217px;
+}
+
+.product-infor{
+	text-align:center;
+}
+.product-infor p.product_name{
+	font-size: 13px;
+	font-weight:bold;
+	color: #333;
+	padding: 4px 0;
+}
+.product-infor p.product_price{
+	color: #f3734f;
+	font-size: 18px;
+}
+
+.product-infor p.rating img{
+	width: 98px;
+padding: 4px;
+}
+
+input.button {
+	margin: 0;
+	border: 0;
+	height: 34px;
+	padding: 0px 20px;
+}
+
+a.add-to-cart{
+	background: #666;
+	padding: 7px 11px;
+	color: #fff;
+	text-transform:capitalize;
+	font-weight:lighter;
+	font-size:18px;
+}
+
+a.add-to-cart:hover{
+	background: #662d91;
+}
+
+a.add-to-cart span img{
+	width: 26px;
+	vertical-align: text-bottom;
+	padding-right: 6px;
+	display: inline-block;
+}
+
+.list_carousel li {
+	text-align: center;
+	background-color: #f7f7f7;
+	border: none;
+	width: 190px;
+	height: auto;
+	padding: 21px 13px;
+	margin: 6px;
+	display: block;
+	float: left;
+			}
+			
+.slide_arrow_next{
+	top: 45%;
+	z-index: 101;
+	cursor: pointer;
+	height: 50px;
+	width: 50px;
+	text-indent: -9999px;
+	position: absolute;
+	background: url(../img/slideshow-arrows.png) no-repeat;
+}
+
+.slide_arrow_prev {
+	top: 45%;
+	z-index: 101;
+	cursor: pointer;
+	height: 50px;
+	width: 50px;
+	text-indent: -9999px;
+	position: absolute;
+	background: url(../img/slideshow-arrows.png) no-repeat;
+}
+
+
+.slide_arrow_prev {
+	left: 20px;
+	background-position: 0px 0px;
+}
+
+.slide_arrow_next {
+	right: 20px;
+	background-position: -50px 0px;
+}
+
+
+
+
+
+
+
+
+.carousel_module {
+	padding:10px 50px 10px 50px;
+	height:75px;
+	position:relative;
+	margin-bottom:20px;
+}
+.carousel_module .carousel_item {
+	float:left;
+	padding:0px 25px;
+	display:block;
+	height:75px;
+	width:150px;
+	text-align:center;
+}
+.carousel_arrow_next, .carousel_arrow_prev {
+	top:24px;
+	z-index:101;
+	cursor:pointer;
+	height:50px;
+	width:50px;
+	text-indent:-9999px;
+	position:absolute;
+	background: url('../image/slideshow-arrows.png' ) no-repeat;
+}
+.carousel_arrow_prev {
+	left:0px;
+	background-position:0px 0px;
+}
+.carousel_arrow_prev:hover {
+	background-position:0px -50px;
+}
+.carousel_arrow_next {
+	right:0px;
+	background-position:-50px 0px;
+}
+.carousel_arrow_next:hover {
+	background-position:-50px -50px;	
+}
+
+
+/**/
+
+			#intro {
+				width: 580px;
+				margin: 0 auto;
+			}
+			.wrapper {
+				background-color: white;
+				width: 480px;
+				margin: 40px auto;
+				padding: 50px;
+				box-shadow: 0 0 5px #999;
+			}
+			.list_carousel {
+				background-color: #fff;
+				width: 100%
+			}
+			.list_carousel ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: block;
+			}
+			
+			.list_carousel.responsive {
+				width: auto;
+				margin-left: 0;
+			}
+			.clearfix {
+				float: none;
+				clear: both;
+			}
+			
+			.pager {
+				float: left;
+				width: 300px;
+				text-align: center;
+			}
+			.pager a {
+				margin: 0 5px;
+				text-decoration: none;
+			}
+			.pager a.selected {
+				text-decoration: underline;
+			}
+			.timer {
+				background-color: #999;
+				height: 6px;
+				width: 0px;
+			}

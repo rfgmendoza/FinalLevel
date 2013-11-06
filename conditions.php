@@ -120,7 +120,6 @@ require_once('db_connect.php');
             <div class="row">
                 <div class="container">
                     <div class="twelvecol">
-                    <div id="paragraph">
 						<h1>Conditions of Use<h1>
 						<p>Last Updated: September 6, 2013</p>
 						<p>FinaLevel Games, Inc. and/or its affiliates ("FinaLevel") provide website features and other products and services when you visit or shop using GameStop's mobile applications, or finalevelgames.com. <h3>By using the Sites you agree to the following terms and conditions, as well as the FinaLevel Privacy Policy and all other disclaimers and terms and conditions that appear elsewhere on this Site.</h3></p>
@@ -152,9 +151,10 @@ require_once('db_connect.php');
 
 						FinaLevel's designated Copyright Agent to receive notifications of claimed infringement is : <br>
 						FinaLevel Games, Inc.
-						ATT: FinaLevel Games<br/>
-						123 Main Street Orlando, FL<br/>
-						phonefinalevelgames@contact.com<br/>
+						ATT: Some CEO<br>
+						888 Imaginary Way<br>
+						Wallawoo, TX 76051<br><br>
+						someceo@finalevel.com<br>
 						<h2>Your Account</h2>
 						<p>If you register on the Sites, you are responsible for maintaining the confidentiality of your account and password and for restricting access to your computer, and you agree to accept responsibility for all activities that occur under your account or password. FinaLevel does sell products for children, but it sells them to adults who can purchase with a credit card or other permitted payment method. If you are under 18, you may use the Sites only with involvement of a parent or guardian. FinaLevel reserves the right to refuse service, terminate accounts, remove or edit content, or cancel orders in its sole discretion. FinaLevel reserves the right to change, suspend, or discontinue all or any aspects of the Sites at any time without prior notice.</p>
 						<p>FinaLevel does not knowingly collect information from children, including those less than thirteen years of age. If you are a child, do not submit any information to FinaLevel. If a parent, guardian, or other concerned person becomes aware that we have collected information from a child, including one less than 13 years of age, please contact us promptly and we will take steps to delete and remove any such information.</p>
@@ -182,7 +182,7 @@ require_once('db_connect.php');
 
 
 
-</div>
+
 					</div>
                 </div>
             </div>
