@@ -2,7 +2,7 @@
 <html dir="ltr" lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Final Level Games About us – Miki Nagai</title>
+<title>Final Level Games About us</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
