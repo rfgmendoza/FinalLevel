@@ -16,6 +16,7 @@
                     	<li><a href="#">Contact us</a></li>
                         <li><a href="returns.php">Returns</a></li>
                         <li><a href="#">Site map</a></li>
+                        <li><a href="test_cases.doc">Use Cases</a></li>
                     </ul>
                 </div>
                 <div class="threecol footer-col">
