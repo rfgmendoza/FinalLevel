@@ -2,13 +2,11 @@
 	include ('includes/head.php');
 	include ('includes/header.php');
 ?>
- <div id="products">
-        <div class="container" style="position:relative;">
-            <div class="row">
-                <div class="container">
-                    <div class="twelvecol">
-                    <div id="paragraph">
-                    				<h1>Privacy Policy</h2>
+<div class="client-content">
+    	<div class="container">
+        	<div class="row">
+            	<div class="twelvecol">
+                    	<h1>Privacy Policy</h2>
 						<p>FinaLevel Games knows that you care about your privacy and the use of your personal information. This notice describes our Privacy Policy.  This Privacy Policy applies to information we collect about you from our Website.</p>
 						<p>By visiting a FinaLevel Website, or otherwise providing information FinaLevel you are accepting the practices described in this Privacy Policy. </p>
 
@@ -106,12 +104,12 @@
 						<p>Pursuant to Section 1798.83 of the California Civil Code, residents of California have the right to request from a business, with whom the California resident has an established business relationship, certain information with respect to the types of personal information the business shares with third parties for direct marketing purposes by such third party and the identities of the third parties with whom the business has shared such information during the immediately preceding calendar year.<p>
 						<p>To request a copy of the information disclosure provided by Best Buy pursuant to Section 1798.83 of the California Civil Code, please contact PrivacyManager@finalevel.com</p>
 
-</div>
+
 					</div>
                 </div>
             </div>
 		</div>
-	</div>
+
      
 <?php
 	include ('includes/footer.php');

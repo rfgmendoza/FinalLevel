@@ -2,11 +2,10 @@
 	include ('includes/head.php');
 	include ('includes/header.php');
 ?>
-<div id="products">
-        <div class="container" style="position:relative;">
-            <div class="row">
-                <div class="container">
-                    <div class="twelvecol">
+<div class="client-content">
+    	<div class="container">
+        	<div class="row">
+            	<div class="twelvecol">
 						<h1>Returns to FinaLevel.com</h1>
 						<p><b>Please note:</b> A receipt is required for all returns and exchanges.</p>
 						<p>This page details how to return products purchased online at finalevel.com.</p>
@@ -37,7 +36,7 @@
                 </div>
             </div>
 		</div>
-	</div>
+
             
 <?php
 	include ('includes/footer.php');

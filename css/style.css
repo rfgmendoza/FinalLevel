@@ -823,3 +823,27 @@ p.aboutus-content{
 padding: 10px;
 line-height: 1.7;
 }
+/**************************
+Business
+**************************/
+
+.client-content{
+	margin:5px;
+}
+
+.client-content p{
+	padding: 5px 15px;
+}
+.client-content ul{
+	padding: 5px 30px;
+}
+.client-content ul>li>ul>li{
+	padding: 5px 10px;
+}
+.client-content h1,h2,h3,h4{
+	color:#662d91;
+}
+.client-content h1{
+	padding:5px;
+	border-bottom: 2px solid #662d91;
+}

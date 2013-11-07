@@ -3,13 +3,10 @@
 	include ('includes/header.php');
 ?>
     
- 
-    <div id="products">
-        <div class="container" style="position:relative;">
-            <div class="row">
-                <div class="container">
-                    <div class="twelvecol">
-                    <div id="paragraph">
+<div class="client-content">
+    	<div class="container">
+        	<div class="row">
+            	<div class="twelvecol">
 						<h1>Conditions of Use</h1>
 						<p>Last Updated: September 6, 2013</p>
 						<p>FinaLevel Games, Inc. and/or its affiliates ("FinaLevel") provide website features and other products and services when you visit or shop using GameStop's mobile applications, or finalevelgames.com. 
@@ -29,15 +26,17 @@
 
 						<p>FINALEVELGAMES.COM are trademarks or registered trademarks of Finalevel Games, Inc. In addition, graphics, logos, page headers, button icons, scripts, and service names included in or made available through the Sites are trademarks or trade dress of FinaLevel in the U.S..</p>
 						<p>All rights not expressly granted herein are reserved.</p>
+						
 						<h2>Digital Millennium Copyright Act</h2>
 
 						<p>If you are a copyright owner or an agent thereof and believe that any content on this Site infringes upon your copyrights, you may submit a notification pursuant to the Digital Millennium Copyright Act ("DMCA") by providing our Copyright Agent with the following information in writing (see 17 U.S.C 512(c)(3) for further detail):</p>
-						<li>A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed; </li>
-						<li>Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works at a single online site are covered by a single notification, a representative list of such works at that site;</li>
-						<li>Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled and information reasonably sufficient to permit the service provider to locate the material;</li>
-						<li>Information reasonably sufficient to permit the service provider to contact you, such as an address, telephone number, and, if available, an electronic mail;</li>
-						<li>A statement that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law; and</li>
-						<li>A statement that the information in the notification is accurate, and under penalty of perjury, that you are authorized to act on behalf of the owner of an exclusive right that is allegedly infringed. </li>
+						<ul>
+							<li>A physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed; </li>
+							<li>Identification of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works at a single online site are covered by a single notification, a representative list of such works at that site;</li>
+							<li>Identification of the material that is claimed to be infringing or to be the subject of infringing activity and that is to be removed or access to which is to be disabled and information reasonably sufficient to permit the service provider to locate the material;</li>
+							<li>Information reasonably sufficient to permit the service provider to contact you, such as an address, telephone number, and, if available, an electronic mail;</li>
+							<li>A statement that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law; and</li>
+							<li>A statement that the information in the notification is accurate, and under penalty of perjury, that you are authorized to act on behalf of the owner of an exclusive right that is allegedly infringed. </li>
 						</ul>
 
 						FinaLevel's designated Copyright Agent to receive notifications of claimed infringement is : <br>
@@ -71,14 +70,14 @@
 
 						<p>No Endorsement of User Content. Users to the Sites are prohibited from posting through the Sites any harmful, vulgar, obscene, profane, sexually explicit, abusive, threatening, privacy invading, libelous, racially, ethnically, or otherwise objectionable or unlawful content of any kind, or that infringes or may infringe on the intellectual or other rights of another. You acknowledge that FinaLevel does not endorse or pre-screen content, but that FinaLevel and its designees will have the right (but not the obligation) in their sole discretion to refuse, edit, move, or remove any content that is available via the Sites. You may not use a false e-mail address, impersonate any person or entity, or otherwise mislead as to the origin of any Content posted by you. </p>
 
-</div>
+
 
 
 					</div>
                 </div>
             </div>
 		</div>
-	</div>
+
      
 <?php
 	include ('includes/footer.php');
