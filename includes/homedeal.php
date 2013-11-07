@@ -68,7 +68,7 @@
 						</div>
 							<br>
 						<p>
-							<a class='add-to-cart' href='includes/addtocart.php?sku=$sku&amp;prod=$prod'><span><image src='image/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+							<a class='add-to-cart' href='includes/addtocart.php?sku=$sku&amp;prod=$prod'><span><image src='img/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
 						</p>	
 							
 				</li>";

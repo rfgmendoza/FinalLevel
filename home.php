@@ -64,7 +64,7 @@
             </div><!--row-->
         </div>
     </div><!--products-->
-     
+	<br>
 <?php
 	include ('includes/footer.php');
 ?>

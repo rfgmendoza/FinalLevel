@@ -31,7 +31,7 @@ $(document).ready(function(){
     
 });
 
-=======
+
 AJAX = {};
 
 AJAX.login = function() {
