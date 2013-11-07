@@ -37,14 +37,10 @@
 						</div>
 					</div>
 					<div class="ninecol last"> <!--products col-->
-						<p class="result"> 
-							<span class="page-result">Showing 8 of 20</span>
-							<span class="nl-result"><a href="#">next</a> | <a href="#">last</a></span>
-						</p>
-						
-							<?php
-								$pulltable='"NintendoDS"';
-								include ('includes/listing.php'); ?>
+						<?php
+							$pulltable='"NintendoDS"';
+							include ('includes/listing.php'); 
+						?>
 						
 					</div>
 				</div><!--end row-->
