@@ -12,7 +12,7 @@
 
     $userQuery = $_GET['userQuery'];
     $passwordQuery = $_GET['passwordQuery'];
-    
+
     $sql="SELECT username, password, access_level FROM $tbl_name WHERE username='$userQuery'";
     $result = mysql_query($sql);
     while($row = mysql_fetch_array($result))
@@ -23,12 +23,25 @@
         if($userQuery==$row[0] && $passwordQuery==$row[1])
         { 
             if ($row[2]==2){
+                session_start();
+                $userQuery = $_SESSION['username'];
+                $passwordQuery = $_SESSION['password'];
                 echo "Login successful";
                 header("Location: userLog.php");
             }
             else if ($row[2]==3){
+                session_start();
+                $userQuery = $_SESSION['username'];
+                $passwordQuery = $_SESSION['password'];
                 echo "Login successful";
                 header("Location: admin.php");
+            }
+            else{
+                session_start();
+                $userQuery = $_SESSION['username'];
+                $passwordQuery = $_SESSION['password'];
+                header("Location: homeMain.php");
+
             }
         }
     }

@@ -12,21 +12,28 @@ mysql_select_db("$db_name")or die("cannot select DB");
 
 
 // define number and name
-$username=$_POST['username'];
-$password=$_POST['password'];
-$firstName=$_POST['firstName'];
-$lastName=$_POST['lastName'];
-$street=$_POST['street'];
-$city=$_POST['city'];
-$state=$_POST['state'];
-$zip=$_POST['zip'];
-$phone=$_POST['phone'];
+$username=$_GET['username'];
+$password=$_GET['password'];
+$firstName=$_GET['firstName'];
+$lastName=$_GET['lastName'];
+$street=$_GET['street'];
+$city=$_GET['city'];
+$state=$_GET['state'];
+$zip=$_GET['zip'];
+$phone=$_GET['phone'];
+$email=$_GET['email'];
 
-$sql="INSERT INTO $tbl_name (username, password, first_name, last_name, street, city, state, zip, phone) VALUES ('$username','$password','$firstName','$lastName','$street','$city', '$state','$zip','$phone')";
+$sql="INSERT INTO $tbl_name (username, password, first_name, last_name, street, city, state, zip, phone, email) VALUES ('$username','$password','$firstName','$lastName','$street','$city', '$state','$zip','$phone', '$email')";
 $result = mysql_query($sql); 
 
 echo "<script type='text/javascript'>alert('User Added');</script>";
-echo "<script type='text/javascript'>window.location=\"userLog.php\";</script>";
+
+if ($_GET['register']){
+	echo "<script type='text/javascript'>window.location=\"registration.php\";</script>";
+}
+else{
+	echo "<script type='text/javascript'>window.location=\"userLog.php\";</script>";
+}
 
 
 ?>

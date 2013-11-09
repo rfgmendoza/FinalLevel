@@ -20,7 +20,6 @@ AJAX.login = function() {
     $.ajax(ajaxOptions);
 };
 
-
 $(document).ready(function(){
 
 	$('#box-products-wrapper').carouFredSel({
@@ -51,8 +50,15 @@ $(document).ready(function(){
                    userQuery = $('input#userName').val();
                    passwordQuery = $('input#password').val();
                    AJAX.login();
-
         });
+
+	$( "button#submitUserInfo" ).click(function() {
+		$( "form#client-general-inf" ).submit();
+		});
+
+	$( "button#registerUser" ).click(function() {
+		$( "form#client-general-inf" ).submit();
+		});
     
 
 });

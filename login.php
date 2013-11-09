@@ -64,12 +64,12 @@
                             </li>
                             <li class="signup">
                             	<div class="background"></div>
-                                <a href="#">sign up</a>
+                                <a href="registration.php">sign up</a>
                             </li>
-                            <li class="wishlist">
+                            <!-- <li class="wishlist">
                             	<div class="background"></div>
                                 <a href="#">wishlist</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div><!--nine col-->
                 </div>
@@ -104,10 +104,12 @@
                 	<p class="login-header">REGISTERED CUSTOMERS</p>
                     
                     <form id="client-general-inf">
-                    	<p><label>Email Address or Username </label><input id="userName" type="text" /></p>
+                        <fieldset>
+                    	<p><label>Username </label><input id="userName" type="text" /></p>
                         <p><label>Password </label><input id="password" type="password" /></p>
                         <a href="#" style="font-weight: lighter;display:block;;font-size: 12px;text-decoration: underline;">Forgot Password</a> <br />
                         <button type="button" title="signin" id="loginSubmit" class="button btn-proceed-checkout btn-checkout"><span><span>SIGN IN</span></span></button>
+                    </fieldset>
                     </form>
                 </div>
                 <div class="fivecol last">
@@ -119,7 +121,7 @@
                         <li>Exclusive Emails</li>
                         <li>Checkout Preferences</li>
                     </ul>
-                    <button type="button" title="signin" class="button btn-proceed-checkout btn-checkout"><span><span>Create an Account</span></span></button>
+                    <a href="registration.php"><button type="button" title="signin" class="button btn-proceed-checkout btn-checkout"><span><span>Create an Account</span></span></button></a>
                 </div>
             </div>
         </div>

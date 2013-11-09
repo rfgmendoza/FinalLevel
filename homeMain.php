@@ -2,6 +2,14 @@
 
 require_once('db_connect.php');
 
+session_start();
+    
+    $userQuery = $_SESSION['username'];
+    $passwordQuery = $_SESSION['password'];
+
+    //CHECK WHAT USER IS LOGGED IN
+    
+    // echo "<script type='text/javascript'>alert('" . $userQuery . "');</script>";
 ?>
 
 <!DOCTYPE html>
@@ -59,10 +67,10 @@ require_once('db_connect.php');
                         </div><!--cart-->
                         
                         <ul>
-                            <!-- <li class="account">
+                            <li class="account">
                                 <div class="background"></div>
                                 <a href="client.php">account</a>
-                            </li> -->
+                            </li>
                             <li class="login">
                             	<div class="background"></div>
                                 <a href="login.php">login</a>
@@ -113,7 +121,7 @@ require_once('db_connect.php');
                         </div>
                     </div>
                 </div><!--eightcol-->
-                <div class="threecol last">
+                <!-- <div class="threecol last">
                     <div id="loginform">
                         <p class="title">login</p>
                         <p>
@@ -128,7 +136,7 @@ require_once('db_connect.php');
                             <a class="forgotten" href="#nd_lost_password_form">You can not login?</a> 
                             <input type="submit" id="loginSubmit" class="button" value="Login">
                         </p>
-                    </div>
+                    </div> -->
                 </div><!--threecol-->
             </div>
         </div>
@@ -623,6 +631,9 @@ require_once('db_connect.php');
     </div><!--footer-->
     
 </div><!--page_warp-->
-
+<?php
+    $_SESSION['username'] = $userQuery;
+    $_SESSION['password'] = $passwordQuery;
+?>
 </body>
 </html>

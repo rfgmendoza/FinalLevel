@@ -562,6 +562,27 @@ button.button span {
 	border-radius:2px;
 }
 
+input.button {
+	overflow: visible;
+	width: auto;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+input.button span {
+	display: block;
+	background: #d2d2d2;
+	padding: 3px 20px;
+	font: bold 12px/23px;
+	text-align: center;
+	white-space: nowrap;
+	color: #3170BB;
+	border-radius:2px;
+}
+
 td a{
 	color:#999;	
 }
