@@ -16,7 +16,7 @@ session_start();
 <html dir="ltr" lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Final Level Games Client </title>
+<title>Final Level Games Client – Miki Nagai</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -40,26 +40,14 @@ session_start();
 </head>
 
 <body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-41209891-2', 'ucf.edu');
-  ga('send', 'pageview');
-
-</script>
 <div id="page_warp">
 	<div id="header">
     	<div id="header-top">
             <div class="container">
-                 <div class="row">
+                <div class="row">
                     <div id="search" class="twelvecol" style="text-align:right;">
-                       <form action="search.php" method="post" class="search">
-                        <input type="text" name="term" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#4b4b4b';">
-                         <input id="search-bar" type="submit" name="search" value=""/>
-                        </form>
+                        <input type="text" id="search-bar" name="filter_name" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#4b4b4b';">
                     </div>
                 </div><!--row-->
             </div>
@@ -163,6 +151,10 @@ session_start();
                             {
                                echo '<form id="client-general-inf" action="reviseAccount.php">
                                 <fieldset>
+                                <p><label>Username</label>
+                                    <span><input id="username" type="text" name="username" value="' . $userQuery . '" /></span></p>
+                                <p><label>Password</label>
+                                    <span><input id="password" name="password" type="text" value="' . $row1[3] . '" /></span></p>
                                 <p><label>Full Name</label>
                                     <span><input id="firstname" type="text" name="firstName" value="' . $row1[5] . '" /><input id="lastname" name="lastName" type="text" value="' . $row1[4] . '" /></span></p>
                                 <p><label>Street Address</label><input type="text" name="street" value="' . $row1[6] . '" /></p>
@@ -238,7 +230,7 @@ session_start();
             </div><!--row-->
             <div class="row footer-bottom">
             	<div class="tencol">
-                	<p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Rafael Mendoza, Melissa McDermott, Ashley Pajak, Miki Nagai, and James Marquis.</p>
+                	<p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Miki Nagai</p>
                 </div>
                 
                 <div class="twocol last"><img src="img/payment.gif" alt="" /></div>
