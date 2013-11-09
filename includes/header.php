@@ -1,74 +1,70 @@
-<?
-	session_start();
-?>
-<!-- divide for Header -->
-	<body>
-		<div class="container">
-			
-			<div class="row" id="navtop">
-				
-					<div class="fourcol">
-						<a href="home.php"> <img id="logo" src="img/logo.png" alt="Final Level - Gaming For Girls"></a>
-						
-					</div>
-					<div class="threecol">	
-					<div class="dark">
-						<form method="get" action="post" id="search" class="dark">
-							<input name="q" type="text" size="40" placeholder="Search..." >
-						</form>
-					</div>
-					</div>
-					<div class="fivecol last">
-						<div class="row">
-							<div class='sixcol last'>
-								<div id="usernav">
-									<div class="signnav">
-										<ul>
-											<li>Hello, <span id="username"><a href="login.php">User</span></a></li>
-											<li> | </li>
-											<li><a href="logout.php">Log out</a> </li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class='sixcol last'>
-								<div id="sidenav">
-									<div class="signnav">
-										<ul>
-											<li><a href="cart.php"> Cart (0) </a></li>
-											<li> | </li>
-											<li><a href="wishlist.php">Wish List</a> </li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>		
-			</div>
-			<div class="row">
-				<div class="navbar">
-					<div class="ninecol">
-						<ul class="mainnav">
-							<li><a href="catalog.php">Xbox</a> </li>
-							<li><a href="catalog.php">PlayStation</a></li>
-							<li><a href="catalog.php">Wii</a></li>
-							<li><a href="catalog.php">PC</a></li>
-							<li><a href="catalog.php">Wii U</a></li>
-							<li><a href="catalog.php">3DS</a></li>
-							<li><a href="catalog.php">PS Vita</a></li>
-						</ul>
-					</div>
-					<div class="threecol last">
-						<div class="socialnav">
-							<ul>
-								<li><a href="http://www.facebook.com"><img src="img/icons/facebook.png" alt="Final Level on Facebook"></a> </li>
-								<li><a href="http://www.twitter.com"><img src="img/icons/twitter.png" alt="Final Level on Twitter"></a> </li>
-								<li><a href="http://www.plus.google.com"><img src="img/icons/google.png" alt="Final Level on Google Plus"></a> </li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<body>
+<div id="page_warp">
+    <div id="header">
+        <div id="header-top">
+            <div class="container">
+                <div class="row">
+                    <div id="search" class="twelvecol" style="text-align:right;">
+                       <form action="search.php" method="post" class="search">
+                        <input type="text" name="term" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#4b4b4b';">
+                         <input id="search-bar" type="submit" name="search" value=""/>
+                        </form>
+                    </div>
+                </div><!--row-->
+            </div>
+        </div><!--header-top-->
+        <div id="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="threecol">
+                        <a href="home.php"><img src="img/logo_2.png" alt="logo" /></a>
+                    </div><!--three col-->
+                    <div class="ninecol last user-menu">
+                        
+                        <div id="cart">
+                            <div class="heading">
+                              <div class="background"></div>
+                              <div class="mini_header_cart"><a href="cart.php" class="cart_empty">My cart (3 items)</a></div>
+                            </div>
+                        </div><!--cart-->
+                        
+                        <ul>
+                            <li class="account">
+                                <div class="background"></div>
+                                <a href="client.php">account</a>
+                            </li>
+                            <li class="login">
+                            	<div class="background"></div>
+                                <a href="login.php">login</a>
+                            </li>
+                            <li class="signup">
+                                <div class="background"></div>
+                                <a href="#">sign up</a>
+                            </li>
+                            <li class="wishlist">
+                                <div class="background"></div>
+                                <a href="#">wishlist</a>
+                            </li>
+                        </ul>
+                    </div><!--nine col-->
+                </div>
+            </div>
+        </div><!--header-bottom-->
+    </div><!--header-->
+    
+    <div id="navigation">
+        <div class="container">
+            <div class="row">
+                <div id="mainmenu" class="twelvecol">
+                    <ul>
+                        <li><a href='catalog_playstation.php?pulltable=$pulltable'>PS3</a></li>
+                        <li><a href='catalog_xbox.php?pulltable=$pulltable'>Xbox360</a></li>
+                        <li><a href='catalog_pc.php?pulltable=$pulltable'>PC</a></li>
+                        <li><a href='catalog_wii.php?pulltable=$pulltable'>Wii</a></li>
+                        <li><a href='catalog_nintendods.php?pulltable=$pulltable'>Nintendo DS</a></li>
+                        <li><a href="#">More</a></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </div><!--navigation-->

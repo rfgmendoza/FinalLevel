@@ -1,22 +1,42 @@
-<?
-	session_start();
+<?php
+
+require_once('db_connect.php');
+
 ?>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-	
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-		<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-		<link rel="stylesheet" type="text/css" href="css/styles.css" >
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<meta name=description content=" Final Level Games is taking gaming to the next level and supporting women in Video Games">
-		<meta name=keywords content="PS3, PS4, PS Vita, Wii, Wii U,Xbox, PC, video games, buy">
-		<link rel="icon" type="image/ico" href="img/favicon.ico">
-		
-		
-		<title>
-			Final Level Games – Gaming For Girls
-		</title>
-	
-	</head>
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Final Level Games - Games For Girls</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<link rel="stylesheet" type="text/css" href="css/grid.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/carousel.css">
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41209891-2', 'ucf.edu');
+  ga('send', 'pageview');
+
+</script>
+</head>

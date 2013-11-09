@@ -8,7 +8,7 @@ require_once('db_connect.php');
 <html dir="ltr" lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Final Level Games Home – Miki Nagai</title>
+<title>Final Level Games Catalog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
@@ -28,17 +28,28 @@ require_once('db_connect.php');
 <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 
 <script type="text/javascript" src="js/custom.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-41209891-2', 'ucf.edu');
+  ga('send', 'pageview');
+
+</script>
 </head>
-
 <body>
 <div id="page_warp">
     <div id="header">
         <div id="header-top">
             <div class="container">
-                <div class="row">
+                 <div class="row">
                     <div id="search" class="twelvecol" style="text-align:right;">
-                        <input type="text" id="search-bar" name="filter_name" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#4b4b4b';">
+                       <form action="search.php" method="post" class="search">
+                        <input type="text" name="term" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#4b4b4b';">
+                         <input id="search-bar" type="submit" name="search" value=""/>
+                        </form>
                     </div>
                 </div><!--row-->
             </div>
@@ -47,7 +58,7 @@ require_once('db_connect.php');
             <div class="container">
                 <div class="row">
                     <div class="threecol">
-                        <img src="img/logo_2.png" alt="logo" />
+                        <a href="home.php"><img src="image/logo_2.png" alt="logo" /></a>
                     </div><!--three col-->
                     <div class="ninecol last user-menu">
                         
@@ -87,14 +98,12 @@ require_once('db_connect.php');
             <div class="row">
                 <div id="mainmenu" class="twelvecol">
                     <ul>
-                        <li><a href="catalog.php">Xbox One</a></li>
-                        <li><a href="catalog.php">PS4</a></li>
-                        <li><a href="catalog.php">Xbox360</a></li>
-                        <li><a href="catalog.php">PC</a></li>
-                        <li><a href="catalog.php">Wii U</a></li>
-                        <li><a href="catalog.php">3DS</a></li>
-                        <li><a href="catalog.php">PS vista</a></li>
-                        <li><a href="catalog.php">More</a></li>
+                        <li><a href='catalog_playstation.php?pulltable=$pulltable'>PS3</a></li>
+                        <li><a href='catalog_xbox.php?pulltable=$pulltable'>Xbox360</a></li>
+                        <li><a href='catalog_pc.php?pulltable=$pulltable'>PC</a></li>
+                        <li><a href='catalog_wii.php?pulltable=$pulltable'>Wii</a></li>
+                        <li><a href='catalog_psvita.php?pulltable=$pulltable'>PS Vista</a></li>
+                        <li><a href="#">More</a></li>
                    </ul>
                 </div>
             </div>
@@ -133,12 +142,16 @@ require_once('db_connect.php');
 							</div>
 						</div>
 					</div>
-					<div class="tencol last"> <!--products col-->
-						<div><p class="result"><span class="page-result">Showing 8 of 20</span><span class="nl-result"><a href="#">next</a> | <a href="#">last</a></span></p>
-						</div>
-						<div>
-							<?php include ('includes/listing.php'); ?>
-						</div>
+					<div class="ninecol last"> <!--products col-->
+						<p class="result"> 
+							<span class="page-result">Showing 8 of 20</span>
+							<span class="nl-result"><a href="#">next</a> | <a href="#">last</a></span>
+						</p>
+						
+							<?php
+								
+								include ('includes/listing.php'); ?>
+						
 					</div>
 				</div><!--end row-->
                    
@@ -162,54 +175,54 @@ require_once('db_connect.php');
             
     
     <div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="threecol footer-col">
-                    <p class="footer-title">information</p>
+    	<div class="container">
+        	<div class="row">
+            	<div class="threecol footer-col">
+                	<p class="footer-title">information</p>
                     <ul>
-                        <li><a href="about.php">about us</a></li>
-                        <li><a href="#">Delivery Information</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
+                    	<li><a href="about.php">about us</a></li>
+                        <li><a href="shipping.php">Delivery Information</a></li>
+                        <li><a href="privacypolicy.php">Privacy Policy</a></li>
+                        <li><a href="conditions.php">Terms & Conditions</a></li>
                     </ul>
                 </div>
                 <div class="threecol footer-col">
-                    <p class="footer-title">Customer Service</p>
+                	<p class="footer-title">Customer Service</p>
                     <ul>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">returns</a></li>
-                        <li><a href="#">site map</a></li>
+                    	<li><a href="#">Contact us</a></li>
+                        <li><a href="returns.php">Returns</a></li>
+                        <li><a href="#">Site map</a></li>
                     </ul>
                 </div>
                 <div class="threecol footer-col">
-                    <p class="footer-title">My Account</p>
+                	<p class="footer-title">My Account</p>
                     <ul>
-                        <li><a href="#">my account</a></li>
-                        <li><a href="#">order history</a></li>
-                        <li><a href="#">wish list</a></li>
-                        <li><a href="#">news letter</a></li>
+                    	<li><a href="#">My Account</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Wish List</a></li>
+                        <li><a href="#">News Letter</a></li>
                         <li><a target="_blank" href="admin.php">Admin</a></li>
                     </ul>
                 </div>
                 <div class="threecol last contactinfor">
-                    <div class="footer-right">
-                    <p class="footer-title">Company information</p>
+                	<div class="footer-right">
+                	<p class="footer-title">Company information</p>
                     <ul>
-                        <li><p><span class="contact"><img src="img/phone.png" alt="phone" /></span>+001 (000) 555 801</p></li>
-                        <li><p><span class="contact"><img src="img/location-outline.png" alt="phone" /></span>123 Main  Street Orlando, FL</p></li>
-                        <li style="text-transform:lowercase;"><p><span class="contact"><img src="img/mail.png" alt="phone" /></span>finalevelgames@contact.com</p></li>
-                        <li style="padding-top:10px;"><a href="#" target="_blank"><img src="img/Facebook.png" alt="socialmedia" class="fb socialmedia" /></a>
-                    <a href="#" target="_blank"><img src="img/Twitter.png" alt="socialmedia" class="tw socialmedia" /></a></li>
+                    	<li><p><span class="contact"><image src="image/phone.png" alt="phone" /></span>+001 (000) 555 801</p></li>
+                        <li><p><span class="contact"><image src="image/location-outline.png" alt="phone" /></span>123 Main  Street Orlando, FL</p></li>
+                        <li style="text-transform:lowercase;"><p><span class="contact"><image src="image/mail.png" alt="phone" /></span>finalevelgames@contact.com</p></li>
+                        <li style="padding-top:10px;"><a href="#" target="_blank"><image src="image/Facebook.png" alt="socialmedia" class="fb socialmedia" /></a>
+                    <a href="#" target="_blank"><image src="image/Twitter.png" alt="socialmedia" class="tw socialmedia" /></a></li>
                     </ul>
                     </div>
                 </div>
             </div><!--row-->
             <div class="row footer-bottom">
-                <div class="tencol">
-                    <p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Miki Nagai</p>
+            	<div class="tencol">
+                	<p class="footer-content">This site is not official and is an assignment for a UCF Digital Media course <br />designed by Rafael Mendoza, Melissa McDermott, Ashley Pajak, Miki Nagai, and James Marquis.</p>
                 </div>
                 
-                <div class="twocol last"><img src="img/payment.gif" alt="" /></div>
+                <div class="twocol last"><image src="image/payment.gif" alt="" /></div>
             </div>
         </div>
     
