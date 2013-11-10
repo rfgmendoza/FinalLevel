@@ -1,3 +1,7 @@
+<?php
+	$cartItemCount = count($_SESSION['cart']);
+?>
+
 <body>
 <div id="page_warp">
     <div id="header">
@@ -24,7 +28,7 @@
                         <div id="cart">
                             <div class="heading">
                               <div class="background"></div>
-                              <div class="mini_header_cart"><a href="cart.php" class="cart_empty">My cart (3 items)</a></div>
+                              <div class="mini_header_cart"><a href="cart.php" class="cart_empty">My cart <?php echo "({$cartItemCount})"; ?></a></div>
                             </div>
                         </div><!--cart-->
                         
