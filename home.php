@@ -20,11 +20,11 @@
                         <p class="title">login</p>
                         <p>
                             <label for="nd_username">Username:</label>
-                            <input type="text" class="text" name="log" id="userName" placeholder="Username">
+                            <input type="text" class="text" name="log" id="userName" value="Username" onClick="this.value = '';" onKeyDown="this.style.color = '#4b4b4b';" />
                         </p>
                         <p>
                             <label for="nd_password">Password:</label> 
-                            <input type="password" class="text" name="pwd" id="password" placeholder="Password">
+                            <input type="password" class="text" name="pwd" id="password" value="Password" onClick="this.value = '';" onKeyDown="this.style.color = '#4b4b4b';" />
                         </p>
                         <p style="margin-top:20px;">
                             <a class="forgotten" href="#nd_lost_password_form">You can not login?</a> 

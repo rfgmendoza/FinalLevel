@@ -17,7 +17,7 @@
 				$_SESSION['cart'][$i]['qty']=$q;
 			}
 			else{
-				$msg='Some proudcts not updated!, quantity must be a number between 1 and 999';
+				$msg='Some products not updated!, quantity must be a number between 1 and 999';
 			}
 		}
 	}
@@ -67,7 +67,9 @@
 					$pname=get_product_name($pid);
 					if($q==0) continue;
 			?>
-            		<tr bgcolor="#FFFFFF"><td><?=$i+1?></td><td><?=$pname?></td>
+            		<tr bgcolor="#FFFFFF">
+            			<td><?=$i+1?></td>
+            			<td><?=$pname?></td>
                     <td>$ <?=get_price($pid)?></td>
                     <td><input type="text" name="product<?=$pid?>" value="<?=$q?>" maxlength="3" size="2" /></td>                    
                     <td>$ <?=get_price($pid)*$q?></td>

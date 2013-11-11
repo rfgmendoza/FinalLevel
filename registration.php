@@ -1,7 +1,5 @@
 <?php
 
-
-    
     $userQuery = $_SESSION['username'];
     $passwordQuery = $_SESSION['password'];
     
@@ -36,11 +34,11 @@
                         <form id="client-general-inf" action="addUser.php">
                             <fieldset>
                                 <p><label>Username</label>
-                                    <span><input id="username" type="text" name="username" value="User Name" /></span></p>
+                                    <span><input id="username" type="text" name="username" value="User Name" onClick="this.value = '';" onKeyDown="this.style.color = '#4b4b4b';" /></span></p>
                                 <p><label>Password</label>
-                                    <span><input id="password" name="password" type="text" value="Password" /></span></p>
+                                    <span><input id="password" name="password" type="text" value="Password" onClick="this.value = '';" onKeyDown="this.style.color = '#4b4b4b';" /> </span></p>
                                 <p><label>Full Name</label>
-                                    <span><input id="firstname" type="text" name="firstName" value="First Name" /><input id="lastname" name="lastName" type="text" value="Last Name" /></span></p>
+                                    <span><input id="firstname" type="text" name="firstName" value="First Name"  value="Password" onClick="this.value = '';" onKeyDown="this.style.color = '#4b4b4b';" /><input id="lastname" name="lastName" type="text" value="Last Name" value="Password" onClick="this.value = '';" onKeyDown="this.style.color = '#4b4b4b';" /></span></p>
                                 <!-- <p><label>Business or C/O</label><input type="text" /></p> -->
                                 <p><label>Street Address</label><input type="text" name="street" /></p>
                                 <!-- <p><label>Unit</label><input type="text" value="Apt, Suite" /></p> -->

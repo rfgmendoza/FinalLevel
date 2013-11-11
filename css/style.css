@@ -475,6 +475,7 @@ thead {
 	width: 100%;
 	border: 1px solid #bebcb7;
 	font-size:12px;
+	margin-bottom: 22px;
 }
 
 .data-table thead th {
@@ -556,9 +557,11 @@ button.button {
 	width: auto;
 	border: 0;
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	background: transparent;
 	cursor: pointer;
+	display: block;
+	margin-bottom:20px;
 }
 
 button.button span {
@@ -821,13 +824,14 @@ margin-top: 16px;
 }
 
 ul.admin-menu{
-	background: #f7f7f7;
-padding: 31px;
-list-style: none;
+	list-style: none;
+	float:right;
 }
 
 ul.admin-menu li{
 	line-height:1.5;
+	float:left;
+	margin-left:40px;
 }
 
 ul.admin-menu li a{
@@ -867,4 +871,17 @@ Business
 .client-content h1{
 	padding:5px;
 	border-bottom: 2px solid #662d91;
+}
+
+
+#sidebar ul li a{
+	font-weight: lighter;
+color: #000;
+padding-left: 4px;
+margin-bottom:2px;
+line-height: 1.5;
+}
+
+#sidebar ul li a:hover{
+	text-decoration:underline;
 }
