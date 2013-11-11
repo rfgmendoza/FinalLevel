@@ -2,18 +2,20 @@
 
 require_once('db_connect.php');
 session_start();
+$userQuery = $_SESSION['username'];
+$passwordQuery = $_SESSION['password'];
 ?>
 
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-<meta charset="UTF-8" />
+<meta charset="UTF-8" >
 <title>Final Level Games - Games For Girls</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-<link rel="stylesheet" type="text/css" href="css/grid.css"/>
-<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
 <link rel="stylesheet" type="text/css" href="css/default.css">
 <link rel="stylesheet" type="text/css" href="css/carousel.css">

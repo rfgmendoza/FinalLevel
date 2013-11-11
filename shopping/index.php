@@ -1,3 +1,0 @@
-<?
-	header("location:products.php");
-?>

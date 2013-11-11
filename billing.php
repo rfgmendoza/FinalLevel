@@ -28,12 +28,9 @@
 		}
 		die('Thank You! your order has been placed!');
 	}
+	include ('includes/head.php');
+	include ('includes/header.php');
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Billing Info</title>
 <script language="javascript">
 	function validate(){
 		var f=document.form1;
@@ -46,10 +43,7 @@
 		f.submit();
 	}
 </script>
-</head>
 
-
-<body>
 <form name="form1" onsubmit="return validate()">
     <input type="hidden" name="command" />
 	<div align="center">
@@ -64,5 +58,8 @@
         </table>
 	</div>
 </form>
-</body>
-</html>
+
+<?php
+	include ('includes/footer.php');
+	
+?>

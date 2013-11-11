@@ -4,7 +4,7 @@ $(window).load(function() {
 		$('#slider').nivoSlider();
 });
 
-<<<<<<< HEAD
+
 AJAX = {};
 
 AJAX.login = function() {
@@ -23,8 +23,7 @@ AJAX.login = function() {
     $.ajax(ajaxOptions);
 };
 
-=======
->>>>>>> fb12f505c61753425b1f69de18d3be216c6790ce
+
 $(document).ready(function(){
 	$('#box-products-wrapper').carouFredSel({
 					auto: false,
@@ -52,7 +51,7 @@ $(document).ready(function(){
     
 });
 
-<<<<<<< HEAD
+
 	$('body').on('click','#loginSubmit', function(e) {
                    userQuery = $('input#userName').val();
                    passwordQuery = $('input#password').val();
@@ -66,8 +65,6 @@ $(document).ready(function(){
 	$( "button#registerUser" ).click(function() {
 		$( "form#client-general-inf" ).submit();
 		});
-    
-=======
 
 AJAX = {};
 
@@ -86,5 +83,5 @@ AJAX.login = function() {
     };
     $.ajax(ajaxOptions);
 };
->>>>>>> fb12f505c61753425b1f69de18d3be216c6790ce
+
 
