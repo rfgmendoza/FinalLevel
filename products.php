@@ -8,12 +8,10 @@
 		header("location:shoppingcart.php");
 		exit();
 	}
+	include ('includes/head.php');
+	include ('includes/header.php');
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Products</title>
+
 <script language="javascript">
 	function addtocart(indentifyer){
 		document.form1.productid.value=indentifyer;
@@ -21,10 +19,6 @@
 		document.form1.submit();
 	}
 </script>
-</head>
-
-
-<body>
 <form name="form1">
 	<input type="hidden" name="indentifyer" />
     <input type="hidden" name="command" />
@@ -49,5 +43,7 @@
         <? } ?>
     </table>
 </div>
-</body>
-</html>
+<?php
+	include ('includes/footer.php');
+	
+?>

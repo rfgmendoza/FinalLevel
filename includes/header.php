@@ -1,3 +1,7 @@
+<?php
+	$cartItemCount = count($_SESSION['cart']);
+?>
+
 <body>
 <div id="page_warp">
     <div id="header">
@@ -7,7 +11,7 @@
                     <div id="search" class="twelvecol" style="text-align:right;">
                        <form action="search.php" method="post" class="search">
                         <input type="text" name="term" value="Search" onclick="this.value = '';" onkeydown="this.style.color = '#4b4b4b';">
-                         <input id="search-bar" type="submit" name="search" value=""/>
+                         <input id="search-bar" type="submit" name="search" value="">
                         </form>
                     </div>
                 </div><!--row-->
@@ -24,27 +28,25 @@
                         <div id="cart">
                             <div class="heading">
                               <div class="background"></div>
-                              <div class="mini_header_cart"><a href="cart.php" class="cart_empty">My cart (3 items)</a></div>
+                              <div class="mini_header_cart"><a href="cart.php" class="cart_empty">My cart <?php echo "({$cartItemCount})"; ?></a></div>
                             </div>
                         </div><!--cart-->
                         
                         <ul>
-                            <li class="account">
+							<li class="account">
                                 <div class="background"></div>
                                 <a href="client.php">account</a>
                             </li>
+                           
                             <li class="login">
                             	<div class="background"></div>
                                 <a href="login.php">login</a>
                             </li>
                             <li class="signup">
                                 <div class="background"></div>
-                                <a href="#">sign up</a>
+                                <a href="registration.php">sign up</a>
                             </li>
-                            <li class="wishlist">
-                                <div class="background"></div>
-                                <a href="#">wishlist</a>
-                            </li>
+                            
                         </ul>
                     </div><!--nine col-->
                 </div>

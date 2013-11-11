@@ -55,7 +55,10 @@
     </div><!--footer-->
     
 </div><!--page_warp-->
-
+<?php
+    $_SESSION['username'] = $userQuery;
+    $_SESSION['password'] = $passwordQuery;
+?>
 </body>
 </html>
 
