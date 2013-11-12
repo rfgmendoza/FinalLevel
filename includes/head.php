@@ -2,11 +2,8 @@
 
 require_once('db_connect.php');
 session_start();
-<<<<<<< HEAD
 $userQuery = $_SESSION['username'];
 $passwordQuery = $_SESSION['password'];
-=======
->>>>>>> bc80bd23e8f3645aa317818623487b75a68de182
 ?>
 
 <!DOCTYPE html>

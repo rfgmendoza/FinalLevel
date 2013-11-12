@@ -59,7 +59,7 @@
 			}
 			echo "
 				<li>
-						<div class='image'><a href='productpage.php?sku=$sku&amp;prod=$prod'><img src='$img' alt='$prod' class='shopimg'></a></div>
+						<div class='image'><a href='#'><img src='$img' alt='$prod' class='shopimg'></a></div>
 						
 						<div class='product-infor'>
 							<p class='product_name'>$prodname</p>
@@ -67,9 +67,9 @@
 							$rankimg
 						</div>
 							<br>
-						<p>
-							<a class='add-to-cart' href='includes/addtocart.php?sku=$sku&amp;prod=$prod'><span><image src='img/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
-						</p>	
+							<p>
+								<a class='add-to-cart' href='includes/addtocart.php?id=$id'><span><image src='img/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+							</p>	
 							
 				</li>";
 				
