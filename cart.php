@@ -12,10 +12,11 @@
 				<div class="container">
 					<div class="row">
 						<div class="twelvecol">
+							<div class="cartheight">
 							<div><h1>Shopping Cart</h1></div>
 								<?php 	include ('includes/shoppingcart.php');?>
 						
-					
+					</div>
 				</div>
 			</div>
 

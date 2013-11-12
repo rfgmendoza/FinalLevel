@@ -221,7 +221,10 @@ a.cartbtn:hover{
 	margin:0 10px;
 
 }
-
+.cartheight{
+	min-height:300px !important;
+	height:100%;
+}
 
 /***************************************************
 	  navigation
