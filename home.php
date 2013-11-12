@@ -56,10 +56,7 @@
                 </div>
             </div>
             <div class="row">
-				<?php include ('includes/homedeal.php'); ?>
-                        
-                     
-            
+				<?php include ('includes/homedeal.php'); ?>           
             </div><!--row-->
         </div>
     </div><!--products-->
