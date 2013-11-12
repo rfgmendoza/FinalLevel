@@ -62,7 +62,7 @@
             	echo '<tr bgcolor="#FFFFFF" style="font-weight:bold"><td>Serial</td><td>Name</td><td>Price</td><td>Qty</td><td>Amount</td><td>Options</td></tr>';
 				$max=count($_SESSION['cart']);
 				for($i=0;$i<$max;$i++){
-					$pid=$_SESSION['cart'][$i]['productid'];
+					$pid=$_SESSION['cart'][$i]['id'];
 					$q=$_SESSION['cart'][$i]['qty'];
 					$pname=get_product_name($pid);
 					if($q==0) continue;

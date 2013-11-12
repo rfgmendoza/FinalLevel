@@ -1,11 +1,8 @@
 <?php
-	
-	include ('includes/head.php');
-	include ('includes/header.php');
+    
+    include ('includes/head.php');
+    include ('includes/header.php');
 ?>    
-<style type="text/css">
-li.account{display:none !important;}
-</style>
     <div id="content">
         <div class="container">
             <div class="row">
@@ -18,7 +15,7 @@ li.account{display:none !important;}
                         </div>
                     </div>
                 </div><!--eightcol-->
-                <div class="threecol last">
+                <!-- <div class="threecol last">
                     <div id="loginform">
                         <p class="title">login</p>
                         <p>
@@ -34,7 +31,7 @@ li.account{display:none !important;}
                             <input type="submit" id="loginSubmit" class="button" value="Login">
                         </p>
                     </div>
-                </div><!--threecol-->
+                </div> --><!--threecol-->
             </div>
         </div>
     </div><!--content-->
@@ -59,15 +56,15 @@ li.account{display:none !important;}
                 </div>
             </div>
             <div class="row">
-				<?php include ('includes/homedeal.php'); ?>
+                <?php include ('includes/homedeal.php'); ?>
                         
                      
             
             </div><!--row-->
         </div>
     </div><!--products-->
-	<br>
+    <br>
 <?php
-	include ('includes/footer.php');
-	
+    include ('includes/footer.php');
+    
 ?>

@@ -9,7 +9,7 @@
                 mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
                 mysql_select_db("$db_name")or die("cannot select DB");
 
-		$result=mysql_query("SELECT product_name FROM Products WHERE sku='1111124'");
+		$result=mysql_query("SELECT product_name FROM Products WHERE sku='$pid'");
 		$row=mysql_fetch_array($result);
 		return $row[0];
 	}
@@ -23,7 +23,7 @@
                 mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
                 mysql_select_db("$db_name")or die("cannot select DB");
 
-		$result=mysql_query("SELECT price FROM Products WHERE sku='1111124'");
+		$result=mysql_query("SELECT price FROM Products WHERE sku='$pid'");
 		$row=mysql_fetch_array($result);
 		return $row[0];
 	}

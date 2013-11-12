@@ -143,7 +143,6 @@
         </div>
     </div>
 </div><!--page_warp-->
-     
-<?php
-	include ('includes/footer.php');
-?>
+
+</body>
+</html>
