@@ -55,7 +55,7 @@
 						echo "<td class='textAlignCenter'><img src='$img' alt='$prod' class='cartimg'></td>";
 						echo "<td>{$prod}</td>";
 						echo "<td class='textAlignCenter'>{$price}</td>";
-						echo "<td class='textAlignCenter'><a href='#'>Remove </a></td>";
+						echo "<td class='textAlignCenter'><a href='includes/removeFromCart.php?sku=$sku'>Remove </a></td>";
 					echo "</tr>";
 				}
 				
@@ -109,10 +109,10 @@
 				</div>";
 			
 		}else{
-			echo "<br><div>No products found in your cart.</div>";
+			echo "<br>Your Shopping Cart lives to serve. Give it purpose--fill it with all the games you have never finished.";
 		}
 
 	}else{
-		echo "<br><div>No products in cart yet.</div>";
+		echo "<br>Your Shopping Cart lives to serve. Give it purpose--fill it with all the games you have never finished. If you already have an account, <a href='login.php'>sign in</a> to see your Cart.";
 	}
 ?>
