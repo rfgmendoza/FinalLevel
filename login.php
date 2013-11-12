@@ -1,8 +1,9 @@
 <?php
-	
-	include ('includes/head.php');
-	include ('includes/header.php');
-?>     
+    
+    include ('includes/head.php');
+    include ('includes/header.php');
+?> 
+    
     <div class="login-content">
     	<div class="container">
         	<div class="row">
@@ -33,7 +34,8 @@
             </div>
         </div>
     </div>
-     
-<?php
-	include ('includes/footer.php');
+    
+    <?php
+    include ('includes/footer.php');
+    
 ?>

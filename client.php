@@ -12,9 +12,11 @@ session_start();
     $_SESSION['username'] = $userQuery;
     $_SESSION['password'] = $passwordQuery;
 	include ('includes/head.php');
-	include ('includes/header.php');
+    include ('includes/header.php');
 ?>
-   
+
+    
+    
     <div class="client-content">
     	<div class="container">
         	<div class="row">
@@ -89,10 +91,9 @@ session_start();
         </div><!--container-->
     </div>
     
-    
 <?php
     $_SESSION['username'] = $userQuery;
     $_SESSION['password'] = $passwordQuery;
-	include ('includes/footer.php');
-?>
+    include ('includes/footer.php');
+  ?>
 
