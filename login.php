@@ -8,7 +8,7 @@
     	<div class="container">
         	<div class="row">
                 <div class="sixcol">
-                <div class="padded">
+                <div class="padded1">
                 	<p class="login-header">REGISTERED CUSTOMERS</p>
                     
                     <form id="client-general-inf">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="sixcol last">
-                <div class="padded">
+                <div class="padded2">
                 	<p class="client-header">CREATE AN ACCOUNT</p>
                     <p style="font-weight:lighter;">Register with Final Level Games to enjoy personalized services, including:
                     <ul style="font-weight:lighter;margin-top:20px;padding-left:20px;margin-bottom:20px;">
