@@ -913,3 +913,8 @@ Business
 	padding:5px;
 	border-bottom: 2px solid #662d91;
 }
+
+.padded{
+	padding-left:10%;
+	padding-right:10%;
+}
