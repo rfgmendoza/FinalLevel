@@ -27,11 +27,13 @@
 			$salprice=$row['sales_price'];
 			$img=$row['product_image'];
 			$ranking=$row['ranking'];
+			$id=$row['indentifyer'];
 			$rankingimg;
+			
 			if (strlen($prod)>20){
 				$name = explode(':', $prod);
 				$prodname = join('<br>',$name);
-			}else if (strlen($prod)<20){
+			}else if (strlen($prod)<22){
 				$prodname= $prod.'<br>    <br>';
 			}else{
 				
@@ -56,10 +58,10 @@
 				
 			}else{
 				print("Error with Ranking");
-			}
+			}//
 			echo "
 				<li>
-						<div class='image'><a href='productpage.php?sku=$sku&amp;prod=$prod'><img src='$img' alt='$prod' class='shopimg'></a></div>
+						<div class='image'><a href='#'><img src='$img' alt='$prod' class='shopimg'></a></div>
 						
 						<div class='product-infor'>
 							<p class='product_name'>$prodname</p>
@@ -67,9 +69,9 @@
 							$rankimg
 						</div>
 							<br>
-						<p>
-							<a class='add-to-cart' href='includes/addtocart.php?sku=$sku&amp;prod=$prod'><span><image src='img/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
-						</p>	
+							<p>
+								<a class='add-to-cart' href='includes/addtocart.php?id=$id'><span><image src='img/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+							</p>	
 							
 				</li>";
 				

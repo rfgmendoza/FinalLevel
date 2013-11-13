@@ -1,31 +1,13 @@
 <?
 	function get_product_name($pid){
-				$host="sulley.cah.ucf.edu"; // Host name 
-                $username="as932055"; // Mysql username 
-                $password="01knights!"; // Mysql password 
-                $db_name="as932055"; // Database name 
-                $tbl_name="Products"; // Table name
-
-                mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
-                mysql_select_db("$db_name")or die("cannot select DB");
-
-		$result=mysql_query("SELECT product_name FROM Products WHERE sku='$pid'");
+		$result=mysql_query("select name from products where serial=$pid");
 		$row=mysql_fetch_array($result);
-		return $row[0];
+		return $row['name'];
 	}
 	function get_price($pid){
-				$host="sulley.cah.ucf.edu"; // Host name 
-                $username="as932055"; // Mysql username 
-                $password="01knights!"; // Mysql password 
-                $db_name="as932055"; // Database name 
-                $tbl_name="Products"; // Table name
-
-                mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
-                mysql_select_db("$db_name")or die("cannot select DB");
-
-		$result=mysql_query("SELECT price FROM Products WHERE sku='$pid'");
+		$result=mysql_query("select price from products where serial=$pid");
 		$row=mysql_fetch_array($result);
-		return $row[0];
+		return $row['price'];
 	}
 	function remove_product($pid){
 		$pid=intval($pid);

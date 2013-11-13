@@ -2,9 +2,9 @@
         <div class="container">
             <div class="row">
                 <div class="threecol footer-col">
-                	<p class="footer-title">information</p>
+                	<p class="footer-title">Information</p>
                     <ul>
-                    	<li><a href="about.php">about us</a></li>
+                    	<li><a href="about.php">About us</a></li>
                         <li><a href="shipping.php">Delivery Information</a></li>
                         <li><a href="privacypolicy.php">Privacy Policy</a></li>
                         <li><a href="conditions.php">Terms & Conditions</a></li>
@@ -22,10 +22,10 @@
                 <div class="threecol footer-col">
                     <p class="footer-title">My Account</p>
                     <ul>
-                        <li><a href="#">my account</a></li>
-                        <li><a href="#">order history</a></li>
-                        <li><a href="#">wish list</a></li>
-                        <li><a href="#">news letter</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Wish List</a></li>
+                        <li><a href="#">News Letter</a></li>
                         <li><a target="_blank" href="admin.php">Admin</a></li>
                     </ul>
                 </div>

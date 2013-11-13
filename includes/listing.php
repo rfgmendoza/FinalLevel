@@ -70,7 +70,7 @@
 						</div>
 							<br>
 							<p>
-								<a class='add-to-cart' href='includes/addtocart.php?id=$id&sku=$sku&amp;prod=$prod'><span><image src='img/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+								<a class='add-to-cart' href='includes/addtocart.php?id=$id'><span><image src='img/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
 							</p>	
 							
 					</div>
@@ -81,7 +81,7 @@
 				
 						<div class='threecol last' style='margin-right: 2.8% !important;'>
 							<div class='product-wrapper'>
-								<div class='image'><a href='productpage.php?id=$id&sku=$sku&amp;prod=$prod'><img src='$img' alt='$prod' class='shopimg'></a></div>
+								<div class='image'><a href='#'><img src='$img' alt='$prod' class='shopimg'></a></div>
 								
 								<div class='product-infor'>
 									<p class='product_name'>$prodname</p>
@@ -90,7 +90,7 @@
 								</div>
 									<br>
 									<p>
-										<a class='add-to-cart' href='includes/addtocart.php?id=$id&sku=$sku&amp;prod=$prod'><span><image src='img/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+										<a class='add-to-cart' href='includes/addtocart.php?id=$id'><span><image src='img/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
 									</p>	
 									
 							</div>
