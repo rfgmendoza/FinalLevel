@@ -132,4 +132,9 @@ img {
 	margin-left:0%;
 }
 
+
+#sidebar ul li{
+	list-style:none;
+}
+
 }
