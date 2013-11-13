@@ -127,4 +127,9 @@ img {
 	padding-right: 20px;
 	}
 
+.padded1, .padded2 {
+	padding:0%;
+	margin-left:0%;
+}
+
 }
