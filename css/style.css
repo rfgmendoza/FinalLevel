@@ -832,6 +832,17 @@ margin-bottom: 19px;
 }
 
 
+.padded1 {
+	padding-left:20%;
+	padding-right:5%;
+
+}
+
+.padded2 {
+	padding-left:10%;
+	padding-right:20%;
+}
+
 /***************************************************
 	  admin
 ***************************************************/
