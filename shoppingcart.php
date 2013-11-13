@@ -55,7 +55,7 @@
 <form name="form1" method="post">
 <input type="hidden" name="pid" />
 <input type="hidden" name="command" />
-	<div style="margin:0px auto; width:600px;" >
+	<div style="margin:0px auto; width:80%;" >
     <div style="padding-bottom:10px">
     	<h1 align="center">Your Shopping Cart</h1>
     <input type="button" value="Continue Shopping" onclick="window.location='products.php'" />
