@@ -7,8 +7,8 @@
     <div class="login-content">
     	<div class="container">
         	<div class="row">
-            	<div class="threecol">&nbsp;</div>
-                <div class="fourcol">
+                <div class="sixcol">
+                <div class="padded">
                 	<p class="login-header">REGISTERED CUSTOMERS</p>
                     
                     <form id="client-general-inf">
@@ -19,8 +19,10 @@
                         <button type="button" title="signin" id="loginSubmit" class="button btn-proceed-checkout btn-checkout"><span><span>SIGN IN</span></span></button>
                     </fieldset>
                     </form>
+                    </div>
                 </div>
-                <div class="fivecol last">
+                <div class="sixcol last">
+                <div class="padded">
                 	<p class="client-header">CREATE AN ACCOUNT</p>
                     <p style="font-weight:lighter;">Register with Final Level Games to enjoy personalized services, including:
                     <ul style="font-weight:lighter;margin-top:20px;padding-left:20px;margin-bottom:20px;">
@@ -30,7 +32,7 @@
                         <li>Checkout Preferences</li>
                     </ul>
                     <a href="registration.php"><button type="button" title="signin" class="button btn-proceed-checkout btn-checkout"><span><span>Create an Account</span></span></button></a>
-                </div>
+                </div></div>
             </div>
         </div>
     </div>
