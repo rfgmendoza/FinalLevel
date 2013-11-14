@@ -36,20 +36,20 @@
                         <form id="client-general-inf" action="addUser.php">
                             <fieldset>
                                 <p><label>Username</label>
-                                    <span><input id="username" type="text" name="username" value="User Name" /></span></p>
+                                    <span><input class="field" id="username" type="text" name="username" value="User Name" /></span></p>
                                 <p><label>Password</label>
-                                    <span><input id="password" name="password" type="text" value="Password" /></span></p>
+                                    <span><input class="field" id="password" name="password" type="password" value="Password" /></span></p>
                                 <p><label>Full Name</label>
-                                    <span><input id="firstname" type="text" name="firstName" value="First Name" /><input id="lastname" name="lastName" type="text" value="Last Name" /></span></p>
+                                    <span><input class="field" id="firstname" type="text" name="firstName" value="First Name" /><input id="lastname" name="lastName" type="text" value="Last Name" /></span></p>
                                 <!-- <p><label>Business or C/O</label><input type="text" /></p> -->
-                                <p><label>Street Address</label><input type="text" name="street" /></p>
+                                <p><label>Street Address</label><input class="field" type="text" name="street" /></p>
                                 <!-- <p><label>Unit</label><input type="text" value="Apt, Suite" /></p> -->
                                 <p><label>State</label>
                                
                                 <select name="state" id="state" required=""> <option value="">Select</option> <option value="AL">Alabama</option> <option value="AK">Alaska</option> <option value="AZ">Arizona</option> <option value="AR">Arkansas</option> <option value="CA">California</option> <option value="CO">Colorado</option> <option value="CT">Connecticut</option> <option value="DE">Delaware</option> <option value="DC">District of Columbia</option> <option value="FL">Florida</option> <option value="GA">Georgia</option> <option value="HI">Hawaii</option> <option value="ID">Idaho</option> <option value="IL">Illinois</option> <option value="IN">Indiana</option> <option value="IA">Iowa</option> <option value="KS">Kansas</option> <option value="KY">Kentucky</option> <option value="LA">Louisiana</option> <option value="ME">Maine</option> <option value="MD">Maryland</option> <option value="MA">Massachusetts</option> <option value="MI">Michigan</option> <option value="MN">Minnesota</option> <option value="MS">Mississippi</option> <option value="MO">Missouri</option> <option value="MT">Montana</option> <option value="NE">Nebraska</option> <option value="NV">Nevada</option> <option value="NH">New Hampshire</option> <option value="NJ">New Jersey</option> <option value="NM">New Mexico</option> <option value="NY">New York</option> <option value="NC">North Carolina</option> <option value="ND">North Dakota</option> <option value="OH">Ohio</option> <option value="OK">Oklahoma</option> <option value="OR">Oregon</option> <option value="PA">Pennsylvania</option> <option value="RI">Rhode Island</option> <option value="SC">South Carolina</option> <option value="SD">South Dakota</option> <option value="TN">Tennessee</option> <option value="TX">Texas</option> <option value="UT">Utah</option> <option value="VT">Vermont</option> <option value="VA">Virginia</option> <option value="WA">Washington</option> <option value="WV">West Virginia</option> <option value="WI">Wisconsin</option> <option value="WY">Wyoming</option> <option value="--">----- U.S Territory -----</option> <option value="AS">American Samoa</option> <option value="FM">Fed. Micronesia</option> <option value="GU">Guam</option> <option value="MH">Marshall Island</option> <option value="MP">N. Mariana Is.</option> <option value="PW">Palau Island</option> <option value="PR">Puerto Rico</option> <option value="VI">U.S. Virgin Islands</option> </select></p>
                                 
-                               <p><label>zipcode</label><input type="text" name="zip" /></p>
-                               <p><label>Phone</label><input type="text" name="phone" /></p>
+                               <p><label>zipcode</label><input type="text" name="zip" class="field"/></p>
+                               <p><label>Phone</label><input type="text" name="phone" class="field"/></p>
                                <p><label class="check-label" style="width:auto !important;"> <input type="checkbox" name="smsOptIn" id="sms-optin"> <em></em> <span>I'd like to receive mobile text alerts from Final Level Games.</span> </label></p>
                                <p style="margin-bottom: 36px"><label>Email Address</label><input type="text" name="email" /></p>
                                <input type="hidden" name="register" value="register" />
