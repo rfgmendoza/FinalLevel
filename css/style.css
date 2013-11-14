@@ -606,6 +606,7 @@ button.button {
 	margin: 0;
 	background: transparent;
 	cursor: pointer;
+	width:0 auto;
 }
 
 button.button span {
