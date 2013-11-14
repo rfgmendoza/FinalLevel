@@ -36,6 +36,7 @@
 				
 				//also compute for total price
 				$totalPrice = 0;
+				$x=0;
 				
 				while ($row = $cartList->fetch_assoc()){
 					//extract($row);
@@ -44,21 +45,25 @@
 					$prod=$row['product_name'];
 					$price=$row['price'];
 					$img=$row['product_image'];
-					
-					
+
 					$totalPriceBeforeTax += $price;
 					$tax = round(($totalPriceBeforeTax * .06), 2);
 					$totalPrice=($totalPriceBeforeTax + $tax);
 					
 					//creating new table row per record
+					echo "<input id='$x' type='hidden' value='$prod' />";
 					echo "<tbody><tr>";											
 						echo "<td class='textAlignCenter'><img src='$img' alt='$prod' class='cartimg'></td>";
 						echo "<td>{$prod}</td>";
 						echo "<td class='textAlignCenter'>{$price}</td>";
 						echo "<td class='textAlignCenter'><a href='includes/removeFromCart.php?sku=$sku'>Remove </a></td>";
 					echo "</tr>";
+					$x++;
+
+					
+
 				}
-				
+
 				echo "
 						<tr class='first last'>
 							<td colspan='4' class='a-right last'>
@@ -68,7 +73,7 @@
 						</tr>
 					</tbody>";
 			echo "</table>";
-			
+
 			echo "
 				<div class='row'>
 					<div class='eightcol'>&nbsp;</div>
@@ -101,7 +106,7 @@
 							</tbody>
 						</table>
 						<ul class='checkout-types'>
-							<li>    <a class='cartbtn' href='#'>Checkout</a>
+							<li>    <a class='cartbtn' href='includes/paypal.php?product1={$prod}&totalprice={$totalPrice}'>Checkout</a>
 							</li>
 						</ul>
 						</div>
@@ -109,10 +114,10 @@
 				</div>";
 			
 		}else{
-			echo "<br>Your Shopping Cart lives to serve. Give it purpose--fill it with all the games you have never finished.";
+			echo "<br>Your Shopping Cart lives to serve. Give it purpose--fill it with all the games you have never tried.";
 		}
 
 	}else{
-		echo "<br>Your Shopping Cart lives to serve. Give it purpose--fill it with all the games you have never finished. If you already have an account, <a href='login.php'>sign in</a> to see your Cart.";
+		echo "<br>Your Shopping Cart lives to serve. Give it purpose--fill it with all the games you have never tried. If you already have an account, <a href='login.php'>sign in</a> to see your Cart.";
 	}
 ?>
