@@ -114,10 +114,10 @@
 				</div>";
 			
 		}else{
-			echo "<br>Your Shopping Cart lives to serve. Give it purpose--fill it with all the games you have never tried.";
+			echo "<br />Your Shopping Cart lives to serve. Give it purpose--fill it with all the games you have never tried.";
 		}
 
 	}else{
-		echo "<br>Your Shopping Cart lives to serve. Give it purpose--fill it with all the games you have never tried. If you already have an account, <a href='login.php'>sign in</a> to see your Cart.";
+		echo "<br />Your Shopping Cart lives to serve. Give it purpose--fill it with all the games you have never tried. If you already have an account, <a href='login.php'>sign in</a> to see your Cart.";
 	}
 ?>

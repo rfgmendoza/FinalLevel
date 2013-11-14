@@ -3,9 +3,7 @@
 	include ('includes/head.php');
 	include ('includes/header.php');
 ?>    
-<style type="text/css">
-li.account{display:none !important;}
-</style>
+
     <div id="content">
         <div class="container">
             <div class="row">
@@ -22,16 +20,16 @@ li.account{display:none !important;}
                     <div id="loginform">
                         <p class="title">login</p>
                         <p>
-                            <label for="nd_username">Username:</label>
-                            <input type="text" class="text" name="log" id="userName" placeholder="Username">
+                            <label for="Username">Username:</label>
+                            <input type="text" class="text" name="log" id="userName" value="Username" />
                         </p>
                         <p>
-                            <label for="nd_password">Password:</label> 
-                            <input type="password" class="text" name="pwd" id="password" placeholder="Password">
+                            <label for="Password">Password:</label> 
+                            <input type="password" class="text" name="pwd" id="password" value="Password" />
                         </p>
                         <p style="margin-top:20px;">
                             <a class="forgotten" href="#nd_lost_password_form">You can not login?</a> 
-                            <input type="submit" id="loginSubmit" class="button" value="Login">
+                            <input type="submit" id="loginSubmit" class="button" value="Login" />
                         </p>
                     </div>
                 </div><!--threecol-->
@@ -66,7 +64,7 @@ li.account{display:none !important;}
             </div><!--row-->
         </div>
     </div><!--products-->
-	<br>
+	<br />
 <?php
 	include ('includes/footer.php');
 	

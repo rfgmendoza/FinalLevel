@@ -3,22 +3,17 @@
 ?>
    <div class="client-content">
             <div class="container">
-                <div class="row">
+                 <div class="row">
                     
-                    <p style="padding-left: 6px;margin-bottom: 23px;">Welcome, Admin</p>
-                
-                    <div class="onecol">
-                        <ul class="admin-menu">
-                            <li><a href="home.php">Home</a></li>
+                    <p style="padding-left: 6px;">Welcome, Admin - User Log</p>
+                	 <ul class="admin-menu">
                             <li><a href="userLog.php">User Log</a></li>
                         <li><a href="admin.php">Add/Revise Products</a></li>
                         <li><a href="#">Orders</a></li>
                         <li><a href="home.php">Main Site</a></li>
                         <li><a href="home.php">Log Off</a></li>
                     </ul>
-                </div><!--two-->
-                <div class="elevencol last">
-                
+                <div class="twelvcol" style="clear:both;">
                 <TABLE border="0" cellspacing="0" cellpadding="0" class="data-table admin-table admin-product-table ">
 
                 <THEAD>
@@ -126,8 +121,8 @@
                 
                 
                 <TR class="form"> 
-                    	<TD>
-                                                &nbsp;
+                    	<TD>&nbsp;
+                                                
                                         </TD> 
                                         <TD>
                                                 <input type="text" style="width:100px;" placeholder="image" id="productImage" name="productImage"/>

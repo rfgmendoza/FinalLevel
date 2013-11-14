@@ -7,7 +7,7 @@
                     	<li><a href="about.php">About us</a></li>
                         <li><a href="shipping.php">Delivery Information</a></li>
                         <li><a href="privacypolicy.php">Privacy Policy</a></li>
-                        <li><a href="conditions.php">Terms & Conditions</a></li>
+                        <li><a href="conditions.php">Terms &amp; Conditions</a></li>
                     </ul>
                 </div>
                 <div class="threecol footer-col">

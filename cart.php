@@ -5,8 +5,8 @@
 	include ('includes/header.php');
 ?>
 
-	<html>
-		<body>
+	
+		
 
 			<div id="cart-content">
 				<div class="container">
@@ -19,7 +19,9 @@
 					</div>
 				</div>
 			</div>
+</div>
+</div>
 
-		</body>
-	</html>
+		
+	
 <?php 	include ('includes/footer.php');?>

@@ -72,7 +72,7 @@ switch ($_GET['action']) {
       // email an admin, update the database with payment status, activate a
       // membership, etc.  
  
-      echo "<html><head><title>Success</title></head><body><h3>Thank you for your order.</h3>";
+      echo "<html><head><title>Success</title></head><body><h1><a class='cartbtn' href='../home.php'>Go to Home Page</a><br>Thank you for your order.</h1>";
       foreach ($_POST as $key => $value) { echo "$key: $value<br>"; }
       echo "</body></html>";
       
@@ -80,16 +80,18 @@ switch ($_GET['action']) {
       // order status page which presents the user with the status of their
       // order based on a database (which can be modified with the IPN code 
       // below).
-      
+		session_start();
+		$_SESSION['cart'] = null;
       break;
       
    case 'cancel':       // Order was canceled...
 
       // The order was canceled before being completed.
  
-      echo "<html><head><title>Canceled</title></head><body><h3>The order was canceled.</h3>";
+      echo "<html><head><title>Canceled</title></head><body><h3>The order was canceled.</h3><a class='cartbtn' href='../home.php'>Go to Home Page</a>";
       echo "</body></html>";
-      
+		session_start();
+		$_SESSION['cart'] = null;
       break;
       
    case 'ipn':          // Paypal is calling page for IPN validation...
@@ -125,5 +127,7 @@ switch ($_GET['action']) {
       }
       break;
  }     
+
+	
 
 ?>

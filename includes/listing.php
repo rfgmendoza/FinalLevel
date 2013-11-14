@@ -30,9 +30,9 @@
 			
 			if (strlen($prod)>20){
 				$name = explode(':', $prod);
-				$prodname = join('<br>',$name);
+				$prodname = join('<br />',$name);
 			}else if (strlen($prod)<22){
-				$prodname= $prod.'<br>    <br>';
+				$prodname= $prod.'<br />    <br />';
 			}else{
 				
 			}
@@ -61,16 +61,16 @@
 				echo "
 				<div class='threecol' style='margin-right: 2.8% !important;'>
 					<div class='product-wrapper'>
-						<div class='image'><a href='#'><img src='$img' alt='$prod' class='shopimg'></a></div>
+						<div class='image'><a href='#'><img src='$img' alt='$prod' class='shopimg' /></a></div>
 						
 						<div class='product-infor'>
 							<p class='product_name'>$prodname</p>
-							<p class='product-pr'>New: $$price<br>Used: $$salprice</p>
+							<p class='product-pr'>New: $$price<br />Used: $$salprice</p>
 							$rankimg
 						</div>
-							<br>
+							<br />
 							<p>
-								<a class='add-to-cart' href='includes/addtocart.php?id=$id'><span><image src='img/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+								<a class='add-to-cart' href='includes/addtocart.php?id=$id'><span><img src='img/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
 							</p>	
 							
 					</div>
@@ -81,16 +81,16 @@
 				
 						<div class='threecol last' style='margin-right: 2.8% !important;'>
 							<div class='product-wrapper'>
-								<div class='image'><a href='#'><img src='$img' alt='$prod' class='shopimg'></a></div>
+								<div class='image'><a href='#'><img src='$img' alt='$prod' class='shopimg' /></a></div>
 								
 								<div class='product-infor'>
 									<p class='product_name'>$prodname</p>
-									<p class='product-pr'>New: $$price<br>Used: $$salprice</p>
+									<p class='product-pr'>New: $$price<br />Used: $$salprice</p>
 									$rankimg
 								</div>
-									<br>
+									<br />
 									<p>
-										<a class='add-to-cart' href='includes/addtocart.php?id=$id'><span><image src='img/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
+										<a class='add-to-cart' href='includes/addtocart.php?id=$id'><span><img src='img/shopping-cart-white.png' alt='Add to Cart' /></span>add to cart</a>
 									</p>	
 									
 							</div>
@@ -103,6 +103,6 @@
 		}
 	 /* Passing variables page to page: http://stackoverflow.com/questions/10252418/how-to-pass-variables-from-one-php-page-to-another-without-form  */
 	
-	echo"</div><br>";
+	echo"</div><br />";
 			
 ?>

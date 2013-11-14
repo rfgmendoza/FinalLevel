@@ -107,7 +107,7 @@ class paypal_class {
        
       // initialization constructor.  Called when class is created.
       
-      $this->paypal_url = 'https://www.paypal.com/cgi-bin/webscr';
+      $this->paypal_url = 'https://www.sandbox.paypal.com/cgi-bin/webscr';
       
       $this->last_error = '';
       
@@ -159,7 +159,7 @@ class paypal_class {
          echo "<input type=\"hidden\" name=\"$name\" value=\"$value\"/>\n";
       }
       echo "<center><br/><br/>\n";
-      echo "<a href=\"www.transcendenceproductions.com/betaB\">Click here to go back</a><br /><br />";
+      echo "<a href=\"http://sulley.cah.ucf.edu/~as932055/play/FinalLevel/home.php\">Click here to go back</a><br /><br />";
       echo "<input type=\"submit\" value=\"Click Here\"></center>\n";
       
       echo "</form>\n";
