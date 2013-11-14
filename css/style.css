@@ -452,6 +452,11 @@ color: orange;
 .footer-right{
 	margin-left:13px;
 }
+
+.threecol.last.contactinfor{
+	min-width:200px;
+}
+
 .footer-col{
 	padding:15px 0;
 }
