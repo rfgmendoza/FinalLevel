@@ -12,13 +12,13 @@
 						<h2>Shipping Methods</h2>
 						<p>We offer three methods for shipping your orders from finalevelgames.com:</p>
 						<ul>
-						<li> <h3>Standard</h3> – 4 to 8 business days</h3>
+						<li> <h3>Standard</h3> – 4 to 8 business days
 						Includes 1 day for processing and 3 to 7 days for transit.</li>
 						 
-						<li> <h3> Expedited </h3> – 3 business days</h3>
+						<li> <h3> Expedited </h3> – 3 business days
 						Includes 1 day for processing and 2 days for transit.</li>
 						 
-						<li> <h3> Express </h3> – 2 business days</h3>
+						<li> <h3> Express </h3> – 2 business days
 						Includes 1 day for processing and 1 day for transit.</li>
 						</ul>
 

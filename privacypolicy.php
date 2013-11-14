@@ -6,7 +6,7 @@
     	<div class="container">
         	<div class="row">
             	<div class="twelvecol">
-                    	<h1>Privacy Policy</h2>
+                    	<h1>Privacy Policy</h1>
 						<p>FinaLevel Games knows that you care about your privacy and the use of your personal information. This notice describes our Privacy Policy.  This Privacy Policy applies to information we collect about you from our Website.</p>
 						<p>By visiting a FinaLevel Website, or otherwise providing information FinaLevel you are accepting the practices described in this Privacy Policy. </p>
 

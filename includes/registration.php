@@ -75,7 +75,7 @@
     </div>
  
     
-</div><!--page_warp-->
+
 <?php
 	
     $_SESSION['username'] = $userQuery;

@@ -4,27 +4,28 @@ require_once('db_connect.php');
 session_start();
 $userQuery = $_SESSION['username'];
 $passwordQuery = $_SESSION['password'];
-include ('includes/timeout.php');
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta charset="UTF-8" >
 <title>Final Level Games - Games For Girls</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-<link rel="stylesheet" type="text/css" href="css/grid.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/nivo-slider.css" />
-<link rel="stylesheet" type="text/css" href="css/default.css" />
-<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+<link rel="stylesheet" type="text/css" href="css/grid.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/nivo-slider.css">
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel="stylesheet" type="text/css" href="css/carousel.css">
+<style type="text/css">
+li.account{display:none !important;}
+</style>
 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" ></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
 
 <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
@@ -33,7 +34,7 @@ include ('includes/timeout.php');
 
 <script type="text/javascript" src="js/custom.js"></script>
 
-<script type="text/javascript">
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -43,5 +44,4 @@ include ('includes/timeout.php');
   ga('send', 'pageview');
 
 </script>
-
 </head>

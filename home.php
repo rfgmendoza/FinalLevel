@@ -20,16 +20,16 @@
                     <div id="loginform">
                         <p class="title">login</p>
                         <p>
-                            <label for="Username">Username:</label>
-                            <input type="text" class="text" name="log" id="userName" value="Username" />
+                            <label for="userName">Username:</label>
+                            <input type="text" class="text" name="log" id="userName" value="Username">
                         </p>
                         <p>
-                            <label for="Password">Password:</label> 
-                            <input type="password" class="text" name="pwd" id="password" value="Password" />
+                            <label for="password">Password:</label> 
+                            <input type="password" class="text" name="pwd" id="password" value="Password">
                         </p>
                         <p style="margin-top:20px;">
                             <a class="forgotten" href="#nd_lost_password_form">You can not login?</a> 
-                            <input type="submit" id="loginSubmit" class="button" value="Login" />
+                            <input type="submit" id="loginSubmit" class="button" value="Login">
                         </p>
                     </div>
                 </div><!--threecol-->
@@ -64,7 +64,7 @@
             </div><!--row-->
         </div>
     </div><!--products-->
-	<br />
+	<br>
 <?php
 	include ('includes/footer.php');
 	

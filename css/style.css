@@ -16,7 +16,7 @@ display: block;
 -webkit-margin-after: 1em;
 }
 
-li.account{display:none !important;}
+
 
 /***************************************************
 	  page-header
@@ -116,13 +116,12 @@ input[type='text'], input[type='password'], textarea, select {
 .user-menu > ul > li.login a {
 	background: url(../img/lock-closed.png) no-repeat center top;
 }
-.user-menu > ul > li.logout a {
-	background: url(../img/lock-open.png) no-repeat center top;
-}
 .user-menu > ul > li.signup a {
 	background: url(../img/user-add.png) no-repeat center top;
 }
-
+.user-menu > ul > li.signout a {
+	background: url(../img/lock-open.png) no-repeat center top;
+}
 .user-menu > ul > li.wishlist a {
 	background: url(../img/edit.png) no-repeat center top;
 }
@@ -889,15 +888,14 @@ span.addnew{
 margin-top: 16px;
 }
 
-ul.admin-menu {
+ul.admin-menu{
+	background: #f7f7f7;
+padding: 31px;
 list-style: none;
-float: right;
 }
 
-ul.admin-menu li {
-line-height: 1.5;
-float: left;
-margin-left: 40px;
+ul.admin-menu li{
+	line-height:1.5;
 }
 
 ul.admin-menu li a{

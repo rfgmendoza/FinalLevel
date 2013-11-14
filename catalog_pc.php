@@ -22,9 +22,9 @@
 										<li><a href="#">Education</a></li>
 										<li><a href="#">Fighting</a></li>
 										<li><a href="#">Kinect</a></li>
-										<li><a href="#">Movies &amp; TV</a></li>
-										<li><a href="#">Music &amp; Party</a></li>
-										<li><a href="#">Puzzle &amp; Cards</a></li>
+										<li><a href="#">Movies & TV</a></li>
+										<li><a href="#">Music & Party</a></li>
+										<li><a href="#">Puzzle & Cards</a></li>
 										<li><a href="#">Role-Playing</a></li>
 										<li><a href="#">Shooter</a></li>
 										<li><a href="#">Simulation</a></li>
