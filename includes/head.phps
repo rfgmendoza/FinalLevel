@@ -1,11 +1,9 @@
 <?php
 
 require_once('db_connect.php');
-include_once('jcart/jcart.php');
 session_start();
 $userQuery = $_SESSION['username'];
 $passwordQuery = $_SESSION['password'];
-
 ?>
 
 <!DOCTYPE html>
@@ -23,8 +21,6 @@ $passwordQuery = $_SESSION['password'];
 <link rel="stylesheet" type="text/css" href="css/carousel.css">
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-
-<link rel="stylesheet" type="text/css" media="screen, projection" href="jcart/css/jcart.css" />
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script>

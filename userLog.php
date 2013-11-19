@@ -55,7 +55,7 @@
                 while($row = mysql_fetch_array($result))
                 {
                     echo '<form action="reviseUserInfo.php?id=' . $row[0] . '" method="post">';
-                    echo '<TR> <TD class="id"> ' . $row[0] . '</TD><TD>' . $row[12] . '</TD> <TD>' . $row[3] . '</TD> <TD>' . $row[5] . '</TD> <TD>' . $row[6] . '</TD> <TD>' . $row[7] . '</TD>  <TD>' . $row[8] . '</TD> <TD>' . $row[9] . '</TD> <TD>' . $row[9] . '</TD> <TD>' . $row[10] . '</TD> </TR>';
+                    echo '<TR> <TD class="id"> ' . $row[0] . '</TD><TD>' . $row[12] . '</TD> <TD>' . $row[3] . '</TD> <TD>' . $row[5] . '</TD> <TD>' . $row[4] . '</TD> <TD>' . $row[6] . '</TD>  <TD>' . $row[7] . '</TD> <TD>' . $row[8] . '</TD> <TD>' . $row[9] . '</TD> <TD>' . $row[10] . '</TD> </TR>';
                     echo '<TR class="form"> 
                     
                                         <TD>

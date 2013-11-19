@@ -1,7 +1,4 @@
-
-
 <?php
-
 	$mynewsqli = new mysqli("sulley.cah.ucf.edu", "as932055", "01knights!", "as932055");
 	
 	if ($mynewsqli->connect_errno)
@@ -30,8 +27,6 @@
 			$ranking=$row['ranking'];
 			$id=$row['indentifyer'];
 			$rankingimg;
-			
-			
 			
 			if (strlen($prod)>20){
 				$name = explode(':', $prod);
@@ -63,22 +58,7 @@
 				print("Error with Ranking");
 			}//productpage.php?sku=$sku&amp;prod=$prod
 			if ($a<3){
-
-				
-
 				echo "
-				<form method='post' action='' class='jcart'>
-					<fieldset>
-						<input type='hidden' name='jcartToken' value='$jcartToken'/>
-						<input type='hidden' name='my-item-id' value='$id' />
-						<input type='hidden' name='my-item-image' value='$img' />
-						<input type='hidden' name='my-item-name' value='$prod' />
-						<input type='hidden' name='my-item-price' value='$price' /> 
-						<input type='hidden' name='my-item-url' value='' />
-						<input type='hidden' name='my-item-qty' value='1' size='3' />
-						
-					</fieldset>
-
 				<div class='threecol' style='margin-right: 2.8% !important;'>
 					<div class='product-wrapper'>
 						<div class='image'><a href='#'><img src='$img' alt='$prod' class='shopimg'></a></div>
@@ -90,29 +70,15 @@
 						</div>
 							<br>
 							<p>
-								
-
-								
-								<input type='submit' name='my-add-button' value='add to cart' class='button cartbtn' />
+								<a class='add-to-cart' href='includes/addtocart.php?id=$id'><span><img src='img/shopping-cart-white.png' alt='Add to Cart' ></span>add to cart</a>
 							</p>	
 							
 					</div>
-				</div></form>";
+				</div>";
 				$a++;
 			}else{
-					
 					echo "
-						<form method='post' action='' class='jcart'>
-						<fieldset>  
-						<input type='hidden' name='jcartToken' value='$jcartToken'/>
-						<input type='hidden' name='my-item-id' value='$id' />
-						<input type='hidden' name='my-item-img' value='$img' />
-						<input type='hidden' name='my-item-name' value='$prod' />
-						<input type='hidden' name='my-item-price' value='$price' /> 
-						<input type='hidden' name='my-item-url' value='' />
-						<input type='hidden' name='my-item-qty' value='1' size='3' />
-						
-						</fieldset>
+				
 						<div class='threecol last' style='margin-right: 2.8% !important;'>
 							<div class='product-wrapper'>
 								<div class='image'><a href='#'><img src='$img' alt='$prod' class='shopimg'></a></div>
@@ -124,16 +90,12 @@
 								</div>
 									<br>
 									<p>
-										
-
-										
-										<input type='submit' name='my-add-button' value='add to cart' class='button cartbtn' />
+										<a class='add-to-cart' href='includes/addtocart.php?id=$id'><span><img src='img/shopping-cart-white.png' alt='Add to Cart'></span>add to cart</a>
 									</p>	
 									
 							</div>
 						</div>
 					</div>
-					</form>
 				<div class='row product-list-wrap clear' style='width:auto;'>
 						";
 				$a=0;
@@ -144,4 +106,3 @@
 	echo"</div><br>";
 			
 ?>
-

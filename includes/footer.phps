@@ -59,7 +59,6 @@
     $_SESSION['username'] = $userQuery;
     $_SESSION['password'] = $passwordQuery;
 ?>
-<script type="text/javascript" src="jcart/js/jcart.min.js"></script>
 </body>
 </html>
 

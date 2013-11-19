@@ -1,3 +1,5 @@
+
+
 a, a:visited, a b {cursor: pointer;text-decoration: none;}
 
 a{
@@ -111,6 +113,12 @@ input[type='text'], input[type='password'], textarea, select {
 
 .user-menu > ul > li.account a {
 	background: url(../img/user.png) no-repeat center top;
+	display:none;
+}
+
+.user-menu > ul > li.logged a {
+	background: url(../img/user.png) no-repeat center top;
+	display:block;
 }
 
 .user-menu > ul > li.login a {
@@ -189,17 +197,18 @@ p.featured{
 	padding: 8px;
 }
 
-a.cartbtn{
-	background: #666;
-	padding: 7px 11px;
-	color: #fff;
-	text-transform:capitalize;
-	font-weight:lighter;
-	font-size:18px;
+.cartbtn{
+	background: #666 !important;
+	padding: 7px 11px !important;
+	color: #fff !important;
+	text-transform:capitalize !important;
+	font-weight:lighter !important;
+	font-size:18px !important;
+	width:100%;
 }
 
-a.cartbtn:hover{
-	background: #662d91;
+.cartbtn:hover{
+	background: #662d91 !important;
 }
 .textAlignLeft{
 	text-align:left;
@@ -226,6 +235,12 @@ a.cartbtn:hover{
 .cartheight{
 	min-height:300px !important;
 	height:100%;
+	margin: 10px 0;
+}
+.alignRight{
+	text-align:right;
+	float:right;
+
 }
 
 /***************************************************
@@ -495,54 +510,6 @@ p.footer-content{
 	white-space: nowrap !important;
 }
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	empty-cells: show;
-	font-size: 100%;
-	border-spacing: 2px;
-	border-color: gray;
-	max-width: 100%;
-	background-color: transparent;
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-tr {
-	display: table-row;
-	vertical-align: inherit;
-	border-color: inherit;
-}
-
-thead {
-	display: table-header-group;
-	vertical-align: middle;
-	border-color: inherit;
-}
-
-.data-table {
-	width: 100%;
-	border: 1px solid #bebcb7;
-	font-size:12px;
-}
-
-.data-table thead th {
-	font-weight: normal;
-	border-right: 1px solid #c2d3e0;
-	padding: 8px;
-	color: #333;
-	white-space: nowrap;
-	vertical-align: middle;
-}
-
-.data-table tr.last th, .data-table tr.last td {
-	border-bottom: 0 !important;
-}
-
-.data-table thead th {
-	background: #D2D2D2;
-}
-
 .a-center {
 	text-align: center !important;
 }
@@ -552,12 +519,6 @@ thead {
 }
 
 
-tbody {
-	display: table-row-group;
-	vertical-align: middle;
-	border-color: inherit;
-}
-
 media="all"
 caption, th, td {
 	vertical-align: top;
@@ -566,15 +527,6 @@ caption, th, td {
 }
 
 
-tbody td {
-	border-bottom: 1px solid #d9dde3;
-	border-right: 1px solid #d9dde3;
-}
-
-.cart-table td {
-	padding: 10px;
-}
-
 
 .cart-table .product-name a {
 	font-weight: normal;
@@ -582,19 +534,6 @@ tbody td {
 	color: #666;
 }
 
-.data-table tfoot {
-	border-bottom: 1px solid #d9dde3;
-}
-
-.data-table tfoot tr {
-	border-top: 1px solid #ccc;
-}
-
-tfoot {
-	display: table-footer-group;
-	vertical-align: middle;
-	border-color: inherit;
-}
 
 .cart-table .btn-continue {
 	float: left;
@@ -643,10 +582,9 @@ input.button span {
 	border-radius:2px;
 }
 
-td a{
-	color:#999;	
+.floatRight{
+	float:right;
 }
-
 .totals table tbody td{
 	border:none;
 	
@@ -896,10 +834,14 @@ list-style: none;
 
 ul.admin-menu li{
 	line-height:1.5;
+	float: left;
+	margin-left: 27px;
 }
 
 ul.admin-menu li a{
-	color:#000;}
+	color:#000;
+	display:block;
+	}
 
 ul.admin-menu li a:hover{
 	text-decoration:underline;
@@ -925,6 +867,8 @@ Business
 }
 .client-content ul{
 	padding: 5px 30px;
+	float: right;
+	margin-bottom: 10px;
 }
 .client-content ul>li>ul>li{
 	padding: 5px 10px;

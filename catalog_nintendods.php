@@ -3,7 +3,6 @@
 	include ('includes/header.php');
 ?>
 
-
  <div id="content">
         <div class="container">
             <div class="row">

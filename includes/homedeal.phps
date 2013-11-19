@@ -1,5 +1,4 @@
 <?php
-
 	$mynewsqli = new mysqli("sulley.cah.ucf.edu", "as932055", "01knights!", "as932055");
 	
 	if ($mynewsqli->connect_errno)
@@ -31,8 +30,6 @@
 			$id=$row['indentifyer'];
 			$rankingimg;
 			
-			$img= "<img src='$img' alt='$prod' class='shopimg'>";
-			
 			if (strlen($prod)>20){
 				$name = explode(':', $prod);
 				$prodname = join('<br>',$name);
@@ -62,23 +59,9 @@
 			}else{
 				print("Error with Ranking");
 			}//
-
-			$jcartToken = $_SESSION['jcartToken'];
-
 			echo "
 				<li>
-				<form method='post' action='' class='jcart'>
-					<fieldset>
-						<input type='hidden' name='jcartToken' value='$jcartToken'/>
-						<input type='hidden' name='my-item-id' value='$id' />
-						<input type='hidden' name='my-item-img' value='$img' />
-						<input type='hidden' name='my-item-name' value='$prod' />
-						<input type='hidden' name='my-item-price' value='$price' /> 
-						<input type='hidden' name='my-item-url' value='' />
-						<input type='hidden' name='my-item-qty' value='1' size='3' />
-						
-					</fieldset>
-					<div class='image'><a href='#'><img src='$img' alt='$prod' class='shopimg'></a></div>
+						<div class='image'><a href='#'><img src='$img' alt='$prod' class='shopimg'></a></div>
 						
 						<div class='product-infor'>
 							<p class='product_name'>$prodname</p>
@@ -87,11 +70,8 @@
 						</div>
 							<br>
 							<p>
-								<input type='submit' name='my-add-button' value='add to cart' class='button cartbtn' />
-								
+								<a class='add-to-cart' href='includes/addtocart.php?id=$id'><span><img src='img/shopping-cart-white.png' alt='Add to Cart' ></span>add to cart</a>
 							</p>	
-				</form>
-						
 							
 				</li>";
 				
