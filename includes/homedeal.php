@@ -31,8 +31,6 @@
 			$id=$row['indentifyer'];
 			$rankingimg;
 			
-			$img= "<img src='$img' alt='$prod' class='shopimg'>";
-			
 			if (strlen($prod)>20){
 				$name = explode(':', $prod);
 				$prodname = join('<br>',$name);
