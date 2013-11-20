@@ -316,7 +316,7 @@ class Jcart {
 
 		// Add an item
 		if ($_POST[$add]) {
-			$itemAdded = $this->add_item($id, $image, $name, $price, $qty, $url);
+			$itemAdded = $this->add_item($id, $img, $name, $price, $qty, $url);
 			// If not true the add item function returns the error type
 			if ($itemAdded !== true) {
 				$errorType = $itemAdded;
