@@ -516,9 +516,12 @@ class Jcart {
 				
 				// Product Names
 				echo tab(6) . "<td class='jcart-item-image'>\n";
-				echo tab(7) . "<img src='".$item['img']."' class='shopimg'>\n";
-				
-				echo tab(7) . "<input name='jcartItemImg[]' type='hidden' value='<img src='".$item['img']."'  /> \n";
+				if($item['url']){
+				echo tab(7) . "<img src='".$item['img']."' class='shopimg' alt='' />\n";
+				}
+				else
+					echo tab(7) . "<p> no image </p>\n";	
+				echo tab(7) . "<input name='jcartItemImg[]' type='hidden' value='<img src='".$item['img']."''  /> \n";
 				echo tab(6) . "</td>\n";
 				
 				// Product Names
