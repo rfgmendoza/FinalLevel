@@ -263,7 +263,11 @@ class Jcart {
 			}
 		}
 	}
-
+	
+	public function items_In_Cart(){
+		
+		return $this->itemCount;
+	}
 	/**
 	* Process and display cart
 	*/
