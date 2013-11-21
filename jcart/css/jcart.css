@@ -13,10 +13,21 @@ http://conceptlogic.com/jcart/
 #jcart-error { text-align:center; padding:5px; }
 
 #jcart{
-	width: 100%;
-	min-width: 300px;
+	width: 700px;
 	font-size:12px;
+	margin:0 auto;
 
+}
+.jcart-item-image img{
+	margin:5px auto;
+	height:100px;
+	width:auto;
+	
+}
+.jcart-item-image{
+	width: auto;
+	
+	
 }
 #jcart table { 
 	empty-cells: show;
@@ -24,11 +35,13 @@ http://conceptlogic.com/jcart/
 	border-spacing: 2px;
 	border-color: gray;
 	border: 1px solid #bebcb7;
-	max-width: 100%;
 	margin: 20px 0;
 	background-color: transparent;
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+#shopping-cart-table table{
+	width:100%
 }
 #shopping-cart-totals-table table{
 	width: 100%;
@@ -59,6 +72,9 @@ http://conceptlogic.com/jcart/
 	display: table-header-group;
 	vertical-align: middle;
 	border-color: inherit;
+}
+#jcart thead tr th{
+	padding: 5px;
 }
 #jcart-title {  }
 #jcart tbody {  

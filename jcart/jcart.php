@@ -36,7 +36,6 @@ class Jcart {
 			$item = null;
 			$item['id']       = $tmpItem;
 			$item['img']      = $this->img[$tmpItem];
-			echo '<p> this image: '. $item['img'].'</p>';
 			$item['name']     = $this->names[$tmpItem];
 			$item['price']    = $this->prices[$tmpItem];
 			$item['qty']      = $this->qtys[$tmpItem];
@@ -263,11 +262,7 @@ class Jcart {
 			}
 		}
 	}
-	
-	public function items_In_Cart(){
-		
-		return $this->itemCount;
-	}
+
 	/**
 	* Process and display cart
 	*/
@@ -491,10 +486,10 @@ class Jcart {
 		echo tab(4) . "<thead>\n";
 		
 		echo tab(5) . "<tr>\n";
-		echo tab(6) . "<th rowspan='1' class='a-center'>Product Image</th>";
-		echo tab(6) . "<th rowspan='1' class='nobr'><span>Product Name</span></th>";
-		echo tab(6) . "<th rowspan='1' class='nobr'>Qty</th>\n";
-		echo tab(6) . "<th rowspan='1' class='a-center'><span class='nobr'>Unit Price</span></th>";
+		echo tab(6) . "<th rowspan='1' class='a-center'><h2>Product Image</h2></th>";
+		echo tab(6) . "<th rowspan='1' class='nobr'><span><h2>Product Name</h2></span></th>";
+		echo tab(6) . "<th rowspan='1' class='nobr'><h2>Qty</h2></th>\n";
+		echo tab(6) . "<th rowspan='1' class='a-center'><span class='nobr'><h2>Unit Price</h2></span></th>";
 		echo tab(6) . "<th rowspan='1' class='hidden-cell'>&nbsp;&nbsp;&nbsp;&nbsp;</th>";		
 		echo tab(5) . "</tr>\n";
 		echo tab(4) . "</thead>\n";
@@ -502,10 +497,8 @@ class Jcart {
 		// Display the cart footer
 		echo tab(4) . "<tfoot>\n";
 		echo tab(5) . "<tr>\n";
-		echo tab(6) . "<th colspan='5'>\n";
-
-		echo tab(7) . "<span id='jcart-subtotal'>{$config['text']['subtotal']}: <strong>$currencySymbol" . number_format($this->subtotal, $priceFormat['decimals'], $priceFormat['dec_point'], $priceFormat['thousands_sep']) . "</strong></span>\n";
-		echo tab(6) . "</th>\n";
+		echo tab(6) . "<th colspan='2'><a class='checkbtn floatAlignLeft textAlignCenter' href='home.php'>Continue</a></th>\n";
+		echo tab(6) . "<th colspan='3'><input type='$inputType' $src name='jcartEmpty' value='{$config['text']['emptyButton']}' class='jcart-button checkbtn floatAlignRight' ></th>\n";
 		echo tab(5) . "</tr>\n";
 		echo tab(4) . "</tfoot>\n";			
 		
@@ -522,11 +515,11 @@ class Jcart {
 				// Product Names
 				echo tab(6) . "<td class='jcart-item-image'>\n";
 				if($item['img']){
-				echo tab(7) . "<img src='".$item['img']."' class='shopimg' alt='' />\n";
+				echo tab(7) . "<img src='".$item['img']."' class='checkimg' alt='' />\n";
 				}
 				else
 					echo tab(7) . "<p> no image </p>\n";	
-				echo tab(7) . "<input name='jcartItemImg[]' type='hidden' value='<img src='".$item['img']."''  /> \n";
+				echo tab(7) . "<input name='jcartItemImg[]' type='hidden' value='<img src='".$item['img']."''  > \n";
 				echo tab(6) . "</td>\n";
 				
 				// Product Names
@@ -543,12 +536,12 @@ class Jcart {
 				
 				//Qty
 				echo tab(6) . "<td class='jcart-item-qty'>\n";
-				echo tab(7) . "<input  name='jcartItemId[]' type='hidden' value='{$item['id']}' />\n";
+				echo tab(7) . "<input  name='jcartItemId[]'  class='textAlignCenter' type='hidden' value='{$item['id']}' />\n";
 				echo tab(7) . "<input id='jcartItemQty-{$item['id']}' name='jcartItemQty[]' size='2' type='text' value='{$item['qty']}' />\n";
 				echo tab(6) . "</td>\n";
 				//Price
 				echo tab(6) . "<td class='jcart-item-price'>\n";
-				echo tab(7) . "<span>$currencySymbol" . number_format($item['subtotal'], $priceFormat['decimals'], $priceFormat['dec_point'], $priceFormat['thousands_sep']) . "</span><input name='jcartItemPrice[]' type='hidden' value='{$item['price']}' />\n";
+				echo tab(7) . "<span class='textAlignCenter'>$currencySymbol" . number_format($item['subtotal'], $priceFormat['decimals'], $priceFormat['dec_point'], $priceFormat['thousands_sep']) . "</span><input name='jcartItemPrice[]' type='hidden' value='{$item['price']}' />\n";
 				echo tab(6) . "</td>\n";
 				//Remove
 				echo tab(6) . "<td class='jcart-item-price'>\n";
@@ -581,7 +574,7 @@ class Jcart {
 			$src = " src='{$config['button']['empty']}' alt='{$config['text']['emptyButton']}' title='' ";
 		}
 
-		echo tab(4) . "<input type='$inputType' $src name='jcartEmpty' value='{$config['text']['emptyButton']}' class='jcart-button cartbtn' />\n";
+		echo tab(4) . "n";
 		echo tab(3) . "</div>\n";
 		
 		echo tab(1) . "<div id='jcart-tooltip'></div>\n";
@@ -608,6 +601,8 @@ class Jcart {
 		echo tab(5) . "</tr>\n";
 		echo tab(5) . "<tr>\n";
 		echo tab(6) . "<td colspan='2'>\n";
+		$itemCounter=($this->itemCount);
+		
 			if ($isCheckout === true) {
 			// Hidden input allows us to determine if we're on the checkout page
 			// We normally check against request uri but ajax update sets value to relay.php

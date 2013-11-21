@@ -210,6 +210,20 @@ p.featured{
 .cartbtn:hover{
 	background: #662d91 !important;
 }
+.checkbtn{
+	background: #666 !important;
+	padding: 5px !important;
+	color: #fff !important;
+	text-transform:uppercase !important;
+	font-weight:lighter !important;
+	font-size:12px !important;
+	width:100%;
+	max-width:80px;
+}
+
+.checkbtn:hover{
+	background: #662d91 !important;
+}
 .textAlignLeft{
 	text-align:left;
 
@@ -624,10 +638,7 @@ button.btn-checkout span span {
 	margin-bottom: 26px;
 	
 }
-#shopping-cart-table img {
-	width:auto !important;
-	height:170px !important;
-}
+
 
 /***************************************************
 	  category
