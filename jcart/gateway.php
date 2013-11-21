@@ -82,7 +82,7 @@ else {
 		$queryString .= "&upload=1";
 		$queryString .= "&charset=utf-8";
 		$queryString .= "&currency_code=" . urlencode($config['currencyCode']);
-		$queryString .= "&business=" . urlencode($config['paypal']['id']);
+		$queryString .= "&business=brushstrokefox-facilitator@knights.ucf.edu";
 		$queryString .= "&return=" . urlencode($config['paypal']['returnUrl']);
 		$queryString .= '&notify_url=' . urlencode($config['paypal']['notifyUrl']);
 		
@@ -116,7 +116,7 @@ else {
 			}
 
 			// Send the visitor to PayPal
-			@header('Location: ' . $protocol . 'www' . $sandbox . '.paypal.com/cgi-bin/webscr' . $queryString);
+			@header('Location: ' . $protocol . 'www.sandbox.paypal.com/cgi-bin/webscr' . $queryString);
 		}
 		else {
 			die('Couldn&rsquo;t find a PayPal ID in <strong>config.php</strong>.');
