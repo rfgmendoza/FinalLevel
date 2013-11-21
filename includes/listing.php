@@ -1,5 +1,4 @@
 
-
 <?php
 
 	$mynewsqli = new mysqli("sulley.cah.ucf.edu", "as932055", "01knights!", "as932055");
@@ -61,7 +60,8 @@
 				
 			}else{
 				print("Error with Ranking");
-			}//productpage.php?sku=$sku&amp;prod=$prod
+			}
+			$jcartToken = $_SESSION['jcartToken'];
 			if ($a<3){
 
 				
@@ -71,7 +71,7 @@
 					<fieldset>
 						<input type='hidden' name='jcartToken' value='$jcartToken'/>
 						<input type='hidden' name='my-item-id' value='$id' />
-						<input type='hidden' name='my-item-image' value='$img' />
+						<input type='hidden' name='my-item-img' value='$img' />
 						<input type='hidden' name='my-item-name' value='$prod' />
 						<input type='hidden' name='my-item-price' value='$price' /> 
 						<input type='hidden' name='my-item-url' value='' />
