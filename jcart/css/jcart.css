@@ -14,19 +14,41 @@ http://conceptlogic.com/jcart/
 
 #jcart{
 	width: 100%;
+	min-width: 300px;
 	font-size:12px;
+
 }
 #jcart table { 
 	empty-cells: show;
 	font-size: 100%;
+	border-spacing: 2px;
 	border-color: gray;
-	width: 100%;
-	min-width: 300px;
+	border: 1px solid #bebcb7;
+	max-width: 100%;
+	margin: 20px 0;
 	background-color: transparent;
 	border-collapse: collapse;
 	border-spacing: 0;
-	margin:10px 0;
-	border: 1px solid #bebcb7;
+}
+#shopping-cart-totals-table table{
+	width: 100%;
+	margin: 7px 0;
+}
+#shopping-cart-totals-table table, #shopping-cart-totals-table tr, #shopping-cart-totals-table td, shopping-cart-totals-table tbody{
+	border:none;
+	border-style:none;
+}
+#shopping-cart-totals-table  td
+ {
+	padding: 4px 16px 3px 8px;
+
+}
+#shopping-cart-totals-table{
+	border: 1px #ccc solid;
+	margin-top: 24px;
+	margin-bottom: 26px;
+	
+}
 }
 #jcart tr{
 	display: table-row;
@@ -79,18 +101,13 @@ http://conceptlogic.com/jcart/
 #jcart th, #jcart td { padding:5px; border:0; border:solid 1px #ccc; vertical-align:middle; text-align:left; font-weight:normal; }
 #jcart #jcart-empty { text-align:center; }
 
-.jcart-item-qty{ width:10%;}
-#jcart .jcart-item-name { font-weight:bold; color:#000; }
-#jcart .jcart-item-price { font-weight:bold; text-align:right; }
+.jcart-item-qty { width:25%; }
+#jcart .jcart-item-name { width:50%; font-weight:bold; color:#000; }
+#jcart .jcart-item-price { width:25%; font-weight:bold; text-align:right; }
 .jcart-item-price span { display:block; }
 
 .jcart-remove { font-size:11px; font-weight:normal; }
 
-#shopping-cart-totals-table{
-	width:5% !important;
-	float:right;
-
-}
 #jcart-subtotal { display:block; }
 #jcart-subtotal strong {  }
 

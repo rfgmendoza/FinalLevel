@@ -560,7 +560,7 @@ class Jcart {
 			echo tab(5) . "<tr><td id='jcart-empty' colspan='3'>{$config['text']['emptyMessage']}</td></tr>\n";
 		}
 		echo tab(4) . "</tbody>\n";
-		echo tab(3) . "</table>\n\n";
+		echo tab(3) . "</table>\n";
 
 		echo tab(3) . "<div id='jcart-buttons'>\n";
 
@@ -579,8 +579,35 @@ class Jcart {
 		echo tab(4) . "<input type='$inputType' $src name='jcartEmpty' value='{$config['text']['emptyButton']}' class='jcart-button cartbtn' />\n";
 		echo tab(3) . "</div>\n";
 
-		// If this is the checkout display the PayPal checkout button
-		if ($isCheckout === true) {
+
+		echo tab(2) . "</fieldset>\n";
+		echo tab(1) . "</form>\n\n";
+		
+		echo tab(1) . "<div id='jcart-tooltip'></div>\n";
+		
+		echo tab(4) . "<br><br><table id='shopping-cart-totals-table' class='floatRight textAlignRight'>\n";
+		echo tab(5) . "<thead><tr><th colspan='2'><strong>Total</strong></th> </tr></thead>\n";
+		echo tab(5) . "<tr>\n";
+		echo tab(6) . "<td colspan='1'>\n";
+		echo tab(7) . "<span class='textAlignRight' id='jcart-subtotal'>{$config['text']['subtotal']}:</td><td colspan='1'><strong>$currencySymbol" . number_format($this->subtotal, $priceFormat['decimals'], $priceFormat['dec_point'], $priceFormat['thousands_sep']) . "</strong></span>\n";
+		echo tab(6) . "</td>\n";
+		echo tab(5) . "<tr>\n";
+		echo tab(6) . "<td colspan='1'><span class='textAlignRight' id='jcart-subtotal'>Sales Tax 6%</span>\n";
+		echo tab(6) . "</td>\n";
+		$taxTotal=($this->subtotal)*.06;
+		echo tab(6) . "<td colspan='1'><strong>$currencySymbol".(number_format(($taxTotal), $priceFormat['decimals'],$priceFormat['dec_point'], $priceFormat['thousands_sep'] ))."</strong>\n";
+		echo tab(6) . "</td>\n";
+		echo tab(5) . "</tr>\n";
+		echo tab(5) . "<tr>\n";
+		echo tab(6) . "<td colspan='1'><span class='textAlignRight' id='jcart-subtotal'>Total</span>\n";
+		echo tab(6) . "</td>\n";
+		$grandTotal=$taxTotal+ ($this->subtotal);
+		echo tab(6) . "<td colspan='1'><strong>$currencySymbol".(number_format(($grandTotal), $priceFormat['decimals'],$priceFormat['dec_point'], $priceFormat['thousands_sep'] ))."</strong>\n";
+		echo tab(6) . "</td>\n";
+		echo tab(5) . "</tr>\n";
+		echo tab(5) . "<tr>\n";
+		echo tab(6) . "<td colspan='2'>\n";
+			if ($isCheckout === true) {
 			// Hidden input allows us to determine if we're on the checkout page
 			// We normally check against request uri but ajax update sets value to relay.php
 			echo tab(3) . "<input type='hidden' id='jcart-is-checkout' name='jcartIsCheckout' value='true' />\n";
@@ -597,19 +624,10 @@ class Jcart {
 
 			echo tab(3) . "<input type='$inputType' $src id='jcart-paypal-checkout' class ='cartbtn floatRight' name='jcartPaypalCheckout' value='{$config['text']['checkoutPaypal']}' $disablePaypalCheckout />\n";
 		}
-
-		echo tab(2) . "</fieldset>\n";
-		echo tab(1) . "</form>\n\n";
-		
-		echo tab(1) . "<div id='jcart-tooltip'></div>\n";
-		
-		echo tab(4) . "<table id='shopping-cart-totals-table'>\n";
-		echo tab(5) . "<tr>\n";
-		echo tab(6) . "<td style='' class='a-right' colspan='1'>\n";
-		echo tab(7) . "<span id='jcart-subtotal'>{$config['text']['subtotal']}:<strong>$currencySymbol" . number_format($this->subtotal, $priceFormat['decimals'], $priceFormat['dec_point'], $priceFormat['thousands_sep']) . "</strong></span>\n";
 		echo tab(6) . "</td>\n";
 		echo tab(5) . "</tr>\n";
-		echo tab(4) . "</table>\n";	
+		echo tab(4) . "</table><br><br>\n";	
+		echo tab(4) . "<br><br>\n";
 	}
 }
 

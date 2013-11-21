@@ -2,8 +2,7 @@
 
 include_once('jcart/jcart.php');
  
-	$cartItemCount = count($_SESSION['cart']);
-
+	$itemQty = $_SESSION['itemQty'];
     $jcartToken = $_SESSION['jcartToken']; 
 
 ?> 

@@ -41,13 +41,13 @@ $config['currencyCode']           = '';
 $config['csrfToken']              = false;
 
 // Override default cart text
-$config['text']['cartTitle']      = '';    // Shopping Cart
+$config['text']['cartTitle']      = 'My Cart';    // Shopping Cart
 $config['text']['singleItem']     = '';    // Item
 $config['text']['multipleItems']  = '';    // Items
 $config['text']['subtotal']       = '';    // Subtotal
 $config['text']['update']         = '';    // update
 $config['text']['checkout']       = '';    // checkout
-$config['text']['checkoutPaypal'] = '';    // Checkout with PayPal
+$config['text']['checkoutPaypal'] = 'Checkout';    // Checkout with PayPal
 $config['text']['removeLink']     = '';    // remove
 $config['text']['emptyButton']    = '';    // empty
 $config['text']['emptyMessage']   = '';    // Your cart is empty!
@@ -67,7 +67,7 @@ $config['button']['empty']        = '';
 // ADVANCED SETTINGS
 
 // Display tooltip after the visitor adds an item to their cart?
-$config['tooltip']                = true;
+$config['tooltip']                = false;
 
 // Allow decimals in item quantities?
 $config['decimalQtys']            = false;
