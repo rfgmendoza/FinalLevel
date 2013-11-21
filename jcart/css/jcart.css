@@ -40,9 +40,10 @@ http://conceptlogic.com/jcart/
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-#shopping-cart-table table{
-	width:100%
+#jcart #shopping-cart-table table{
+	width:700px !important;	
 }
+
 #shopping-cart-totals-table table{
 	width: 100%;
 	margin: 7px 0;

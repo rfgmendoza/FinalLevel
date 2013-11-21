@@ -31,10 +31,12 @@ include_once('jcart/jcart.php');
                     <div class="ninecol last user-menu">
                         
                         <div id="cart">
+                            <div style="display:none;"><?php $jcart->display_cart();?></div>
                             <div class="heading">
                               <div class="background"></div>
-                              <div class="mini_header_cart"><a href="checkout.php" class="cart_empty">My cart<?php echo "({$itemCounter})"; ?></a></div>
+                              <div class="mini_header_cart"><a href="checkout.php" class="cart_empty">My cart(<div class="cartQty"></div>)</a></div>
                             </div>
+                            
                         </div><!--cart-->
                         
                         <ul>

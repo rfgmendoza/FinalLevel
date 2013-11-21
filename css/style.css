@@ -18,7 +18,9 @@ display: block;
 -webkit-margin-after: 1em;
 }
 
-
+#displaynone{
+	display:none;
+}
 
 /***************************************************
 	  page-header

@@ -22,6 +22,18 @@ AJAX.login = function() {
 
 $(document).ready(function(){
 
+	quantity = $('#cart-total').html();
+
+	$('.cartQty').append(quantity);
+
+	$('input[name=my-add-button]').click(function() {
+
+	setTimeout(function() {
+      window.location.href=window.location.href;
+	}, 100);
+	});
+	
+
 	$('#box-products-wrapper').carouFredSel({
 					auto: false,
 					prev: '#prev2',
