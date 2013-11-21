@@ -517,7 +517,7 @@ class Jcart {
 				
 				// Product Names
 				echo tab(6) . "<td class='jcart-item-image'>\n";
-				if($item['url']){
+				if($item['img']){
 				echo tab(7) . "<img src='".$item['img']."' class='shopimg' alt='' />\n";
 				}
 				else
