@@ -36,7 +36,7 @@ class Jcart {
 			$item = null;
 			$item['id']       = $tmpItem;
 			$item['img']      = $this->img[$tmpItem];
-			echo '<p> this image: '. $item['img'];
+			echo '<p> this image: '. $item['img'].'</p>';
 			$item['name']     = $this->names[$tmpItem];
 			$item['price']    = $this->prices[$tmpItem];
 			$item['qty']      = $this->qtys[$tmpItem];
