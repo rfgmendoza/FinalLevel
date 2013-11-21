@@ -527,7 +527,7 @@ class Jcart {
 				// Product Names
 				echo tab(6) . "<td class='jcart-item-name'>\n";
 
-				if ($item['url']) {
+				if ($item['img']) {
 					echo tab(7) . "<a href='{$item['url']}'>{$item['name']}</a>\n";
 				}
 				else {
