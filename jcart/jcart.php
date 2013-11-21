@@ -578,10 +578,6 @@ class Jcart {
 
 		echo tab(4) . "<input type='$inputType' $src name='jcartEmpty' value='{$config['text']['emptyButton']}' class='jcart-button cartbtn' />\n";
 		echo tab(3) . "</div>\n";
-
-
-		echo tab(2) . "</fieldset>\n";
-		echo tab(1) . "</form>\n\n";
 		
 		echo tab(1) . "<div id='jcart-tooltip'></div>\n";
 		
@@ -626,7 +622,9 @@ class Jcart {
 		}
 		echo tab(6) . "</td>\n";
 		echo tab(5) . "</tr>\n";
-		echo tab(4) . "</table><br><br>\n";	
+		echo tab(4) . "</table><br><br>\n";
+		echo tab(2) . "</fieldset>\n";
+		echo tab(1) . "</form>\n\n";
 		echo tab(4) . "<br><br>\n";
 	}
 }
